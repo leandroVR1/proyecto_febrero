@@ -85,3 +85,10 @@ button {
     margin-left: 230px;
     color: #0FFE9A;
 }
+.col-md-6{
+    display: flex;
+    align-items: center;
+    border:solid black;
+    margin-left: 100px;
+    
+}
