@@ -1,6 +1,6 @@
 .sbody{
     background: linear-gradient(180deg, #0FFE9A 0%, rgba(50, 114, 40, 0.00) 100%), rgba(60, 65, 64, 0.84);
-    background-repeat: no-repeat;
+  
     justify-content: center;
     text-align: center;
 }
@@ -76,12 +76,31 @@ button {
 .btnC {
     background-color: #0FFE9A;
     border: none;
-    margin-left: 230px;
+   
 }
 
 .btnC:hover {
     background-color: rgba(60, 65, 64, 0.84);
     border: none;
-    margin-left: 230px;
+    
     color: #0FFE9A;
+}
+         
+.box-shadow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: 1px;
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 5px 26px 8px rgba(14, 14, 15, 0.66); 
+    -moz-box-shadow: 0px 5px 26px 8px rgba(9, 9, 9, 0.66); 
+    box-shadow: 0px 5px 26px 8px rgba(31, 31, 32, 0.66); 
+    
+}
+.box-shadow .card{
+
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
