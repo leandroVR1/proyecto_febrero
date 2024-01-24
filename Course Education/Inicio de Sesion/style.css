@@ -76,12 +76,30 @@ button {
 .btnC {
     background-color: #0FFE9A;
     border: none;
-    margin-left: 230px;
+    
 }
 
 .btnC:hover {
     background-color: rgba(60, 65, 64, 0.84);
     border: none;
-    margin-left: 230px;
     color: #0FFE9A;
+}
+
+.col-md-7{
+    display: flex;
+    align-items: center;
+   justify-content: center;
+   border: solid black;
+}
+.col-md-7 .card{
+    width: 50%;
+    height: 40%;
+    
+}
+
+
+.container{
+    
+    border: solid red;
+    
 }
