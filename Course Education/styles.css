@@ -223,6 +223,7 @@ header .btn2 {
 
 /* carousel*/
 
+
 .container-fluid {
     height: 100%;
 }
@@ -255,6 +256,10 @@ header .btn2 {
     border-radius: 20px;
     height: 350px;
     background:#2C2D2C;
+}
+.carousel-inner .card img{
+   border-top-left-radius: 20px;
+   border-top-right-radius: 20px;
 }
 
 .carousel-item .card-title{
@@ -320,7 +325,13 @@ header .btn2 {
 
 
 
-
+.container2{
+    
+    margin-top: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
 
 
@@ -408,9 +419,6 @@ body.active {
 
 .card{
     display: flex;
-
-    
-    margin: 20px;
     width: 536px;
     height: 448px;
     border-radius: 30px;
@@ -418,6 +426,7 @@ body.active {
     background: #2C2D2C;
    
 }
+
 
 
 
