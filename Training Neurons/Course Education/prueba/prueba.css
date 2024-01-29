@@ -1,0 +1,46 @@
+
+
+.card{
+    display: flex;
+    
+    align-items: center;
+    border: solid darkblue;
+    margin: 10px;
+    width: 536px;
+    height: 448px;
+    border-radius: 30px;
+    border: 2px solid #3D4E64;
+    background: #2C2D2C;
+}
+
+.content{
+    color: aliceblue;
+}
+
+.encabezado{
+    display: flex;
+    justify-content: space-between;
+
+   
+    
+}
+
+.logo{
+    
+    border: solid darkblue;
+}
+
+.categoria{
+    display:flex ;
+    justify-content: center;
+    margin: 30px;
+    width: 122px;
+    height: 33px;
+    border-radius: 17.5px;
+    border: 2px solid rgba(255, 255, 255, 0.50);
+    color: var(--White, #FFF);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+}

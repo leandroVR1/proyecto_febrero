@@ -1,0 +1,78 @@
+body {
+    background: linear-gradient(180deg, #0FFE9A 0%, rgba(50, 114, 40, 0.00) 100%), rgba(60, 65, 64, 0.84);
+    background-repeat: no-repeat;
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    font-family: 'Abel', sans-serif;
+}
+
+button {
+    max-width: 320px;
+    display: flex;
+    color: rgb(65, 63, 63);
+    padding: 0.5rem 1.4rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: middle;
+    align-items: center;
+    border-radius: 0.5rem;
+    gap: 0.75rem;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    transition: all .6s ease;
+    margin-left: 65px;
+}
+
+.button svg {
+    height: 24px;
+}
+
+.button:hover {
+    transform: scale(1.02);
+}
+
+.button1 {
+    max-width: 320px;
+    display: flex;
+    color: rgb(65, 63, 63);
+    padding: 0.5rem 1.4rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: middle;
+    align-items: center;
+    border-radius: 0.5rem;
+    gap: 0.75rem;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    transition: all .6s ease;
+    margin-left: 30px;
+  }
+  
+  .button1 svg {
+    height: 26px;
+}
+
+.button1:hover {
+    transform: scale(1.02);
+}
+
+.btnC {
+    background-color: #0FFE9A;
+    border: none;
+    margin-left: 230px;
+    color: rgba(60, 65, 64, 0.84);
+}
+
+.btnC:hover {
+    background-color: rgba(60, 65, 64, 0.84);
+    border: none;
+    margin-left: 230px;
+    color: #0FFE9A;
+}
