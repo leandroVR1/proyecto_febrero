@@ -75,9 +75,23 @@ if (window.matchMedia("(min-width: 768px)").matches) {
 
 //toggle
 const toggle = document.querySelector('.checkbox');
+const solIcon = document.getElementById('sol-icon');
  body = document.querySelector('body');
 
 
 toggle.addEventListener('click', () => {
     body.classList.toggle('active');
+    toggle.addEventListener('change', function () {
+      // Si el checkbox está marcado, cambia el ícono a la luna, de lo contrario, vuelve al sol
+      if (toggle.checked) {
+          solIcon.classList.remove('fa-sun');
+          solIcon.classList.add('fa-moon');
+      } else {
+          solIcon.classList.remove('fa-moon');
+          solIcon.classList.add('fa-sun');
+      }
+  });
+    
+
 });
+
