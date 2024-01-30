@@ -55,19 +55,81 @@
 
                   <p class="mt-5" style="color: rgb(65, 63, 63);">- OR -</p>
 
-                  <input class="form-control mt-5" type="text" placeholder="Nombre Completo">
+                  
 
-                  <input class="form-control mt-4" type="text" placeholder="Correo Electrónico">
+                  
+                  
+                  <form id="registroForm" action="" method="">
+                    <div class="formulario">
+                      <label class="mt-4">Nombre:</label>
+                      <input id="name" class="form-control mt-2" type="text" >
+                      <label class="mt-4">Apellido:</label>
+                      <input id="lastname" class="form-control mt-2" type="text" >  
+                      <label class="mt-4">Telefono:</label>
+                      <input id="phone" class="form-control mt-2" type="tel" >
+                      <label class="mt-4">Fecha de nacimiento:</label>
+                      <input id="birthdate" class="form-control mt-4" type="date">
+                      
+                      <label class="mt-4">Pais:</label>
+                      <select id="country" class="form-control ">
+                        <option value="">Seleccione</option>
+                        <option value="colombia">Colombia</option>
+                        <option value="argentina">Argentina</option>
+                        <option value="mexico">México</option>
+                        <option value="espana">España</option>
+                        <option value="chile">Chile</option>
+                        <option value="peru">Perú</option>
+                        <option value="brasil">Brasil</option>
+                        <option value="ecuador">Ecuador</option>
+                        <option value="uruguay">Uruguay</option>
+                        <option value="venezuela">Venezuela</option>
+                      </select>
 
-                  <input class="form-control mt-4" type="password" placeholder="Contraseña">
+                      <label class="mt-4"seleccionCategoria">Ciudad:</label>
+                      <select id="city" class="form-control ">
+                        <option value="">Seleccione</option>
+                        <option value="bogota">Bogotá</option>
+                        <option value="medellin">Medellín</option>
+                        <option value="cali">Cali</option>
+                        <option value="barranquilla">Barranquilla</option>
+                        <option value="cartagena">Cartagena</option>
+                        <option value="cucuta">Cúcuta</option>
+                        <option value="bucaramanga">Bucaramanga</option>
+                        <option value="pereira">Pereira</option>
+                        <option value="santamarta">Santa Marta</option>
+                        <option value="ibague">Ibagué</option>
+                      </select>
+                    
+                    
+                      <label  class="mt-4" for="Sexo">Sexo:</label>
+                        
+                    
+                      <div>
+                        <input type="radio" name="Genero" value="masculino">Masculino<br>
+                       </div>
+                      
+                        
+                      <div>
+                          <input type="radio" name="Genero" value="femenino">Femenino<br>
+                      </div>
+                       
+                      <label class="mt-4">Correo</label>
+                      <input id="email" class="form-control mt-4" type="email">
 
-                  <button class="btnC form-control mt-5 mb-5">Crear Cuenta</button>
+                      <label class="mt-4">Ingrese una contraseña</label>
+                      <input id="password" class="form-control mt-4" type="password">
 
+                      <button id="btnCrearCuenta" class="btnC form-control mt-5 mb-5">Crear Cuenta</button>
+                      </div>
+                    
+                   
+                      </div>
+                  </form>
+                      
                 </div>
             </div>
         </div>
     </div>
-
 
 
 
