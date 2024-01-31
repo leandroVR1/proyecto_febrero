@@ -1,0 +1,41 @@
+{
+    
+        "categories": [
+          {
+            "img": "img/finanzas.jpg",
+            "title": "desarollo web",
+            "description": "fundamentos intermedios de html, css y javascript con una duracion de 40 horas y certificado gratis",
+            "id": "desarollo"
+          },
+          {
+            "img": "img/finanzas.jpg",
+            "title": "desarollo en java",
+            "description": "fundamentos intermedios en el lenjuage java para backend con una duracion de 40 horas y certificado gratis",
+            "id": "desarollo"
+          },
+          {
+            "img": "img/finanzas.jpg",
+            "title": "desarollo en java",
+            "description": "fundamentos intermedios en el lenjuage java para backend con una duracion de 40 horas y certificado gratis",
+            "id": "desarollo"
+          },
+          {
+            "img": "img/finanzas.jpg",
+            "title": "desarollo en c#",
+            "description": "fundamentos intermedios en el lenjuage java para backend con una duracion de 40 horas y certificado gratis",
+            "id": "desarollo"
+          },
+          {
+            "img": "img/finanzas.jpg",
+            "title": "desarollo de dispositivos moviles",
+            "description": "fundamentos intermedios en el lenjuage java para backend con una duracion de 40 horas y certificado gratis",
+            "id": "desarollo"
+          },
+          {
+            "img": "img/finanzas.jpg",
+            "title": "desarollo en javascript backend",
+            "description": "fundamentos intermedios en el lenjuage java para backend con una duracion de 40 horas y certificado gratis",
+            "id": "desarollo"
+          }
+        ]
+}
