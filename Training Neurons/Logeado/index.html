@@ -421,11 +421,17 @@
 
     </main>
     <script>
-        // Obtener el nombre de usuario almacenado en sessionStorage
-        let nombreUsuario = sessionStorage.getItem("nombre");
+        // Obtener el usuario almacenado en localStorage
+        let userData = localStorage.getItem("user");
 
-        // Verificar si el nombre de usuario existe
-        if (nombreUsuario) {
+        // Verificar si el usuario existe
+        if (userData) {
+            // Parsear el JSON para obtener el objeto del usuario
+            let userObject = JSON.parse(userData);
+
+            // Obtener el nombre del usuario del objeto
+            let nombreUsuario = userObject.name;
+
             // Actualizar el contenido del elemento con id "objUsuario"
             document.getElementById("objUsuario").textContent = nombreUsuario;
         }
