@@ -1,6 +1,11 @@
+// Función para generar un ID único
+function generateUniqueId() {
+  return '_' + Math.random().toString(36).substr(2, 9);
+}
+
 document.addEventListener('DOMContentLoaded', function () {
   document.getElementById('registroForm').addEventListener('submit', function (event) {
-    event.preventDefault(); // Evita que el formulario se envíe de manera convencional
+    event.preventDefault();
 
     var name = document.getElementById('name').value;
     var lastname = document.getElementById('lastname').value;
@@ -8,21 +13,19 @@ document.addEventListener('DOMContentLoaded', function () {
     var birthdate = document.getElementById('birthdate').value;
     var country = document.getElementById('country').value;
     var city = document.getElementById('city').value;
-
-    // Verifica si se seleccionó alguna opción de radio antes de intentar obtener el valor
     var genderElement = document.querySelector('input[name="Genero"]:checked');
     var gender = genderElement ? genderElement.value : null;
-
     var email = document.getElementById('email').value;
     var password = document.getElementById('password').value;
 
-    // Verifica si al menos uno de los campos requeridos está vacío
     if (!name || !lastname || !phone || !birthdate || !country || !city || !gender || !email || !password) {
       alert('Por favor, completa todos los campos del formulario.');
-      return; // Evita continuar con la solicitud si hay campos vacíos
+      return;
     }
 
+    // Crea un objeto con los datos del usuario
     var userData = {
+      id: generateUniqueId(),
       name: name,
       lastname: lastname,
       phone: phone,
@@ -31,10 +34,13 @@ document.addEventListener('DOMContentLoaded', function () {
       city: city,
       gender: gender,
       email: email,
-      password: password
+      password: password,
+      misCursos: []  // Agrega el campo misCursos e inicialízalo como un array vacío
     };
 
-    fetch('http://192.168.21.165:3000/users', {
+    localStorage.setItem("user", JSON.stringify(userData));
+
+    fetch('http://localhost:3000/users', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -44,13 +50,13 @@ document.addEventListener('DOMContentLoaded', function () {
       .then(response => response.json())
       .then(data => {
         console.log('Respuesta del servidor:', data);
-        sessionStorage.setItem("nombre", name);
+
         // Si los datos se envían correctamente al servidor, realiza la redirección
-        window.location.href = "http://127.0.0.1:5500/Logeado/index.html";
+        window.location.href = "http://127.0.0.1:5501/Training%20Neurons/index.html";
+
       })
       .catch(error => {
         console.error('Error al enviar datos:', error);
-
       });
   });
 });
