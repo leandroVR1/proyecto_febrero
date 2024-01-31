@@ -1,0 +1,111 @@
+{
+  "categories": [
+    {
+      "img": "",
+      "title": "",
+      "description": "",
+      "id": "b038"
+    },
+    {
+      "id": "316c",
+      "img": "hola",
+      "title": "hola",
+      "description": "hola"
+    }
+  ],
+  "course": [
+    {
+      "img": "",
+      "title": "",
+      "description": "",
+      "url": "",
+      "id": "1b7c"
+    }
+  ],
+  "users": [
+    {
+      "id": "85bd",
+      "name": "leandro",
+      "lastname": "vargas",
+      "phone": "31313523565",
+      "birthdate": "2024-01-18",
+      "country": "colombia",
+      "city": "medellin",
+      "gender": "femenino",
+      "email": "estudiante@gmail.com",
+      "password": "BX]u-r3aV=^Xiux"
+    },
+    {
+      "id": "e739",
+      "name": "carla",
+      "lastname": "ruiz",
+      "phone": "343434",
+      "birthdate": "2024-01-01",
+      "country": "colombia",
+      "city": "medellin",
+      "gender": "masculino",
+      "email": "davidosorios@hotmail.com",
+      "password": "ererer"
+    },
+    {
+      "id": "0392",
+      "name": "antony",
+      "lastname": "ruiz",
+      "phone": "332232",
+      "birthdate": "2024-01-05",
+      "country": "mexico",
+      "city": "cali",
+      "gender": "masculino",
+      "email": "estudiante@gmail.com",
+      "password": "contraseña1234"
+    },
+    {
+      "id": "1e77",
+      "name": "antony",
+      "lastname": "ruiz",
+      "phone": "332232",
+      "birthdate": "2024-01-11",
+      "country": "argentina",
+      "city": "medellin",
+      "gender": "masculino",
+      "email": "estudiante@gmail.com",
+      "password": "contraseña1234"
+    },
+    {
+      "id": "00be",
+      "name": "keity",
+      "lastname": "ruiz",
+      "phone": "332232",
+      "birthdate": "2024-01-03",
+      "country": "mexico",
+      "city": "medellin",
+      "gender": "masculino",
+      "email": "estudiante@gmail.com",
+      "password": "contraseña1234"
+    },
+    {
+      "id": "aa99",
+      "name": "antony",
+      "lastname": "ruiz",
+      "phone": "332232",
+      "birthdate": "2024-01-12",
+      "country": "colombia",
+      "city": "medellin",
+      "gender": "masculino",
+      "email": "estudiante@gmail.com",
+      "password": "contraseña1234"
+    },
+    {
+      "id": "9a57",
+      "name": "luis",
+      "lastname": "ruiz",
+      "phone": "332232",
+      "birthdate": "2024-01-24",
+      "country": "colombia",
+      "city": "medellin",
+      "gender": "masculino",
+      "email": "estudiante@gmail.com",
+      "password": "contraseña1234"
+    }
+  ]
+}
