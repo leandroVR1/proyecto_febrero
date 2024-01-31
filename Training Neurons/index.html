@@ -33,8 +33,8 @@
         <h1 class="title mt-2" style="font-size: 40px; color: #21B573;">Training Neurons</h1>
         </div>
         <div class="botones">
-        <a target="_blank" href="Inicio de Sesion/INICIO_SESION.html"><button class="btn1">Iniciar Sesion</button></a>
-        <a target="_blank" href="Registro/inicio.html"><button class="btn2">Registrarse</button></a>
+        <a target="_blank" href="Inicio de Sesion/INICIO_SESION.html"><button id="btnIniciarSesion" class="btn1">Iniciar Sesion</button></a>
+        <a target="_blank" href="Registro/inicio.html"><button  id="btnRegistrarse" class="btn2">Registrarse</button></a>
         </div>
     </header>
 
@@ -42,7 +42,7 @@
 
         <div class="name__page">
             <i class="fa-solid fa-user"></i>
-            <h4>User_Name</h4>
+            <h4><span id="objUsuario"> </span></h4>
         </div>
 
         <div class="options__menu">	
@@ -421,6 +421,31 @@
        </div>
 
     </main>
+    <script>
+        // Obtener el usuario almacenado en localStorage
+        let userData = localStorage.getItem("user");
+
+        // Verificar si el usuario existe
+        if (userData) {
+            // Parsear el JSON para obtener el objeto del usuario
+            let userObject = JSON.parse(userData);
+
+            // Obtener el nombre del usuario del objeto
+            let nombreUsuario = userObject.name;
+
+            // Actualizar el contenido del elemento con id "objUsuario"
+            document.getElementById("objUsuario").textContent = nombreUsuario;
+
+            if (btnIniciarSesion) {
+                console.log("entrando al condicional")
+                btnIniciarSesion.style.display = 'none';
+              }
+        
+              if (btnRegistrarse) {
+                btnRegistrarse.style.display = 'none';
+              }
+        }
+    </script>
     <script src="script.js"></script>
 </body>
 </html>

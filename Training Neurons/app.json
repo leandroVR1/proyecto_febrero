@@ -82,30 +82,6 @@
       "gender": "masculino",
       "email": "estudiante@gmail.com",
       "password": "contraseña1234"
-    },
-    {
-      "id": "aa99",
-      "name": "antony",
-      "lastname": "ruiz",
-      "phone": "332232",
-      "birthdate": "2024-01-12",
-      "country": "colombia",
-      "city": "medellin",
-      "gender": "masculino",
-      "email": "estudiante@gmail.com",
-      "password": "contraseña1234"
-    },
-    {
-      "id": "9a57",
-      "name": "luis",
-      "lastname": "ruiz",
-      "phone": "332232",
-      "birthdate": "2024-01-24",
-      "country": "colombia",
-      "city": "medellin",
-      "gender": "masculino",
-      "email": "estudiante@gmail.com",
-      "password": "contraseña1234"
     }
   ]
 }

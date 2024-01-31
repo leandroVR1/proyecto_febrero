@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function () {
     localStorage.setItem("user", JSON.stringify(userData));
 
     // Envía los datos del usuario al servidor
-    fetch('http://192.168.21.165:3000/users',  {
+    fetch('http://localhost:3000/users',  {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -61,7 +61,10 @@ document.addEventListener('DOMContentLoaded', function () {
       console.log('Respuesta del servidor:', data);
       
       // Si los datos se envían correctamente al servidor, realiza la redirección
-      window.location.href = "http://127.0.0.1:5501/Training%20Neurons/Logeado/index.html";
+      window.location.href = "http://127.0.0.1:5501/Training%20Neurons/index.html";
+      var btnIniciarSesion = document.getElementById('btnIniciarSesion');
+      var btnRegistrarse = document.getElementById('btnRegistrarse');
+      
     })
     .catch(error => {
       console.error('Error al enviar datos:', error);
