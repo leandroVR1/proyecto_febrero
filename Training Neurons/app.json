@@ -24,88 +24,117 @@
   ],
   "users": [
     {
-      "id": "85bd",
-      "name": "leandro",
-      "lastname": "vargas",
-      "phone": "31313523565",
-      "birthdate": "2024-01-18",
-      "country": "colombia",
-      "city": "medellin",
-      "gender": "femenino",
-      "email": "estudiante@gmail.com",
-      "password": "BX]u-r3aV=^Xiux"
+      "id": "",
+      "name": "",
+      "lastname": "",
+      "phone": "",
+      "birthdate": "",
+      "country": "",
+      "city": "",
+      "gender": "",
+      "email": "",
+      "password": "",
+      "misCursos": []
     },
     {
-      "id": "e739",
-      "name": "carla",
-      "lastname": "ruiz",
-      "phone": "343434",
+      "id": "_fjgcyqno5",
+      "name": "prueba",
+      "lastname": "sas",
+      "phone": "3434",
+      "birthdate": "2024-01-17",
+      "country": "colombia",
+      "city": "medellin",
+      "gender": "masculino",
+      "email": "errrere.1212@gmail.com",
+      "password": "11111111"
+    },
+    {
+      "id": "_oe4qd8b02",
+      "name": "prueba2",
+      "lastname": "weewe",
+      "phone": "3232323",
+      "birthdate": "2024-01-17",
+      "country": "colombia",
+      "city": "cali",
+      "gender": "femenino",
+      "email": "323232.1212@gfgg.com",
+      "password": "232323"
+    },
+    {
+      "id": "_b7vx6v5tw",
+      "name": "prueba3",
+      "lastname": "ewewe",
+      "phone": "323232",
+      "birthdate": "2024-01-11",
+      "country": "colombia",
+      "city": "bogota",
+      "gender": "masculino",
+      "email": "pruba.121@gmail.com",
+      "password": "43434",
+      "misCursos": []
+    },
+    {
+      "id": "_b7vx6v5tw",
+      "name": "prueba3",
+      "lastname": "ewewe",
+      "phone": "323232",
+      "birthdate": "2024-01-11",
+      "country": "colombia",
+      "city": "bogota",
+      "gender": "masculino",
+      "email": "pruba.121@gmail.com",
+      "password": "43434",
+      "misCursos": [
+        "JCGX",
+        "MG8B",
+        "X2FT",
+        "72EQ",
+        "F2QR"
+      ]
+    },
+    {
+      "id": "_htt4j7pm0",
+      "name": "leandro",
+      "lastname": "vargas",
+      "phone": "23224343",
       "birthdate": "2024-01-01",
       "country": "colombia",
       "city": "medellin",
       "gender": "masculino",
-      "email": "davidosorios@hotmail.com",
-      "password": "ererer"
+      "email": "wqwwq.121@gmail.com",
+      "password": "2323232",
+      "misCursos": []
     },
     {
-      "id": "0392",
-      "name": "antony",
-      "lastname": "ruiz",
-      "phone": "332232",
-      "birthdate": "2024-01-05",
-      "country": "mexico",
-      "city": "cali",
-      "gender": "masculino",
-      "email": "estudiante@gmail.com",
-      "password": "contraseña1234"
-    },
-    {
-      "id": "1e77",
-      "name": "antony",
-      "lastname": "ruiz",
-      "phone": "332232",
-      "birthdate": "2024-01-11",
-      "country": "argentina",
-      "city": "medellin",
-      "gender": "masculino",
-      "email": "estudiante@gmail.com",
-      "password": "contraseña1234"
-    },
-    {
-      "id": "00be",
-      "name": "keity",
-      "lastname": "ruiz",
-      "phone": "332232",
-      "birthdate": "2024-01-03",
-      "country": "mexico",
-      "city": "medellin",
-      "gender": "masculino",
-      "email": "estudiante@gmail.com",
-      "password": "contraseña1234"
-    },
-    {
-      "id": "aa99",
-      "name": "antony",
-      "lastname": "ruiz",
-      "phone": "332232",
-      "birthdate": "2024-01-12",
+      "id": "_htt4j7pm0",
+      "name": "leandro",
+      "lastname": "vargas",
+      "phone": "23224343",
+      "birthdate": "2024-01-01",
       "country": "colombia",
       "city": "medellin",
       "gender": "masculino",
-      "email": "estudiante@gmail.com",
-      "password": "contraseña1234"
+      "email": "wqwwq.121@gmail.com",
+      "password": "2323232",
+      "misCursos": [
+        "JCGX"
+      ]
     },
     {
-      "id": "9a57",
-      "name": "luis",
-      "lastname": "ruiz",
-      "phone": "332232",
-      "birthdate": "2024-01-24",
+      "id": "_htt4j7pm0",
+      "name": "leandro",
+      "lastname": "vargas",
+      "phone": "23224343",
+      "birthdate": "2024-01-01",
       "country": "colombia",
       "city": "medellin",
       "gender": "masculino",
-      "email": "estudiante@gmail.com",
-      "password": "contraseña1234"
+      "email": "wqwwq.121@gmail.com",
+      "password": "2323232",
+      "misCursos": [
+        "JCGX",
+        "72EQ"
+      ]
     }
   ]
 }
