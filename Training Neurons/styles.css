@@ -445,16 +445,7 @@ body.active {
 
 .icono{
   
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 39px;
-    height: 36px;
-    border-radius: 50%;
-    
-    font-size: 16px;
-    background-color: #24D198;
-    
+ 
    
    
     
@@ -544,4 +535,16 @@ button{
     margin-right: 49px;
     font-size: 16px;
     background-color: #ffff;
+}
+.icono button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 39px;
+    height: 36px;
+    border-radius: 50%;
+    
+    font-size: 16px;
+    background-color: #24D198;
+    
 }

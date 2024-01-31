@@ -153,5 +153,15 @@ function enviarActualizacionAlServidor(userObject) {
   });
 }
 
+function cambiarColorBoton(cursoId) {
+  // Seleccionar el botón por su ID
+  let boton = document.getElementById("boton" + cursoId);
+
+  // Cambiar el color del botón a rojo
+  if (boton) {
+      boton.style.color = 'red';
+  }
+}
+
 
 
