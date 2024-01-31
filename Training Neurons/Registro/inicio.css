@@ -76,3 +76,14 @@ button {
     margin-left: 230px;
     color: #0FFE9A;
 }
+
+label{
+    display: flex;
+    align-items: flex-start;
+}
+
+.generos{
+    display:flex;
+    align-items: flex-start;
+    flex-direction: column;
+}

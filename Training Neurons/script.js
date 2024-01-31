@@ -13,6 +13,7 @@ var body = document.getElementById("body");
     }
 
 //Si el ancho de la página es menor a 760px, ocultará el menú al recargar la página
+//esto es una prueba
 
 if (window.innerWidth < 760){
 
