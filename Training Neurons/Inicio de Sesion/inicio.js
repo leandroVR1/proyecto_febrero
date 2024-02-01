@@ -63,24 +63,27 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 // Inicio de sesion 
-fetch ('http://localhost:3000/users')
-.then(response => {return response.json()})
-.then(data)
 
 let correo = document.querySelector("#correo")
 let password = document.querySelector("#password")
 
 if(correo.value != "" && password.value != "") {
-    correo.classList.add("is-valid");
-    correo.classList.remove("is-valid");
-    password.classList.add("is-valid");
-    password.classList.remove("is-valid");
+  correo.classList.add("is-valid");
+  correo.classList.remove("is-valid");
+  password.classList.add("is-valid");
+  password.classList.remove("is-valid");
 }
 else{
-    correo.classList.add("is-valid");
-    correo.classList.remove("is-valid");
-    password.classList.add("is-valid");
-    password.classList.remove("is-valid");
+  correo.classList.add("is-valid");
+  correo.classList.remove("is-valid");
+  password.classList.add("is-valid");
+  password.classList.remove("is-valid");
 }
 
-
+fetch ('http://localhost:3000/users')
+.then(response => {return response.json()})
+.then(data => {
+  data.forEach( function() {
+    
+  });
+})
