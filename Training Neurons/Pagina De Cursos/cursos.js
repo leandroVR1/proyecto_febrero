@@ -3,6 +3,8 @@ var container=document.createElement('div');
 container.classList.add('container');
 root.appendChild(container);
 
+
+
 var row=document.createElement('div');
 row.classList.add('row','mt-5');
 container.appendChild(row)
@@ -22,8 +24,11 @@ function cargarDatos(){
 
 function cargarTargetas(){
 
+    filtro = datos.filter(function(dato){
+        return dato.categoria ==idDelBoton;
+    });
 
-    datos.forEach((dato)=>{
+    filtro.forEach((dato)=>{
         console.log(dato.img)
         let col=document.createElement('div')
         col.classList.add('col-md-3');
@@ -57,9 +62,11 @@ function cargarTargetas(){
         button.style.border = "none";
         button.innerText = "Ir al curso";
 
+        console.log(dato.website)
+
         button.onclick=function(){
             redirigir(dato.website);
-            console.log(dato.website)
+            
         }
 
         cardbody.appendChild(button);
@@ -69,5 +76,9 @@ function cargarTargetas(){
 }
 function redirigir(url) {
     window.open(url, "_blank");
+}
+function capturarID(boton){
+    var idDelBoton=boton.id;
+   return idDelBoton;
 }
 cargarDatos();

@@ -276,13 +276,14 @@ header .btn2 {
 }
 
 
-#boton-categoria{
+.btn{
     display: flex;
     justify-content: center;
     border: none;
     background-color: #21B573;
     border-radius: 47px;
 }
+
 
 
 
