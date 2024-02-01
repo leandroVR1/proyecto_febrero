@@ -96,314 +96,56 @@
       "password": "232323"
     },
     {
-      "id": "_b7vx6v5tw",
-      "name": "prueba3",
-      "lastname": "ewewe",
-      "phone": "323232",
-      "birthdate": "2024-01-11",
+      "id": "_ssdvu97n7",
+      "name": "yeifry leandro",
+      "lastname": "vargas rivera",
+      "phone": "31313131",
+      "birthdate": "2024-02-13",
       "country": "colombia",
-      "city": "bogota",
+      "city": "medellin",
       "gender": "masculino",
-      "email": "pruba.121@gmail.com",
-      "password": "43434",
-      "misCursos": []
-    },
-    {
-      "id": "_b7vx6v5tw",
-      "name": "prueba3",
-      "lastname": "ewewe",
-      "phone": "323232",
-      "birthdate": "2024-01-11",
-      "country": "colombia",
-      "city": "bogota",
-      "gender": "masculino",
-      "email": "pruba.121@gmail.com",
-      "password": "43434",
+      "email": "yeifry.121@gmail.com",
+      "password": "123",
       "misCursos": [
-        "JCGX",
         "MG8B",
-        "X2FT",
-        "72EQ",
-        "F2QR"
-      ]
-    },
-    {
-      "id": "_htt4j7pm0",
-      "name": "leandro",
-      "lastname": "vargas",
-      "phone": "23224343",
-      "birthdate": "2024-01-01",
-      "country": "colombia",
-      "city": "medellin",
-      "gender": "masculino",
-      "email": "wqwwq.121@gmail.com",
-      "password": "2323232",
-      "misCursos": []
-    },
-    {
-      "id": "_htt4j7pm0",
-      "name": "leandro",
-      "lastname": "vargas",
-      "phone": "23224343",
-      "birthdate": "2024-01-01",
-      "country": "colombia",
-      "city": "medellin",
-      "gender": "masculino",
-      "email": "wqwwq.121@gmail.com",
-      "password": "2323232",
-      "misCursos": [
-        "JCGX"
-      ]
-    },
-    {
-      "id": "_htt4j7pm0",
-      "name": "leandro",
-      "lastname": "vargas",
-      "phone": "23224343",
-      "birthdate": "2024-01-01",
-      "country": "colombia",
-      "city": "medellin",
-      "gender": "masculino",
-      "email": "wqwwq.121@gmail.com",
-      "password": "2323232",
-      "misCursos": [
-        "JCGX",
         "72EQ"
       ]
     },
     {
-      "id": "_htt4j7pm0",
-      "name": "leandro",
-      "lastname": "vargas",
-      "phone": "23224343",
-      "birthdate": "2024-01-01",
+      "id": "_9fp37ft7q",
+      "name": "rfrfrf",
+      "lastname": "rfrf",
+      "phone": "2423",
+      "birthdate": "2024-02-07",
       "country": "colombia",
       "city": "medellin",
       "gender": "masculino",
-      "email": "wqwwq.121@gmail.com",
-      "password": "2323232",
+      "email": "rerrer.121@gmail.com",
+      "password": "123445",
       "misCursos": [
         "JCGX",
+        "MG8B",
         "72EQ",
-        "X2FT"
-      ]
-    },
-    {
-      "id": "_htt4j7pm0",
-      "name": "leandro",
-      "lastname": "vargas",
-      "phone": "23224343",
-      "birthdate": "2024-01-01",
-      "country": "colombia",
-      "city": "medellin",
-      "gender": "masculino",
-      "email": "wqwwq.121@gmail.com",
-      "password": "2323232",
-      "misCursos": [
-        "JCGX",
-        "72EQ",
-        "X2FT",
-        "F2QR"
-      ]
-    },
-    {
-      "id": "_htt4j7pm0",
-      "name": "leandro",
-      "lastname": "vargas",
-      "phone": "23224343",
-      "birthdate": "2024-01-01",
-      "country": "colombia",
-      "city": "medellin",
-      "gender": "masculino",
-      "email": "wqwwq.121@gmail.com",
-      "password": "2323232",
-      "misCursos": [
-        "JCGX",
-        "72EQ",
-        "X2FT",
         "F2QR",
+        "X2FT",
         "3JBT"
       ]
     },
     {
-      "id": "_htt4j7pm0",
-      "name": "leandro",
-      "lastname": "vargas",
-      "phone": "23224343",
-      "birthdate": "2024-01-01",
+      "id": "_6y1qezo7c",
+      "name": "prueba121554544",
+      "lastname": "hjhghj",
+      "phone": "56465465",
+      "birthdate": "2024-02-13",
       "country": "colombia",
       "city": "medellin",
       "gender": "masculino",
-      "email": "wqwwq.121@gmail.com",
-      "password": "2323232",
+      "email": "rthhrthgrhrhbr.121@gmail.com",
+      "password": "32443242342",
       "misCursos": [
-        "JCGX",
-        "72EQ",
-        "X2FT",
         "F2QR",
-        "3JBT",
-        "MG8B"
-      ]
-    },
-    {
-      "id": "_5us5vd5wn",
-      "name": "julio",
-      "lastname": "ewe",
-      "phone": "2323",
-      "birthdate": "2024-01-01",
-      "country": "chile",
-      "city": "cali",
-      "gender": "masculino",
-      "email": "sdsadsadsa@gmail.com",
-      "password": "232323",
-      "misCursos": [
-        "JCGX",
-        "72EQ"
-      ]
-    },
-    {
-      "id": "_5us5vd5wn",
-      "name": "julio",
-      "lastname": "ewe",
-      "phone": "2323",
-      "birthdate": "2024-01-01",
-      "country": "chile",
-      "city": "cali",
-      "gender": "masculino",
-      "email": "sdsadsadsa@gmail.com",
-      "password": "232323",
-      "misCursos": [
-        "JCGX",
-        "72EQ",
-        "X2FT"
-      ]
-    },
-    {
-      "id": "_5us5vd5wn",
-      "name": "julio",
-      "lastname": "ewe",
-      "phone": "2323",
-      "birthdate": "2024-01-01",
-      "country": "chile",
-      "city": "cali",
-      "gender": "masculino",
-      "email": "sdsadsadsa@gmail.com",
-      "password": "232323",
-      "misCursos": [
-        "JCGX",
-        "72EQ",
-        "X2FT",
-        "MG8B"
-      ]
-    },
-    {
-      "id": "_5us5vd5wn",
-      "name": "julio",
-      "lastname": "ewe",
-      "phone": "2323",
-      "birthdate": "2024-01-01",
-      "country": "chile",
-      "city": "cali",
-      "gender": "masculino",
-      "email": "sdsadsadsa@gmail.com",
-      "password": "232323",
-      "misCursos": [
-        "JCGX",
-        "72EQ",
-        "X2FT",
         "MG8B",
-        "3JBT"
-      ]
-    },
-    {
-      "id": "_5us5vd5wn",
-      "name": "julio",
-      "lastname": "ewe",
-      "phone": "2323",
-      "birthdate": "2024-01-01",
-      "country": "chile",
-      "city": "cali",
-      "gender": "masculino",
-      "email": "sdsadsadsa@gmail.com",
-      "password": "232323",
-      "misCursos": [
-        "JCGX",
-        "72EQ",
         "X2FT",
-        "MG8B",
-        "3JBT",
-        "F2QR"
-      ]
-    },
-    {
-      "id": "_chuikxpam",
-      "name": "pruebaa",
-      "lastname": "prueba",
-      "phone": "123",
-      "birthdate": "2024-01-28",
-      "country": "colombia",
-      "city": "bogota",
-      "gender": "masculino",
-      "email": "estudiante@gmail.com",
-      "password": "r434",
-      "misCursos": []
-    },
-    {
-      "id": "_chuikxpam",
-      "name": "pruebaa",
-      "lastname": "prueba",
-      "phone": "123",
-      "birthdate": "2024-01-28",
-      "country": "colombia",
-      "city": "bogota",
-      "gender": "masculino",
-      "email": "estudiante@gmail.com",
-      "password": "r434",
-      "misCursos": [
-        "JCGX"
-      ]
-    },
-    {
-      "id": "_iklfnwv4n",
-      "name": "rgeer",
-      "lastname": "ww",
-      "phone": "22",
-      "birthdate": "2024-01-09",
-      "country": "argentina",
-      "city": "bogota",
-      "gender": "masculino",
-      "email": "estudiante@gmail.com",
-      "password": "434535",
-      "misCursos": []
-    },
-    {
-      "id": "_iklfnwv4n",
-      "name": "rgeer",
-      "lastname": "ww",
-      "phone": "22",
-      "birthdate": "2024-01-09",
-      "country": "argentina",
-      "city": "bogota",
-      "gender": "masculino",
-      "email": "estudiante@gmail.com",
-      "password": "434535",
-      "misCursos": [
-        "JCGX"
-      ]
-    },
-    {
-      "id": "_iklfnwv4n",
-      "name": "rgeer",
-      "lastname": "ww",
-      "phone": "22",
-      "birthdate": "2024-01-09",
-      "country": "argentina",
-      "city": "bogota",
-      "gender": "masculino",
-      "email": "estudiante@gmail.com",
-      "password": "434535",
-      "misCursos": [
-        "JCGX",
         "72EQ"
       ]
     }
