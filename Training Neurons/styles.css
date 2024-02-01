@@ -252,7 +252,7 @@ header .btn2 {
  .carousel-inner .card {
     margin: 0 0.5em;
     box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
-    border:none;
+    border: solid black;
     border-radius: 20px;
     height: 350px;
     background:#2C2D2C;
@@ -265,7 +265,16 @@ header .btn2 {
     font-family: "KoHo", sans-serif;
     color:#D9ECFF ;
     
+    
 }
+.carousel-item .card img{
+    border-radius: 20px;
+}
+
+.container2{
+    margin-top: 200px;
+}
+
 
 #boton-categoria{
     display: flex;
@@ -439,8 +448,8 @@ body.active {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 29px;
-    height: 26px;
+    width: 39px;
+    height: 36px;
     border-radius: 50%;
     
     font-size: 16px;

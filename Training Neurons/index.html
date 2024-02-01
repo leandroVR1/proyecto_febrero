@@ -33,8 +33,8 @@
         <h1 class="title mt-2" style="font-size: 40px; color: #21B573;">Training Neurons</h1>
         </div>
         <div class="botones">
-        <a target="_blank" href="Inicio de Sesion/INICIO_SESION.html"><button class="btn1">Iniciar Sesion</button></a>
-        <a target="_blank" href="Registro/inicio.html"><button class="btn2">Registrarse</button></a>
+        <a target="_blank" href="Inicio de Sesion/INICIO_SESION.html"><button id="btnIniciarSesion" class="btn1">Iniciar Sesion</button></a>
+        <a target="_blank" href="Registro/inicio.html"><button  id="btnRegistrarse" class="btn2">Registrarse</button></a>
         </div>
     </header>
 
@@ -42,7 +42,7 @@
 
         <div class="name__page">
             <i class="fa-solid fa-user"></i>
-            <h4>User_Name</h4>
+            <h4><span id="objUsuario"> </span></h4>
         </div>
 
         <div class="options__menu">	
@@ -92,15 +92,15 @@
       <!--   Carousel -->
         <div id="carouselExampleControls" class="carousel">
             <div class="carousel-inner">
-            <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+                    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
                 <div class="carousel-item active">
                     <div class="card">
                         <div class="img-wrapper"><img src="img/programacion.jpg" class="d-block w-100" alt="..."> </div>
                         <div class="card-body">
                             <h5 class="card-title">Programacion</h5>
                            
-                            <a id="boton-categoria" href="#" class="btn btn-primary mt-3">Go somewhere</a>
+                            <a id="boton-categoria" href="./Pagina De Cursos/cursos.html" class="btn btn-primary mt-3">Ver Cursos</a>
                         </div>
                     </div>
                 </div>
@@ -109,7 +109,7 @@
                         <div class="img-wrapper"><img src="img/marketing.jpeg" class="d-block w-100" alt="..."> </div>
                         <div class="card-body">
                             <h5 class="card-title">Marketing</h5>
-                            <a id="boton-categoria" href="#" class="btn btn-primary mt-3">Go somewhere</a>
+                            <a id="boton-categoria" href="./Pagina De Cursos/cursos.html" class="btn btn-primary mt-3">Ver Cursos</a>
                         </div>
                     </div>
                 </div>
@@ -119,7 +119,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Fotografia</h5>
                           
-                            <a id="boton-categoria" href="#" class="btn btn-primary mt-3">Go somewhere</a>
+                            <a id="boton-categoria" href="./Pagina De Cursos/cursos.html" class="btn btn-primary mt-3">Ver Cursos</a>
                         </div>
                     </div>
                 </div>
@@ -129,7 +129,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Diseño</h5>
                             
-                            <a id="boton-categoria" href="#" class="btn btn-primary mt-3">Go somewhere</a>
+                            <a id="boton-categoria" href="./Pagina De Cursos/cursos.html" class="btn btn-primary mt-3">Ver Cursos</a>
                         </div>
                     </div>
                 </div>
@@ -139,7 +139,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Finanzas</h5>
                             
-                            <a id="boton-categoria" href="#" class="btn btn-primary mt-3">Go somewhere</a>
+                            <a id="boton-categoria" href="./Pagina De Cursos/cursos.html" class="btn btn-primary mt-3">Ver Cursos</a>
                         </div>
                     </div>
                 </div>
@@ -149,7 +149,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Idiomas</h5>
                           
-                            <a id="boton-categoria" href="#" class="btn btn-primary mt-3">Go somewhere</a>
+                            <a id="boton-categoria" href="./Pagina De Cursos/cursos.html" class="btn btn-primary mt-3">Ver Cursos</a>
                         </div>
                     </div>
                 </div>
@@ -159,7 +159,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Ciencia De Datos</h5>
                             
-                            <a id="boton-categoria" href="#" class="btn btn-primary mt-3">Go somewhere</a>
+                            <a id="boton-categoria" href="./Pagina De Cursos/cursos.html" class="btn btn-primary mt-3">Ver Cursos</a>
                         </div>
                     </div>
                 </div>
@@ -173,7 +173,28 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
+
+ 
+
         </div>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+                  <!-- Script para recargar el carrusel cuando llega a la última imagen -->
+        <script>
+            $(document).ready(function() {
+                $('#carouselExampleControls').on('slide.bs.carousel', function (e) {
+                    var currentIndex = e.to;
+                    var totalItems = $(this).find('.carousel-item').length;
+
+                    if (currentIndex === totalItems - 1) {
+                        // Si estamos en la última diapositiva, retrocede al inicio
+                        $(this).carousel(0);
+                    }
+                });
+            });
+        </script>
+       
 
 
 
@@ -186,12 +207,11 @@
             <div class="col-md-4 ">
              
 
-                <div class="card ">
+                <div class="card " id="JCGX">
                     <div class="content">
                         <div class="encabezado">
-                            <div class="icono">
-                                <i class="fa-solid fa-play" style="color: #364C65;"> </i>
-                               
+                            <div class="icono" onclick="agregarCurso('JCGX')">
+                                <i class="fa-solid fa-star" style="color: #f6d32d;"></i>                               
                             </div>
                             <div class="categoria">
                                 <label for="">Diseño</label>
@@ -224,12 +244,11 @@
             </div>
             
             <div class="col-md-4 ">
-                <div class="card">
+                <div class="card" id="MG8B">
                     <div class="content">
                         <div class="encabezado">
-                            <div class="icono">
-                                <i class="fa-solid fa-play" style="color: #364C65;"> </i>
-                               
+                            <div class="icono" onclick="agregarCurso('MG8B')">
+                                <i class="fa-solid fa-star" style="color: #f6d32d;"></i>                               
                             </div>
                             <div class="categoria">
                                 <label for="">Marketing</label>
@@ -261,12 +280,11 @@
                 </div>
             </div>
             <div class="col-md-4 ">
-                <div class="card">
+                <div class="card" id="72EQ">
                     <div class="content">
                         <div class="encabezado">
-                            <div class="icono">
-                                <i class="fa-solid fa-play" style="color: #364C65;"> </i>
-                               
+                            <div class="icono" onclick="agregarCurso('72EQ')">
+                                <i class="fa-solid fa-star" style="color: #f6d32d;"></i>                               
                             </div>
                             <div class="categoria">
                                 <label for="">Programación</label>
@@ -302,12 +320,11 @@
 
             <div class="row mt-3">
             <div class="col-md-4">
-                <div class="card">
+                <div class="card" id="3JBT">
                     <div class="content">
                         <div class="encabezado">
-                            <div class="icono">
-                                <i class="fa-solid fa-play" style="color: #364C65;"> </i>
-                               
+                            <div class="icono" onclick="agregarCurso('3JBT')">
+                                <i class="fa-solid fa-star" style="color: #f6d32d;"></i>                               
                             </div>
                             <div class="categoria">
                                 <label for="">Diseño</label>
@@ -341,12 +358,11 @@
         
        
             <div class="col-md-4">
-                <div class="card">
+                <div class="card" id="F2QR">
                     <div class="content">
                         <div class="encabezado">
-                            <div class="icono">
-                                <i class="fa-solid fa-play" style="color: #364C65;"> </i>
-                               
+                            <div class="icono" onclick="agregarCurso('F2QR')">
+                                <i class="fa-solid fa-star" style="color: #f6d32d;"></i>                               
                             </div>
                             <div class="categoria">
                                 <label for="">Psicología</label>
@@ -378,12 +394,11 @@
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="card">
+                <div class="card" id="X2FT">
                     <div class="content">
                         <div class="encabezado">
-                            <div class="icono">
-                                <i class="fa-solid fa-play" style="color: #364C65;"> </i>
-                               
+                            <div class="icono" onclick="agregarCurso('X2FT')">
+                                <i class="fa-solid fa-star" style="color: #f6d32d;"></i>                               
                             </div>
                             <div class="categoria">
                                 <label for="">Programación</label>
@@ -421,6 +436,32 @@
        </div>
 
     </main>
+    <script>
+        // Obtener el usuario almacenado en localStorage
+        let userData = localStorage.getItem("user");
+
+        // Verificar si el usuario existe
+        if (userData) {
+            // Parsear el JSON para obtener el objeto del usuario
+            let userObject = JSON.parse(userData);
+
+            // Obtener el nombre del usuario del objeto
+            let nombreUsuario = userObject.name;
+
+            // Actualizar el contenido del elemento con id "objUsuario"
+            document.getElementById("objUsuario").textContent = nombreUsuario;
+
+            if (btnIniciarSesion) {
+                console.log("entrando al condicional")
+                btnIniciarSesion.style.display = 'none';
+              }
+        
+              if (btnRegistrarse) {
+                btnRegistrarse.style.display = 'none';
+              }
+        }
+        console.log(localStorage.getItem("user"));
+    </script>
     <script src="script.js"></script>
 </body>
 </html>
