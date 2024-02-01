@@ -18,7 +18,7 @@
 
     <link rel="shortcut icon" href="img/logoSinFondo.png" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
-    <script src="Pagina De Cursos/cursos.js"></script>
+    
 
     <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
 </head>
@@ -101,7 +101,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Programacion</h5>
                            
-                            <a id="programacion" href="./Pagina De Cursos/cursos.html" class="btn btn-primary mt-3" onclick="capturarID(this)">Ver Cursos</a>
+                            <a id="desarollo" href="./Pagina De Cursos/cursos.html" class="btn btn-primary mt-3" onclick="capturarID(this)">Ver Cursos</a>
                         </div>
                     </div>
                 </div>
@@ -110,17 +110,17 @@
                         <div class="img-wrapper"><img src="img/marketing.jpeg" class="d-block w-100" alt="..."> </div>
                         <div class="card-body">
                             <h5 class="card-title">Marketing</h5>
-                            <a id="marketing" href="./Pagina De Cursos/cursos.html" class="btn btn-primary mt-3">Ver Cursos</a>
+                            <a id="marketing" href="./Pagina De Cursos/cursos.html" class="btn btn-primary mt-3"  onclick="capturarID(this)">Ver Cursos</a>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <div class="card">
+                    <div class="card" >
                         <div class="img-wrapper"><img src="img/fotografia.jpg" class="d-block w-100" alt="..."> </div>
                         <div class="card-body">
                             <h5 class="card-title">Fotografia</h5>
-                          
-                            <a id="fotografia" href="./Pagina De Cursos/cursos.html" class="btn btn-primary mt-3">Ver Cursos</a>
+                           
+                            <a id="fotografia" href="./Pagina De Cursos/cursos.html" class="btn btn-primary mt-3" onclick="capturarID(this)">Ver Cursos</a>
                         </div>
                     </div>
                 </div>
@@ -130,7 +130,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Diseño</h5>
                             
-                            <a id="diseño" href="./Pagina De Cursos/cursos.html" class="btn btn-primary mt-3">Ver Cursos</a>
+                            <a id="diseño" href="./Pagina De Cursos/cursos.html" class="btn btn-primary mt-3" onclick="capturarID(this)">Ver Cursos</a>
                         </div>
                     </div>
                 </div>
@@ -140,7 +140,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Finanzas</h5>
                             
-                            <a id="finanzas" href="./Pagina De Cursos/cursos.html" class="btn btn-primary mt-3">Ver Cursos</a>
+                            <a id="finanzas" href="./Pagina De Cursos/cursos.html" class="btn btn-primary mt-3" onclick="capturarID(this)">Ver Cursos</a>
                         </div>
                     </div>
                 </div>
@@ -150,7 +150,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Idiomas</h5>
                           
-                            <a id="idiomas" href="./Pagina De Cursos/cursos.html" class="btn btn-primary mt-3">Ver Cursos</a>
+                            <a id="idiomas" href="./Pagina De Cursos/cursos.html" class="btn btn-primary mt-3" onclick="capturarID(this)">Ver Cursos</a>
                         </div>
                     </div>
                 </div>
@@ -160,7 +160,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Ciencia De Datos</h5>
                             
-                            <a id="ciencia_datos" href="./Pagina De Cursos/cursos.html" class="btn btn-primary mt-3">Ver Cursos</a>
+                            <a id="ciencia_datos" href="./Pagina De Cursos/cursos.html" class="btn btn-primary mt-3" onclick="capturarID(this)">Ver Cursos</a>
                         </div>
                     </div>
                 </div>
@@ -463,6 +463,21 @@
         }
         console.log(localStorage.getItem("user"));
     </script>
+   
     <script src="script.js"></script>
+
+    <!--funtion para capturar el valor del id de los botones con getattribute y hay que guardarlo en local store para poder usarlo ya que toca traer ese valor 
+    en el js donde esta la logica para cargar las tarjetas -->
+    <script>
+        function capturarID(elemento){
+            idCurso = elemento.getAttribute('id');
+
+            localStorage.setItem("cursos", idCurso)
+            console.log(idCurso);
+            
+            
+        
+        }
+    </script>
 </body>
 </html>
