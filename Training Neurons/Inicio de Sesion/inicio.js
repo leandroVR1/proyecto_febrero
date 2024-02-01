@@ -83,7 +83,13 @@ else{
 fetch ('http://localhost:3000/users')
 .then(response => {return response.json()})
 .then(data => {
-  data.forEach( function() {
-    
-  });
+  data.forEach(function(user){
+    if(correo.value == user.email & password.value == user.password){
+      sessionStorage.setItem("name",user.name);
+      window.localStorage.href = "";
+    } 
+    else{
+      
+    }
+  })
 })
