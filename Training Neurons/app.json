@@ -15,11 +15,46 @@
   ],
   "course": [
     {
-      "img": "",
-      "title": "",
-      "description": "",
+      "title": "Arte y Humanidades",
+      "description": "For athletes, high altitude produces two contradi effects on performance.",
+      "category": "Diseño",
       "url": "",
-      "id": "1b7c"
+      "id": "JCGX"
+    },
+    {
+      "title": "Marketing Digital y Analítico",
+      "description": "For athletes, high altitude produces two contradi effects on performance.",
+      "category": "Marketing",
+      "url": "",
+      "id": "MG8B"
+    },
+    {
+      "title": "Desarrollo web",
+      "description": "For athletes, high altitude produces two contradi effects on performance.",
+      "category": "Programación",
+      "url": "",
+      "id": "72EQ"
+    },
+    {
+      "title": "Diseño gráfico",
+      "description": "For athletes, high altitude produces two contradi effects on performance.",
+      "category": "Diseño",
+      "url": "",
+      "id": "3JBT"
+    },
+    {
+      "title": "Personal Developmen",
+      "description": "For athletes, high altitude produces two contradi effects on performance.",
+      "category": "Psicología",
+      "url": "",
+      "id": "F2QR"
+    },
+    {
+      "title": "Software IT",
+      "description": "For athletes, high altitude produces two contradi effects on performance.",
+      "category": "Programación",
+      "url": "",
+      "id": "X2FT"
     }
   ],
   "users": [
@@ -208,6 +243,168 @@
         "F2QR",
         "3JBT",
         "MG8B"
+      ]
+    },
+    {
+      "id": "_5us5vd5wn",
+      "name": "julio",
+      "lastname": "ewe",
+      "phone": "2323",
+      "birthdate": "2024-01-01",
+      "country": "chile",
+      "city": "cali",
+      "gender": "masculino",
+      "email": "sdsadsadsa@gmail.com",
+      "password": "232323",
+      "misCursos": [
+        "JCGX",
+        "72EQ"
+      ]
+    },
+    {
+      "id": "_5us5vd5wn",
+      "name": "julio",
+      "lastname": "ewe",
+      "phone": "2323",
+      "birthdate": "2024-01-01",
+      "country": "chile",
+      "city": "cali",
+      "gender": "masculino",
+      "email": "sdsadsadsa@gmail.com",
+      "password": "232323",
+      "misCursos": [
+        "JCGX",
+        "72EQ",
+        "X2FT"
+      ]
+    },
+    {
+      "id": "_5us5vd5wn",
+      "name": "julio",
+      "lastname": "ewe",
+      "phone": "2323",
+      "birthdate": "2024-01-01",
+      "country": "chile",
+      "city": "cali",
+      "gender": "masculino",
+      "email": "sdsadsadsa@gmail.com",
+      "password": "232323",
+      "misCursos": [
+        "JCGX",
+        "72EQ",
+        "X2FT",
+        "MG8B"
+      ]
+    },
+    {
+      "id": "_5us5vd5wn",
+      "name": "julio",
+      "lastname": "ewe",
+      "phone": "2323",
+      "birthdate": "2024-01-01",
+      "country": "chile",
+      "city": "cali",
+      "gender": "masculino",
+      "email": "sdsadsadsa@gmail.com",
+      "password": "232323",
+      "misCursos": [
+        "JCGX",
+        "72EQ",
+        "X2FT",
+        "MG8B",
+        "3JBT"
+      ]
+    },
+    {
+      "id": "_5us5vd5wn",
+      "name": "julio",
+      "lastname": "ewe",
+      "phone": "2323",
+      "birthdate": "2024-01-01",
+      "country": "chile",
+      "city": "cali",
+      "gender": "masculino",
+      "email": "sdsadsadsa@gmail.com",
+      "password": "232323",
+      "misCursos": [
+        "JCGX",
+        "72EQ",
+        "X2FT",
+        "MG8B",
+        "3JBT",
+        "F2QR"
+      ]
+    },
+    {
+      "id": "_chuikxpam",
+      "name": "pruebaa",
+      "lastname": "prueba",
+      "phone": "123",
+      "birthdate": "2024-01-28",
+      "country": "colombia",
+      "city": "bogota",
+      "gender": "masculino",
+      "email": "estudiante@gmail.com",
+      "password": "r434",
+      "misCursos": []
+    },
+    {
+      "id": "_chuikxpam",
+      "name": "pruebaa",
+      "lastname": "prueba",
+      "phone": "123",
+      "birthdate": "2024-01-28",
+      "country": "colombia",
+      "city": "bogota",
+      "gender": "masculino",
+      "email": "estudiante@gmail.com",
+      "password": "r434",
+      "misCursos": [
+        "JCGX"
+      ]
+    },
+    {
+      "id": "_iklfnwv4n",
+      "name": "rgeer",
+      "lastname": "ww",
+      "phone": "22",
+      "birthdate": "2024-01-09",
+      "country": "argentina",
+      "city": "bogota",
+      "gender": "masculino",
+      "email": "estudiante@gmail.com",
+      "password": "434535",
+      "misCursos": []
+    },
+    {
+      "id": "_iklfnwv4n",
+      "name": "rgeer",
+      "lastname": "ww",
+      "phone": "22",
+      "birthdate": "2024-01-09",
+      "country": "argentina",
+      "city": "bogota",
+      "gender": "masculino",
+      "email": "estudiante@gmail.com",
+      "password": "434535",
+      "misCursos": [
+        "JCGX"
+      ]
+    },
+    {
+      "id": "_iklfnwv4n",
+      "name": "rgeer",
+      "lastname": "ww",
+      "phone": "22",
+      "birthdate": "2024-01-09",
+      "country": "argentina",
+      "city": "bogota",
+      "gender": "masculino",
+      "email": "estudiante@gmail.com",
+      "password": "434535",
+      "misCursos": [
+        "JCGX",
+        "72EQ"
       ]
     }
   ]

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <!-- Encabezado similar al de la página principal -->
+    </header>
+
+    <main>
+        <div class="container2" style="padding: 20px;">
+            <div class="row" id="misCursosContainer">
+                <!-- Aquí se mostrarán las tarjetas de Mis Cursos -->
+            </div>
+        </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+   
+    
+
+    
+    <script>
+     fetch('http://localhost:3000/users')
+    .then(response => response.json())
+    .then(users => {
+        let userObject = users.find(user => user.id === "_iklfnwv4n");
+
+        console.log("Usuario:", userObject); // Agregamos esta línea para verificar la información del usuario
+
+        let misCursosContainer = document.getElementById("misCursosContainer");
+
+        if (userObject && userObject.misCursos && userObject.misCursos.length > 0) {
+
+            fetch('http://localhost:3000/course')
+                .then(response => response.json())
+                .then(courses => { 
+                    let userCourses = courses.filter(course => userObject.misCursos.includes(course.id));
+
+                    console.log("Cursos del usuario:", userCourses); // Agregamos esta línea para verificar los cursos del usuario
+
+                    // Mostrar los cursos
+                    userCourses.forEach(course => {
+                        let cursoCard = document.createElement("div");
+                        cursoCard.className = "card";
+
+                        cursoCard.innerHTML = `
+                            <div class="content">
+                                <div class="encabezado">
+                                    <div class="icono" onclick="agregarCurso('${course.id}')">
+                                        <button id="boton${course.id}"><i class="fas fa-star" style="color: #f6d32d;"></i></button>
+                                    </div>
+                                    <div class="categoria">
+                                        <label for="">${course.category}</label>
+                                    </div>
+                                </div>
+
+                                <div class="titulo">
+                                    <h2>${course.title}</h2>
+                                </div>
+
+                                <div class="descripcion">
+                                    <p>${course.description}</p>
+                                </div>
+
+                                <div class="separacion"></div>
+
+                                <div class="piedetarjeta">
+                                    <div class="boton">
+                                        <button>Unirse</button>
+                                    </div>
+
+                                    <div class="icono2">
+                                        <!-- Asegúrate de tener la imagen correcta o ajusta según sea necesario -->
+                                        <img src="img/IconPsicologia.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        `;
+
+                        misCursosContainer.appendChild(cursoCard);
+                    });
+                })
+                .catch(error => console.error('Error al cargar la información de cursos:', error));
+        } else {
+            misCursosContainer.innerHTML = "<p>No tienes cursos guardados.</p>";
+        }
+    })
+    .catch(error => console.error('Error al cargar la información de usuario:', error));
+
+      
+    </script>
+
+        
+    
+
+</body>
+</html>

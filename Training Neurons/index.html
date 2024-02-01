@@ -54,7 +54,7 @@
                 </div>
             </a>
 
-            <a href="#">
+            <a href="./MisCursos/cursos.html">
                 <div class="option">
                     <i class="fa-solid fa-book"></i>
                     <h4>Mis Cursos</h4>
@@ -190,7 +190,7 @@
                     <div class="content">
                         <div class="encabezado">
                             <div class="icono" onclick="agregarCurso('JCGX')">
-                                <button  id="botonJCGX"><i class="fa-solid fa-star" style="color: #f6d32d;"></i></button>                       
+                                <button  id="botonJCGX"><i class="fa-solid fa-star" style="color: #f6d32d;" data-curso="JCGX"></i></button>                       
                              
                             </div>
                             <div class="categoria">
@@ -228,7 +228,7 @@
                     <div class="content">
                         <div class="encabezado">
                             <div class="icono" onclick="agregarCurso('MG8B')">
-                                <button  id="botonMG8B"><i class="fa-solid fa-star" style="color: #f6d32d;"></i></button>                       
+                                <button  id="botonMG8B"><i class="fa-solid fa-star" style="color: #f6d32d;" data-curso="MG8B"></i></button>                       
                             </div>
                             <div class="categoria">
                                 <label for="">Marketing</label>
@@ -264,7 +264,7 @@
                     <div class="content">
                         <div class="encabezado">
                             <div class="icono" onclick="agregarCurso('72EQ')">
-                                <button  id="boton72EQ"><i class="fa-solid fa-star" style="color: #f6d32d;"></i></button>                       
+                                <button  id="boton72EQ"><i class="fa-solid fa-star" style="color: #f6d32d;"data-curso="72EQ"></i></button>                       
 
                             </div>
                             <div class="categoria">
@@ -305,7 +305,7 @@
                     <div class="content">
                         <div class="encabezado">
                             <div class="icono" onclick="agregarCurso('3JBT')">
-                                <button  id="boton3JBT"><i class="fa-solid fa-star" style="color: #f6d32d;"></i></button>                       
+                                <button  id="boton3JBT"><i class="fa-solid fa-star" style="color: #f6d32d;" data-curso="3JBT"></i></button>                       
                                 
                             </div>
                             <div class="categoria">
@@ -344,7 +344,7 @@
                     <div class="content">
                         <div class="encabezado">
                             <div class="icono" onclick="agregarCurso('F2QR')">
-                                <button  id="botonF2QR"><i class="fa-solid fa-star" style="color: #f6d32d;"></i></button>                       
+                                <button  id="botonF2QR"><i class="fa-solid fa-star" style="color: #f6d32d;" data-curso="F2QR"></i></button>                       
           
                             </div>
                             <div class="categoria">
@@ -381,7 +381,7 @@
                     <div class="content">
                         <div class="encabezado">
                             <div class="icono" onclick="agregarCurso('X2FT')">
-                                <button  id="botonX2FT"><i class="fa-solid fa-star" style="color: #f6d32d;"></i></button>                       
+                                <button  id="botonX2FT"><i class="fa-solid fa-star" style="color: #f6d32d;" data-curso="X2FT"></i></button>                       
                                
                             </div>
                             <div class="categoria">
@@ -447,5 +447,9 @@
         console.log(localStorage.getItem("user"));
     </script>
     <script src="script.js"></script>
+
+    <script>
+        console.log(typeof  localStorage.getItem("user"))
+    </script>
 </body>
 </html>

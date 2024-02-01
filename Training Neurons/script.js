@@ -163,5 +163,6 @@ function cambiarColorBoton(cursoId) {
   }
 }
 
+console.log(JSON.parse(localStorage.getItem("user")))
 
 
