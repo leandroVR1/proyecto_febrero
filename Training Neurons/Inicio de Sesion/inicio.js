@@ -1,20 +1,12 @@
-// Función para generar un ID único
+/* // Función para generar un ID único
 function generateUniqueId() {
   return '_' + Math.random().toString(36).substr(2, 9);
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-  document.getElementById('registroForm').addEventListener('submit', function (event) {
+  document.getElementById('iniciar').addEventListener('submit', function (event) {
     event.preventDefault();
 
-    var name = document.getElementById('name').value;
-    var lastname = document.getElementById('lastname').value;
-    var phone = document.getElementById('phone').value;
-    var birthdate = document.getElementById('birthdate').value;
-    var country = document.getElementById('country').value;
-    var city = document.getElementById('city').value;
-    var genderElement = document.querySelector('input[name="Genero"]:checked');
-    var gender = genderElement ? genderElement.value : null;
     var email = document.getElementById('email').value;
     var password = document.getElementById('password').value;
 
@@ -59,37 +51,27 @@ document.addEventListener('DOMContentLoaded', function () {
         console.error('Error al enviar datos:', error);
       });
   });
-});
 
+ */
 
 // Inicio de sesion 
-
-let correo = document.querySelector("#correo")
-let password = document.querySelector("#password")
-
-if(correo.value != "" && password.value != "") {
-  correo.classList.add("is-valid");
-  correo.classList.remove("is-valid");
-  password.classList.add("is-valid");
-  password.classList.remove("is-valid");
-}
-else{
-  correo.classList.add("is-valid");
-  correo.classList.remove("is-valid");
-  password.classList.add("is-valid");
-  password.classList.remove("is-valid");
-}
-
-fetch ('http://localhost:3000/users')
-.then(response => {return response.json()})
-.then(data => {
-  data.forEach(function(user){
-    if(correo.value == user.email & password.value == user.password){
-      sessionStorage.setItem("name",user.name);
-      window.localStorage.href = "";
-    } 
-    else{
-      
-    }
+function iniciar(){
+  let correo = document.querySelector("#email")
+  let password = document.querySelector("#password")
+  let verification = document.querySelector("#verification");
+ 
+  fetch ('http://localhost:3000/users')
+  .then(response => {return response.json()})
+  .then(data => {
+    data.forEach(function(user){
+      if(correo.value == user.email & password.value == user.password){
+        sessionStorage.setItem("name",user.name);
+        window.location.href = "http://127.0.0.1:5502/Training%20Neurons/index.html";
+      } 
+      else{
+        verification.innerHTML = "Correo o contraseña es invalido"
+        verification.style.color = "red";
+      }
+    })
   })
-})
+};
