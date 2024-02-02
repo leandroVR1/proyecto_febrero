@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,7 +9,7 @@
 
 }
 
-body{
+body {
     margin-left: 80px;
     margin-top: 80px;
     padding-right: 20px;
@@ -29,26 +29,31 @@ body{
 }
 
 
-.card{
+.card {
     display: flex;
+    flex-direction: column;
+    /* Para que los elementos internos se apilen verticalmente */
     margin: 20px;
-    width: 495px;
-    height: 448px;
+    width: 100%;
+    /* O cualquier otro valor que desees */
+    max-width: 495px;
+    height: 750px;
     border-radius: 30px;
     border: 2px solid #3D4E64;
     background: #2C2D2C;
-   
+    align-items: stretch;
+
 }
 
-.encabezado{
+.encabezado {
     display: flex;
     justify-content: space-between;
     margin: 30px;
-    
+
 }
 
-.icono{
-  
+.icono {
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,11 +62,11 @@ body{
     border-radius: 50%;
     font-size: 16px;
     background-color: #24D198;
-    
+
 }
 
-.categoria{
-    display:flex ;
+.categoria {
+    display: flex;
     justify-content: center;
     width: 122px;
     height: 33px;
@@ -74,18 +79,18 @@ body{
     line-height: 28px;
 }
 
-.titulo{
+.titulo {
     display: flex;
     justify-content: space-between;
     margin: 30px;
     font-size: 30px;
     font-weight: 700;
     font-weight: 700;
-    line-height: 40px; 
+    line-height: 40px;
     color: #D9ECFF;
 }
 
-.descripcion{
+.descripcion  {
     display: flex;
     justify-content: space-between;
     margin: 30px;
@@ -94,28 +99,30 @@ body{
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
-    line-height: 28px; /* 155.556% */
+    line-height: 28px;
+    /* 155.556% */
 }
 
-.separacion{
+.separacion {
     margin: 30px;
     width: 457px;
     height: 1px;
     background: rgba(218, 218, 247, 0.30);
 }
-.boton{
+
+.boton {
     margin: 30px;
 }
 
-.pietarjeta{
-   
+.pietarjeta {
+
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin: 20px;
+    align-items: flex-end;
+
 }
 
-button{
+button {
     width: 161px;
     height: 58px;
     border-radius: 47px;
@@ -127,11 +134,11 @@ button{
     font-style: normal;
     font-weight: 700;
     line-height: 28px;
-    
+
 }
 
-.icono2{
-    
+.icono2 {
+
     display: flex;
     justify-content: center;
     align-items: center;

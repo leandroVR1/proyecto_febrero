@@ -3,46 +3,123 @@
         "categories": [
           {
             "img": "img/IconProgramacion.png",
-            "title": "desarollo web",
-            "description": "fundamentos intermedios de html, css y javascript con una duracion de 40 horas y certificado gratis",
+            "title": "Curso de Simulink",
+            "idioma":"Ingles",
+            "duracion":"2 horas",
+            "description":"El curso de Simulink proporciona una introducción completa a esta herramienta de simulación y modelado de sistemas dinámicos. Aprende a diseñar y simular sistemas de control, comunicación y procesamiento de señales en un entorno gráfico intuitivo.",
             "id": "1",
-            "categoria":"desarollo",
-            "website":"https://skillshop.exceedlms.com/student/collection/799479-web-development-i?locale=es"
+            "categoria":"informatica",
+            "website":"https://matlabacademy.mathworks.com/es/details/simulink-onramp/simulink"
           },
           {
             "img": "img/IconProgramacion.png",
-            "title": "desarollo en java",
-            "description": "fundamentos intermedios en el lenjuage java para backend con una duracion de 40 horas y certificado gratis",
-            "categoria": "desarollo",
-            "id":"2"
+            "title": "Curso de WordPress",
+            "idioma":"Español",
+            "duracion":"5 horas",
+            "description": "El curso de WordPress te sumerge en la creación de sitios web dinámicos. Aprende a utilizar temas, plugins y herramientas de diseño para optimizar tu presencia en línea. Domina el contenido, SEO y seguridad en WordPress para sitios efectivos y profesionales",
+            "id": "2",
+            "categoria":"informatica",
+            "website":"https://www.webempresa.com/university/curso-wordpress-gratis/?utm_source=WE&utm_medium=FBAds&utm_campaign=LeadsUniversity&fbclid=IwAR3WYPJuosPXcHMDtkIRFt5N1Um6aXGsF4444BuS_KTU_W3b64S14f63Kv4"
           },
           {
             "img": "img/IconProgramacion.png",
-            "title": "desarollo en java",
-            "description": "fundamentos intermedios en el lenjuage java para backend con una duracion de 40 horas y certificado gratis",
-            "categoria": "desarollo",
-            "id":"3"
+            "title": "Curso Administrador De la Nube",
+            "idioma":"Ingles",
+            "duracion":"2 horas",
+            "description":"El curso de Administrador de la Nube te capacita en la gestión eficiente de recursos y servicios en entornos de nube. Aprende a configurar, supervisar y optimizar infraestructuras en la nube para empresas y organizaciones. Domina tecnologías como AWS, Azure o Google Cloud para impulsar la innovación y escalabilidad.",
+            "id": "3",
+            "categoria":"informatica",
+            "website":"https://capacitateparaelempleo.org/cursos/view/219"
           },
           {
             "img": "img/IconProgramacion.png",
-            "title": "desarollo en c#", 
-            "description": "fundamentos intermedios en el lenjuage java para backend con una duracion de 40 horas y certificado gratis",
-            "categoria": "desarollo",
-            "id":"4"
+            "title": "Curso de NoSQL y DBaas",
+            "idioma":"Español",
+            "duracion":"5 horas",
+            "description": "El curso de NoSQL y DBaaS te sumerge en las bases de datos NoSQL y servicios DBaaS. Aprende modelos de datos, escalabilidad y gestión para potenciar soluciones en la era digital. Explora la flexibilidad y eficiencia de estas tecnologías en la gestión de datos.",
+            "id": "4",
+            "categoria":"informatica",
+            "website":"https://cognitiveclass.ai/courses/introduction-nosql-dbaas#about-course"
           },
           {
-            "img": "img/IconMarketing.png",
-            "title": "desarollo de dispositivos moviles",
-            "description": "fundamentos intermedios en el lenjuage java para backend con una duracion de 40 horas y certificado gratis",
-            "categoria": "marketing",
-            "id":"6"
+            "img": "img/IconProgramacion.png",
+            "title": "Curso de Excel nivel Experto",
+            "idioma":"Español",
+            "duracion":"3 horas",
+            "description": "El curso de Excel nivel Experto te lleva a dominar análisis de datos, fórmulas avanzadas, macros y visualización. Perfecciona tus habilidades para optimizar la toma de decisiones y la gestión de datos en entornos profesionales",
+            "id": "5",
+            "categoria":"informatica",
+            "website":"https://teachlr.com/cursos-online/experto-en-microsoft-excel-en-tres-paso-con-hyperexcel/"
           },
           {
-            "img": "img/IconMarketing.png",
-            "title": "desarollo en javascript backend",
-            "description": "fundamentos intermedios en el lenjuage java para backend con una duracion de 40 horas y certificado gratis",
-            "categoria": "marketing",
-            "id":"7"
+            "img": "img/IconProgramacion.png",
+            "title": "Curso de Digitalizacion en Turismo",
+            "idioma":"Español",
+            "duracion":"1 horas",
+            "description":" El curso de Digitalización en Turismo explora estrategias digitales clave para la industria. Aprende marketing online, gestión de redes sociales y análisis de datos para optimizar la presencia y rendimiento en línea de los negocios turísticos",
+            "id": "6",
+            "categoria":"informatica",
+            "website":"https://turingo.com/turingo/courses/digitalizacion-turismo"
+          },
+          {
+            "img": "img/IconProgramacion.png",
+            "title": "Curso de Laravel + Vue",
+            "idioma":"Español",
+            "duracion":"5 horas",
+            "description":" El curso de Laravel + Vue fusiona dos tecnologías poderosas para el desarrollo web moderno. Aprende a construir aplicaciones web interactivas y eficientes mediante la integración de Laravel en el backend y Vue.js en el frontend. Domina la creación de aplicaciones dinámicas y escalables",
+            "id": "7",
+            "categoria":"desarrollo",
+            "website":"https://campus-ademass.com/acceso"
+          },
+          {
+            "img": "img/IconProgramacion.png",
+            "title": "Curso de Programacion de Datos",
+            "idioma":"Ingles",
+            "duracion":"10 horas",
+            "description":"El curso de Programación de Datos te sumerge en la manipulación y análisis de datos. Aprende a programar con Python, R y SQL para manejar grandes volúmenes de información. Domina técnicas de limpieza, transformación y visualización para extraer conocimientos significativos",
+            "id": "8",
+            "categoria":"desarrollo",
+            "website":"https://www.sololearn.com/es/learn/courses/data-programming"
+          },
+          {
+            "img": "img/IconProgramacion.png",
+            "title": "Curso de Javascrip Intermedio",
+            "idioma":"Ingles",
+            "duracion":"10 horas",
+            "description":" El curso de JavaScript Intermedio profundiza en las habilidades de programación en JavaScript. Explora temas avanzados como funciones de orden superior, programación orientada a objetos y manipulación del DOM. Adquiere conocimientos para crear aplicaciones web más complejas y dinámicas",
+            "id": "9",
+            "categoria":"desarrollo",
+            "website":"https://www.sololearn.com/es/learn/courses/javascript-intermediate"
+          },
+          {
+            "img": "img/IconProgramacion.png",
+            "title": "Curso de Python Intermedio",
+            "idioma":"Ingles",
+            "duracion":"10 horas",
+            "description":" El curso de Python Intermedio te lleva más allá de lo básico. Aprende sobre estructuras de datos avanzadas, manejo de archivos, y programación orientada a objetos. Domina la resolución de problemas y el desarrollo de aplicaciones más complejas en Python",
+            "id": "10",
+            "categoria":"desarrollo",
+            "website":"https://www.sololearn.com/es/learn/courses/python-intermediate"
+          },
+          {
+            "img": "img/IconProgramacion.png",
+            "title": "Curso de Dart-Flutter",
+            "idioma":"Español",
+            "duracion":"10 horas",
+            "description":" El curso de Dart-Flutter te sumerge en el desarrollo de aplicaciones móviles multiplataforma. Aprende a utilizar Dart para programar la lógica de tus aplicaciones y Flutter para crear interfaces de usuario hermosas y funcionales. Domina la creación de apps para Android e iOS de manera eficiente ",
+            "id": "11",
+            "categoria":"desarrollo",
+            "website":"https://campus-ademass.com/acceso"
+          },
+          {
+            "img": "img/IconProgramacion.png",
+            "title": "Curso de Desarrollo web moderno",
+            "idioma":"Español",
+            "duracion":"13 horas",
+            "description":" El curso de Digitalización en Turismo explora estrategias digitales clave para la industria. Aprende marketing online, gestión de redes sociales y análisis de datos para optimizar la presencia y rendimiento en línea de los negocios turísticos",
+            "id": "12",
+            "categoria":"desarrollo",
+            "website":"https://fullstackopen.com/es/"
           }
         ]
 }
