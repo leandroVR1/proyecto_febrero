@@ -96,6 +96,11 @@ toggle.addEventListener('click', () => {
 
 });
 
+let userData3 = localStorage.getItem("user");
+let user = JSON.parse(userData3);
+
+// Extrae el ID del usuario
+let userId2 = user.id;
 
 function agregarCurso(cursoId) {
   // Obtener el usuario almacenado en localStorage
@@ -122,8 +127,8 @@ function agregarCurso(cursoId) {
           // Puedes realizar alguna acción adicional, como mostrar un mensaje de éxito
           console.log('Curso agregado a Mis Cursos: ' + cursoId);
 
-          // Enviar la actualización al servidor
-          enviarActualizacionAlServidor(userObject);
+          // Enviar la actualización al servidor con el ID del usuario
+          enviarActualizacionAlServidor(userObject.userId, userObject);
       } else {
           // Si ya está en la lista, puedes mostrar un mensaje de que ya se ha unido
           console.log('Ya te has unido a este curso: ' + cursoId);
@@ -131,27 +136,32 @@ function agregarCurso(cursoId) {
   }
 }
 
-// Función para enviar la actualización al servidor
-function enviarActualizacionAlServidor(userObject) {
+// Función para enviar la actualización al servidor con el ID del usuario
+function enviarActualizacionAlServidor(userId, userObject) {
   // Utilizar fetch para enviar la actualización al servidor
-  fetch('http://localhost:3000/users', {
-    method: 'POST', // O el método adecuado para tu API
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify(userObject),
+  fetch('http://localhost:3000/users/' + userId2, {  // Asegúrate de tener una ruta adecuada en tu servidor para actualizar usuarios por ID
+      method: 'PUT', // Utiliza el método adecuado para actualizar en tu API
+      headers: {
+          'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(userObject),
   })
-  .then(response => {
-    if (!response.ok) {
-      throw new Error('Error al actualizar datos en el servidor');
-    }
-    // Puedes manejar la respuesta del servidor si es necesario
-    return response.json();
-  })
-  .catch(error => {
-    console.error('Error:', error);
-  });
+      .then(response => {
+          if (!response.ok) {
+              throw new Error('Error al actualizar datos en el servidor');
+          }
+          // Puedes manejar la respuesta del servidor si es necesario
+          return response.json();
+      })
+      .catch(error => {
+          console.error('Error:', error);
+      });
 }
+
+
+console.log(userId2);
+
+
 
 
 

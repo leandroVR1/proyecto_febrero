@@ -55,7 +55,7 @@
                 </div>
             </a>
 
-            <a href="#">
+            <a href="./MisCursos/cursos.html">
                 <div class="option">
                     <i class="fa-solid fa-book"></i>
                     <h4>Mis Cursos</h4>
@@ -71,6 +71,8 @@
                     <h4>Soporte</h4>
                 </div>
             </a>
+
+
         
             <div class="option">
                 <i id="sol-icon" class="fa-solid fa-sun"></i>
@@ -79,6 +81,14 @@
             
                     <input type="checkbox" class="checkbox"> 
                   </div>     
+
+                
+            </div>
+
+            <div class="option">
+                <i class="fa-solid fa-right-to-bracket"></i>
+                <h4>Cerrar Sesion</h4>
+                
 
                 
             </div>
@@ -212,7 +222,8 @@
                     <div class="content">
                         <div class="encabezado">
                             <div class="icono" onclick="agregarCurso('JCGX')">
-                                <i class="fa-solid fa-star" style="color: #f6d32d;"></i>                               
+                                <button  id="botonJCGX"><i class="fa-solid fa-star" style="color: #f6d32d;" data-curso="JCGX"></i></button>                       
+                             
                             </div>
                             <div class="categoria">
                                 <label for="">Diseño</label>
@@ -249,7 +260,7 @@
                     <div class="content">
                         <div class="encabezado">
                             <div class="icono" onclick="agregarCurso('MG8B')">
-                                <i class="fa-solid fa-star" style="color: #f6d32d;"></i>                               
+                                <button  id="botonMG8B"><i class="fa-solid fa-star" style="color: #f6d32d;" data-curso="MG8B"></i></button>                       
                             </div>
                             <div class="categoria">
                                 <label for="">Marketing</label>
@@ -285,7 +296,8 @@
                     <div class="content">
                         <div class="encabezado">
                             <div class="icono" onclick="agregarCurso('72EQ')">
-                                <i class="fa-solid fa-star" style="color: #f6d32d;"></i>                               
+                                <button  id="boton72EQ"><i class="fa-solid fa-star" style="color: #f6d32d;"data-curso="72EQ"></i></button>                       
+
                             </div>
                             <div class="categoria">
                                 <label for="">Programación</label>
@@ -325,7 +337,8 @@
                     <div class="content">
                         <div class="encabezado">
                             <div class="icono" onclick="agregarCurso('3JBT')">
-                                <i class="fa-solid fa-star" style="color: #f6d32d;"></i>                               
+                                <button  id="boton3JBT"><i class="fa-solid fa-star" style="color: #f6d32d;" data-curso="3JBT"></i></button>                       
+                                
                             </div>
                             <div class="categoria">
                                 <label for="">Diseño</label>
@@ -363,7 +376,8 @@
                     <div class="content">
                         <div class="encabezado">
                             <div class="icono" onclick="agregarCurso('F2QR')">
-                                <i class="fa-solid fa-star" style="color: #f6d32d;"></i>                               
+                                <button  id="botonF2QR"><i class="fa-solid fa-star" style="color: #f6d32d;" data-curso="F2QR"></i></button>                       
+          
                             </div>
                             <div class="categoria">
                                 <label for="">Psicología</label>
@@ -399,7 +413,8 @@
                     <div class="content">
                         <div class="encabezado">
                             <div class="icono" onclick="agregarCurso('X2FT')">
-                                <i class="fa-solid fa-star" style="color: #f6d32d;"></i>                               
+                                <button  id="botonX2FT"><i class="fa-solid fa-star" style="color: #f6d32d;" data-curso="X2FT"></i></button>                       
+                               
                             </div>
                             <div class="categoria">
                                 <label for="">Programación</label>
@@ -462,9 +477,14 @@
               }
         }
         console.log(localStorage.getItem("user"));
+
     </script>
    
     <script src="script.js"></script>
+
+    <script>
+        console.log(typeof  localStorage.getItem("user"))
+    </script>
 
     <!--funtion para capturar el valor del id de los botones con getattribute y hay que guardarlo en local store para poder usarlo ya que toca traer ese valor 
     en el js donde esta la logica para cargar las tarjetas -->

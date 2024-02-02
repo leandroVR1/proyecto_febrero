@@ -15,11 +15,46 @@
   ],
   "course": [
     {
-      "img": "",
-      "title": "",
-      "description": "",
+      "title": "Arte y Humanidades",
+      "description": "For athletes, high altitude produces two contradi effects on performance.",
+      "category": "Diseño",
       "url": "",
-      "id": "1b7c"
+      "id": "JCGX"
+    },
+    {
+      "title": "Marketing Digital y Analítico",
+      "description": "For athletes, high altitude produces two contradi effects on performance.",
+      "category": "Marketing",
+      "url": "",
+      "id": "MG8B"
+    },
+    {
+      "title": "Desarrollo web",
+      "description": "For athletes, high altitude produces two contradi effects on performance.",
+      "category": "Programación",
+      "url": "",
+      "id": "72EQ"
+    },
+    {
+      "title": "Diseño gráfico",
+      "description": "For athletes, high altitude produces two contradi effects on performance.",
+      "category": "Diseño",
+      "url": "",
+      "id": "3JBT"
+    },
+    {
+      "title": "Personal Developmen",
+      "description": "For athletes, high altitude produces two contradi effects on performance.",
+      "category": "Psicología",
+      "url": "",
+      "id": "F2QR"
+    },
+    {
+      "title": "Software IT",
+      "description": "For athletes, high altitude produces two contradi effects on performance.",
+      "category": "Programación",
+      "url": "",
+      "id": "X2FT"
     }
   ],
   "users": [
@@ -61,78 +96,56 @@
       "password": "232323"
     },
     {
-      "id": "_b7vx6v5tw",
-      "name": "prueba3",
-      "lastname": "ewewe",
-      "phone": "323232",
-      "birthdate": "2024-01-11",
+      "id": "_ssdvu97n7",
+      "name": "yeifry leandro",
+      "lastname": "vargas rivera",
+      "phone": "31313131",
+      "birthdate": "2024-02-13",
       "country": "colombia",
-      "city": "bogota",
+      "city": "medellin",
       "gender": "masculino",
-      "email": "pruba.121@gmail.com",
-      "password": "43434",
-      "misCursos": []
+      "email": "yeifry.121@gmail.com",
+      "password": "123",
+      "misCursos": [
+        "MG8B",
+        "72EQ"
+      ]
     },
     {
-      "id": "_b7vx6v5tw",
-      "name": "prueba3",
-      "lastname": "ewewe",
-      "phone": "323232",
-      "birthdate": "2024-01-11",
+      "id": "_9fp37ft7q",
+      "name": "rfrfrf",
+      "lastname": "rfrf",
+      "phone": "2423",
+      "birthdate": "2024-02-07",
       "country": "colombia",
-      "city": "bogota",
+      "city": "medellin",
       "gender": "masculino",
-      "email": "pruba.121@gmail.com",
-      "password": "43434",
+      "email": "rerrer.121@gmail.com",
+      "password": "123445",
       "misCursos": [
         "JCGX",
         "MG8B",
-        "X2FT",
         "72EQ",
-        "F2QR"
+        "F2QR",
+        "X2FT",
+        "3JBT"
       ]
     },
     {
-      "id": "_htt4j7pm0",
-      "name": "leandro",
-      "lastname": "vargas",
-      "phone": "23224343",
-      "birthdate": "2024-01-01",
+      "id": "_6y1qezo7c",
+      "name": "prueba121554544",
+      "lastname": "hjhghj",
+      "phone": "56465465",
+      "birthdate": "2024-02-13",
       "country": "colombia",
       "city": "medellin",
       "gender": "masculino",
-      "email": "wqwwq.121@gmail.com",
-      "password": "2323232",
-      "misCursos": []
-    },
-    {
-      "id": "_htt4j7pm0",
-      "name": "leandro",
-      "lastname": "vargas",
-      "phone": "23224343",
-      "birthdate": "2024-01-01",
-      "country": "colombia",
-      "city": "medellin",
-      "gender": "masculino",
-      "email": "wqwwq.121@gmail.com",
-      "password": "2323232",
+      "email": "rthhrthgrhrhbr.121@gmail.com",
+      "password": "32443242342",
       "misCursos": [
-        "JCGX"
-      ]
-    },
-    {
-      "id": "_htt4j7pm0",
-      "name": "leandro",
-      "lastname": "vargas",
-      "phone": "23224343",
-      "birthdate": "2024-01-01",
-      "country": "colombia",
-      "city": "medellin",
-      "gender": "masculino",
-      "email": "wqwwq.121@gmail.com",
-      "password": "2323232",
-      "misCursos": [
-        "JCGX",
+        "F2QR",
+        "MG8B",
+        "X2FT",
         "72EQ"
       ]
     }
