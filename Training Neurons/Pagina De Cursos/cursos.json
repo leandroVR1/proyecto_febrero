@@ -2,7 +2,7 @@
     
         "categories": [
           {
-            "img": "img/finanzas.jpg",
+            "img": "img/IconProgramacion.png",
             "title": "desarollo web",
             "description": "fundamentos intermedios de html, css y javascript con una duracion de 40 horas y certificado gratis",
             "id": "1",
@@ -10,35 +10,35 @@
             "website":"https://skillshop.exceedlms.com/student/collection/799479-web-development-i?locale=es"
           },
           {
-            "img": "img/finanzas.jpg",
+            "img": "img/IconProgramacion.png",
             "title": "desarollo en java",
             "description": "fundamentos intermedios en el lenjuage java para backend con una duracion de 40 horas y certificado gratis",
             "categoria": "desarollo",
             "id":"2"
           },
           {
-            "img": "img/finanzas.jpg",
+            "img": "img/IconProgramacion.png",
             "title": "desarollo en java",
             "description": "fundamentos intermedios en el lenjuage java para backend con una duracion de 40 horas y certificado gratis",
             "categoria": "desarollo",
             "id":"3"
           },
           {
-            "img": "img/finanzas.jpg",
+            "img": "img/IconProgramacion.png",
             "title": "desarollo en c#", 
             "description": "fundamentos intermedios en el lenjuage java para backend con una duracion de 40 horas y certificado gratis",
             "categoria": "desarollo",
             "id":"4"
           },
           {
-            "img": "img/finanzas.jpg",
+            "img": "img/IconMarketing.png",
             "title": "desarollo de dispositivos moviles",
             "description": "fundamentos intermedios en el lenjuage java para backend con una duracion de 40 horas y certificado gratis",
             "categoria": "marketing",
             "id":"6"
           },
           {
-            "img": "img/finanzas.jpg",
+            "img": "img/IconMarketing.png",
             "title": "desarollo en javascript backend",
             "description": "fundamentos intermedios en el lenjuage java para backend con una duracion de 40 horas y certificado gratis",
             "categoria": "marketing",

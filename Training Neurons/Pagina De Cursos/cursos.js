@@ -59,11 +59,13 @@ function cargarTargetas(){
 
         let categoria=document.createElement('div')
         categoria.classList.add('categoria')
+        categoria.id=('categoria')
         encabezado.appendChild(categoria)
 
         let label=document.createElement('label')
         label.innerText=dato.categoria;
-        encabezado.appendChild(label); 
+        label.setAttribute('for','categoria')
+        categoria.appendChild(label); 
 
         let title=document.createElement('div')
         title.classList.add('titulo')
