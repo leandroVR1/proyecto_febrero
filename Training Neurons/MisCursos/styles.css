@@ -223,12 +223,23 @@ a.selected{
 }
 
 
+.pieNav{
+   
+   
+    top: 390px;
+    padding: 20px 0px;
+   
+    align-items: center;
+    position: relative;
+}
+
 
 .logo {
     width: 80px;
     height: 80px;
     margin-right: 10px;
 }
+
 
 header .btn1 {
     background-color: #0d443b;

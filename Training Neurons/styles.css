@@ -192,7 +192,15 @@ a.selected{
     }
 }
 
-
+.pieNav{
+   
+   
+    top: 390px;
+    padding: 20px 0px;
+   
+    align-items: center;
+    position: relative;
+}
 
 .logo {
     width: 80px;

@@ -124,13 +124,13 @@ function agregarCurso(cursoId) {
           // Actualizar el objeto del usuario en localStorage
           localStorage.setItem("user", JSON.stringify(userObject));
 
-          // Puedes realizar alguna acción adicional, como mostrar un mensaje de éxito
+          
           console.log('Curso agregado a Mis Cursos: ' + cursoId);
 
           // Enviar la actualización al servidor con el ID del usuario
           enviarActualizacionAlServidor(userObject.userId, userObject);
       } else {
-          // Si ya está en la lista, puedes mostrar un mensaje de que ya se ha unido
+          // Si ya está en la lista, mostrar un mensaje  que ya se ha unido
           console.log('Ya te has unido a este curso: ' + cursoId);
       }
   }
@@ -139,8 +139,8 @@ function agregarCurso(cursoId) {
 // Función para enviar la actualización al servidor con el ID del usuario
 function enviarActualizacionAlServidor(userId, userObject) {
   // Utilizar fetch para enviar la actualización al servidor
-  fetch('http://localhost:3000/users/' + userId2, {  // Asegúrate de tener una ruta adecuada en tu servidor para actualizar usuarios por ID
-      method: 'PUT', // Utiliza el método adecuado para actualizar en tu API
+  fetch('http://localhost:3000/users/' + userId2, {  
+      method: 'PUT', // 
       headers: {
           'Content-Type': 'application/json',
       },
@@ -150,7 +150,7 @@ function enviarActualizacionAlServidor(userId, userObject) {
           if (!response.ok) {
               throw new Error('Error al actualizar datos en el servidor');
           }
-          // Puedes manejar la respuesta del servidor si es necesario
+          
           return response.json();
       })
       .catch(error => {

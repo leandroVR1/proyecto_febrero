@@ -70,9 +70,7 @@
                     <h4>Soporte</h4>
                 </div>
             </a>
-
-
-        
+        <div class="pieNav">
             <div class="option">
                 <i id="sol-icon" class="fa-solid fa-sun"></i>
                 <div class="toggle">
@@ -83,14 +81,11 @@
 
                 
             </div>
-
-            <div class="option">
+            <div class="option" id="cerrarSesionBtn" onclick="cerrarSesion()">
                 <i class="fa-solid fa-right-to-bracket"></i>
-                <h4>Cerrar Sesion</h4>
-                
-
-                
+                <h4>Cerrar Sesión</h4>
             </div>
+</div>
 
             
 
@@ -433,7 +428,7 @@
     <script>
         // Obtener el usuario almacenado en localStorage
         let userData = localStorage.getItem("user");
-
+        let cerrarSesionBtn = document.getElementById("cerrarSesionBtn");
         // Verificar si el usuario existe
         if (userData) {
             // Parsear el JSON para obtener el objeto del usuario
@@ -453,14 +448,26 @@
               if (btnRegistrarse) {
                 btnRegistrarse.style.display = 'none';
               }
-        }
-        console.log(localStorage.getItem("user"));
-
+             
+} else {
+    // Ocultar el botón de cerrar sesión
+    cerrarSesionBtn.style.display = 'none';
+}
+              
+        
+    
+        
+        
+        function cerrarSesion() {
+        // Limpiar localStorage
+        localStorage.clear();
+        
+        // Redirigir a la página principal
+        window.location.href = "http://127.0.0.1:5501/Training%20Neurons/index.html";
+    }
     </script>
     <script src="script.js"></script>
 
-    <script>
-        console.log(typeof  localStorage.getItem("user"))
-    </script>
+    
 </body>
 </html>

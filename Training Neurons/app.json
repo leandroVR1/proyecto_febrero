@@ -148,6 +148,66 @@
         "X2FT",
         "72EQ"
       ]
+    },
+    {
+      "id": "_vcigc3xz4",
+      "name": "trululu",
+      "lastname": "trtrtr",
+      "phone": "5445545",
+      "birthdate": "2024-02-10",
+      "country": "colombia",
+      "city": "medellin",
+      "gender": "masculino",
+      "email": "trululu.121@gmail.com",
+      "password": "trulululu",
+      "misCursos": [
+        "JCGX"
+      ]
+    },
+    {
+      "id": "_1xgxf1aeo",
+      "name": "intento",
+      "lastname": "wee",
+      "phone": "45544",
+      "birthdate": "2024-01-30",
+      "country": "colombia",
+      "city": "medellin",
+      "gender": "masculino",
+      "email": "trululu.121@gmail.com",
+      "password": "34343",
+      "misCursos": [
+        "JCGX",
+        "MG8B"
+      ]
+    },
+    {
+      "id": "_spf7c4nwa",
+      "name": "intento2",
+      "lastname": "ruiz",
+      "phone": "3434",
+      "birthdate": "2024-02-12",
+      "country": "colombia",
+      "city": "cucuta",
+      "gender": "masculino",
+      "email": "estudiante@gmail.com",
+      "password": "123",
+      "misCursos": []
+    },
+    {
+      "id": "_zvwiys9k5",
+      "name": "intento3",
+      "lastname": "ruiz",
+      "phone": "2323",
+      "birthdate": "2008-02-13",
+      "country": "espana",
+      "city": "cucuta",
+      "gender": "masculino",
+      "email": "estudiante@gmail.com",
+      "password": "90000",
+      "misCursos": [
+        "MG8B",
+        "72EQ"
+      ]
     }
   ]
 }
