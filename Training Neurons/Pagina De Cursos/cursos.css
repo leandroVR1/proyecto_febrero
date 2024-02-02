@@ -107,7 +107,8 @@ body{
     margin: 30px;
 }
 
-.piedetarjeta{
+.pietarjeta{
+   
     display: flex;
     justify-content: space-between;
     align-items: center;
