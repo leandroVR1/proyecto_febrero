@@ -70,7 +70,33 @@
                     <h4>Soporte</h4>
                 </div>
             </a>
+
+
+
+
         <div class="pieNav">
+
+        <div class="option">
+            <div class="dropdown" id="languageDropdown">
+                <button class="dropbtn">
+                  <img src="img/earth-americas-solid(1).svg" alt="Icono" class="icon">
+                  <strong>Idioma</strong>
+                  <span class="arrow">&#9660;</span>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">
+                      <img src="img/espana.png" alt="Opción 1" class="option-icon">
+                      Español
+                    </a>
+                    <a href="#">
+                      <img src="img/estados-unidos-de-america.png" alt="Opción 2" class="option-icon">
+                      Inglés
+                    </a>
+                  </div>
+              </div>
+        </div>
+
+
             <div class="option">
                 <i id="sol-icon" class="fa-solid fa-sun"></i>
                 <div class="toggle">
@@ -486,14 +512,25 @@
         // Redirigir a la página principal
         window.location.href = "http://127.0.0.1:5501/Training%20Neurons/index.html";
     }
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const dropdownButton = document.querySelector('.dropbtn');
+        const dropdownContent = document.querySelector('.dropdown-content');
+  
+        dropdownButton.addEventListener('click', function(e) {
+          // Prevenir el comportamiento predeterminado del clic en el botón
+          e.preventDefault();
+          
+          // Alternar la visibilidad del contenido del dropdown
+          dropdownContent.style.display = (dropdownContent.style.display === 'block') ? 'none' : 'block';
+        });
+      });
+
     </script>
    
     <script src="script.js"></script>
 
     
-
-    <!--funtion para capturar el valor del id de los botones con getattribute y hay que guardarlo en local store para poder usarlo ya que toca traer ese valor 
-    en el js donde esta la logica para cargar las tarjetas -->
     <script>
         function capturarID(elemento){
             idCurso = elemento.getAttribute('id');
