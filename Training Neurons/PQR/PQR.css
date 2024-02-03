@@ -3,4 +3,10 @@
     border: solid 1px black;
     padding: 30px;
     border-radius: 10px;
+    margin-top: 190px;
+}
+body{
+     background: linear-gradient(180deg, #0FFE9A 0%, rgba(50, 114, 40, 0.00) 100%), rgba(60, 65, 64, 0.84);
+     background-size: cover;
+     background-repeat: no-repeat;
 }
