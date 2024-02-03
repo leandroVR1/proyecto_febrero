@@ -152,6 +152,3 @@ function enviarActualizacionAlServidor(userObject) {
     console.error('Error:', error);
   });
 }
-
-
-
