@@ -5,6 +5,18 @@
       "type": "Pregunta",
       "description": "Porque es todo tan re exotic?",
       "email": "davidpt94@gmail.com"
-    }    
+    },
+    {
+      "id": "f9dc",
+      "type": "Queja",
+      "description": "gergergre",
+      "email": "richard.montoyaa1@gmail.com"
+    },
+    {
+      "id": "9ef2",
+      "type": "Queja",
+      "description": "tyjytjtyj",
+      "email": "na@h.com"
+    }
   ]
 }
