@@ -1,40 +1,47 @@
-<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menú lateral responsive - MagtimusPro</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
 
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Sixtyfour&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Sixtyfour&display=swap"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lemon&family=Salsa&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=KoHo:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=KoHo:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
 
     <link rel="shortcut icon" href="img/logoSinFondo.png" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
-    
+
 
     <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
 </head>
+
 <body id="body">
-    
+
     <header>
         <div class="inicio">
-        <div class="icon__menu">
-            <i class="fa-solid fa-bars" style="color: aliceblue;" id="btn_open"></i>
-        </div>
-        
-        <img style="margin-left: 50px;" class="logo" src="img/logoSinFondo.png" alt="">
-        <h1 class="title mt-2" style="font-size: 40px; color: #21B573;">Training Neurons</h1>
+            <div class="icon__menu">
+                <i class="fa-solid fa-bars" style="color: aliceblue;" id="btn_open"></i>
+            </div>
+
+            <img style="margin-left: 50px;" class="logo" src="img/logoSinFondo.png" alt="">
+            <h1 class="title mt-2" style="font-size: 40px; color: #21B573;">Training Neurons</h1>
         </div>
         <div class="botones">
-        <a target="_blank" href="Inicio de Sesion/INICIO_SESION.html"><button id="btnIniciarSesion" class="btn1">Iniciar Sesion</button></a>
-        <a target="_blank" href="Registro/inicio.html"><button  id="btnRegistrarse" class="btn2">Registrarse</button></a>
+            <a target="_blank" href="Inicio de Sesion/INICIO_SESION.html"><button id="btnIniciarSesion"
+                    class="btn1">Iniciar Sesion</button></a>
+            <a target="_blank" href="Registro/inicio.html"><button id="btnRegistrarse"
+                    class="btn2">Registrarse</button></a>
         </div>
     </header>
 
@@ -45,7 +52,7 @@
             <h4><span id="objUsuario"> </span></h4>
         </div>
 
-        <div class="options__menu">	
+        <div class="options__menu">
 
             <a href="#" class="selected">
                 <div class="option">
@@ -57,11 +64,11 @@
             <a href="./MisCursos/cursos.html">
                 <div class="option">
                     <i class="fa-solid fa-book"></i>
-                    <h4>Mis Cursos</h4>
+                    <h4 data-translate="hola">Mis Cursos</h4>
                 </div>
             </a>
-            
-       
+
+
 
             <a href="#">
                 <div class="option">
@@ -74,64 +81,68 @@
 
 
 
-        <div class="pieNav">
+            <div class="pieNav">
 
-        <div class="option">
-            <div class="dropdown" id="languageDropdown">
-                <button class="dropbtn">
-                  <img src="img/earth-americas-solid(1).svg" alt="Icono" class="icon">
-                  <strong>Idioma</strong>
-                  <span class="arrow">&#9660;</span>
-                </button>
-                <div class="dropdown-content">
-                    <a href="#">
-                      <img src="img/espana.png" alt="Opción 1" class="option-icon">
-                      Español
-                    </a>
-                    <a href="#">
-                      <img src="img/estados-unidos-de-america.png" alt="Opción 2" class="option-icon">
-                      Inglés
-                    </a>
-                  </div>
-              </div>
-        </div>
+                <div class="option">
+                    <div class="dropdown" id="languageDropdown">
+                        <button class="dropbtn">
+                            <img src="img/earth-americas-solid(1).svg" alt="Icono" class="icon">
+                            <strong>Idioma</strong>
+                            <span class="arrow">&#9660;</span>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#">
+                                <img src="img/espana.png" alt="Opción 1" class="option-icon">
+                                Español
+                            </a>
+                            <a href="#">
+                                <img src="img/estados-unidos-de-america.png" alt="Opción 2" class="option-icon">
+                                Inglés
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
 
-            <div class="option">
-                <i id="sol-icon" class="fa-solid fa-sun"></i>
-                <div class="toggle">
-                    <!-- <span>lightaaa mode</span>   -->
-            
-                    <input type="checkbox" class="checkbox"> 
-                  </div>     
+                <div class="option">
+                    <i id="sol-icon" class="fa-solid fa-sun"></i>
+                    <div class="toggle">
+                        <!-- <span>lightaaa mode</span>   -->
 
-                
+                        <input type="checkbox" class="checkbox">
+                    </div>
+
+
+                </div>
+                <div class="option" id="cerrarSesionBtn" onclick="cerrarSesion()">
+                    <i class="fa-solid fa-right-to-bracket"></i>
+                    <h4>Cerrar Sesión</h4>
+                </div>
             </div>
-            <div class="option" id="cerrarSesionBtn" onclick="cerrarSesion()">
-                <i class="fa-solid fa-right-to-bracket"></i>
-                <h4>Cerrar Sesión</h4>
-            </div>
-</div>
 
-            
+
 
         </div>
 
     </div>
 
     <main>
-      <!--   Carousel -->
+        <!--   Carousel -->
         <div id="carouselExampleControls" class="carousel">
             <div class="carousel-inner">
-                    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+                <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+                    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+                    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+                    crossorigin="anonymous"></script>
                 <div class="carousel-item active">
                     <div class="card">
                         <div class="img-wrapper"><img src="img/programacion.jpg" class="d-block w-100" alt="..."> </div>
                         <div class="card-body">
                             <h5 class="card-title">Programacion</h5>
-                           
-                            <a id="desarollo" href="./Pagina De Cursos/cursos.html" class="btn btn-primary mt-3" onclick="capturarID(this)">Ver Cursos</a>
+
+                            <a id="desarollo" href="./Pagina De Cursos/cursos.html" class="btn btn-primary mt-3"
+                                onclick="capturarID(this)">Ver Cursos</a>
                         </div>
                     </div>
                 </div>
@@ -140,17 +151,19 @@
                         <div class="img-wrapper"><img src="img/marketing.jpeg" class="d-block w-100" alt="..."> </div>
                         <div class="card-body">
                             <h5 class="card-title">Marketing</h5>
-                            <a id="marketing" href="./Pagina De Cursos/cursos.html" class="btn btn-primary mt-3"  onclick="capturarID(this)">Ver Cursos</a>
+                            <a id="marketing" href="./Pagina De Cursos/cursos.html" class="btn btn-primary mt-3"
+                                onclick="capturarID(this)">Ver Cursos</a>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <div class="card" >
+                    <div class="card">
                         <div class="img-wrapper"><img src="img/fotografia.jpg" class="d-block w-100" alt="..."> </div>
                         <div class="card-body">
                             <h5 class="card-title">Fotografia</h5>
-                           
-                            <a id="fotografia" href="./Pagina De Cursos/cursos.html" class="btn btn-primary mt-3" onclick="capturarID(this)">Ver Cursos</a>
+
+                            <a id="fotografia" href="./Pagina De Cursos/cursos.html" class="btn btn-primary mt-3"
+                                onclick="capturarID(this)">Ver Cursos</a>
                         </div>
                     </div>
                 </div>
@@ -159,8 +172,9 @@
                         <div class="img-wrapper"><img src="img/diseño.jpg" class="d-block w-100" alt="..."> </div>
                         <div class="card-body">
                             <h5 class="card-title">Diseño</h5>
-                            
-                            <a id="diseño" href="./Pagina De Cursos/cursos.html" class="btn btn-primary mt-3" onclick="capturarID(this)">Ver Cursos</a>
+
+                            <a id="diseño" href="./Pagina De Cursos/cursos.html" class="btn btn-primary mt-3"
+                                onclick="capturarID(this)">Ver Cursos</a>
                         </div>
                     </div>
                 </div>
@@ -169,8 +183,9 @@
                         <div class="img-wrapper"><img src="img/finanzas.jpg" class="d-block w-100" alt="..."> </div>
                         <div class="card-body">
                             <h5 class="card-title">Finanzas</h5>
-                            
-                            <a id="finanzas" href="./Pagina De Cursos/cursos.html" class="btn btn-primary mt-3" onclick="capturarID(this)">Ver Cursos</a>
+
+                            <a id="finanzas" href="./Pagina De Cursos/cursos.html" class="btn btn-primary mt-3"
+                                onclick="capturarID(this)">Ver Cursos</a>
                         </div>
                     </div>
                 </div>
@@ -179,41 +194,49 @@
                         <div class="img-wrapper"><img src="img/idiomas.jpg" class="d-block w-100" alt="..."> </div>
                         <div class="card-body">
                             <h5 class="card-title">Idiomas</h5>
-                          
-                            <a id="idiomas" href="./Pagina De Cursos/cursos.html" class="btn btn-primary mt-3" onclick="capturarID(this)">Ver Cursos</a>
+
+                            <a id="idiomas" href="./Pagina De Cursos/cursos.html" class="btn btn-primary mt-3"
+                                onclick="capturarID(this)">Ver Cursos</a>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="card">
-                        <div class="img-wrapper"><img src="img/ciencia_datos.jpg" class="d-block w-100" alt="..."> </div>
+                        <div class="img-wrapper"><img src="img/ciencia_datos.jpg" class="d-block w-100" alt="...">
+                        </div>
                         <div class="card-body">
                             <h5 class="card-title">Ciencia De Datos</h5>
-                            
-                            <a id="ciencia_datos" href="./Pagina De Cursos/cursos.html" class="btn btn-primary mt-3" onclick="capturarID(this)">Ver Cursos</a>
+
+                            <a id="ciencia_datos" href="./Pagina De Cursos/cursos.html" class="btn btn-primary mt-3"
+                                onclick="capturarID(this)">Ver Cursos</a>
                         </div>
                     </div>
                 </div>
-               
+
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
 
- 
+
 
         </div>
-        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
 
-                  <!-- Script para recargar el carrusel cuando llega a la última imagen -->
+        <!-- Script para recargar el carrusel cuando llega a la última imagen -->
         <script>
-            $(document).ready(function() {
+            $(document).ready(function () {
                 $('#carouselExampleControls').on('slide.bs.carousel', function (e) {
                     var currentIndex = e.to;
                     var totalItems = $(this).find('.carousel-item').length;
@@ -225,251 +248,257 @@
                 });
             });
         </script>
-       
 
 
 
-       <!--  Cards -->
 
-       <div class="container2" style="padding: 20px;">
-        <div class="row">
+        <!--  Cards -->
 
-            
-            <div class="col-md-4 ">
-             
+        <div class="container2" style="padding: 20px;">
+            <div class="row">
 
-                <div class="card " id="JCGX">
-                    <div class="content">
-                        <div class="encabezado">
-                            <div class="icono" onclick="agregarCurso('JCGX')">
-                                <button  id="botonJCGX"><i class="fa-solid fa-star" style="color: #f6d32d;" data-curso="JCGX"></i></button>                       
-                             
+
+                <div class="col-md-4 ">
+
+
+                    <div class="card " id="JCGX">
+                        <div class="content">
+                            <div class="encabezado">
+                                <div class="icono" onclick="agregarCurso('JCGX')">
+                                    <button id="botonJCGX"><i class="fa-solid fa-star" style="color: #f6d32d;"
+                                            data-curso="JCGX"></i></button>
+
+                                </div>
+                                <div class="categoria">
+                                    <label for="">Diseño</label>
+                                </div>
                             </div>
-                            <div class="categoria">
-                                <label for="">Diseño</label>
+
+                            <div class="titulo">
+                                <h2>Arte y Humanidades</h2>
                             </div>
-                        </div>
-            
-                        <div class="titulo">
-                            <h2>Arte y Humanidades</h2>
-                        </div>
-            
-                        <div class="descripcion">
-                            <p>For athletes, high altitude produces two contradi effects on performance.</p>
-                        </div>
-                        
-                        <div class="separacion"></div>
-            
-                        <div class="piedetarjeta">
-                            <div class="boton">
-                                <button>Unirse</button>
+
+                            <div class="descripcion">
+                                <p>For athletes, high altitude produces two contradi effects on performance.</p>
                             </div>
-            
-                            <div class="icono2">
-                                <img src="img/Icon.png" alt="">
+
+                            <div class="separacion"></div>
+
+                            <div class="piedetarjeta">
+                                <div class="boton">
+                                    <button>Unirse</button>
+                                </div>
+
+                                <div class="icono2">
+                                    <img src="img/Icon.png" alt="">
+                                </div>
                             </div>
+
+
                         </div>
-                        
-            
                     </div>
                 </div>
-            </div>
-            
-            <div class="col-md-4 ">
-                <div class="card" id="MG8B">
-                    <div class="content">
-                        <div class="encabezado">
-                            <div class="icono" onclick="agregarCurso('MG8B')">
-                                <button  id="botonMG8B"><i class="fa-solid fa-star" style="color: #f6d32d;" data-curso="MG8B"></i></button>                       
+
+                <div class="col-md-4 ">
+                    <div class="card" id="MG8B">
+                        <div class="content">
+                            <div class="encabezado">
+                                <div class="icono" onclick="agregarCurso('MG8B')">
+                                    <button id="botonMG8B"><i class="fa-solid fa-star" style="color: #f6d32d;"
+                                            data-curso="MG8B"></i></button>
+                                </div>
+                                <div class="categoria">
+                                    <label for="">Marketing</label>
+                                </div>
                             </div>
-                            <div class="categoria">
-                                <label for="">Marketing</label>
+
+                            <div class="titulo">
+                                <h2>Marketing Digital y Analítico</h2>
                             </div>
-                        </div>
-            
-                        <div class="titulo">
-                            <h2>Marketing Digital y Analítico</h2>
-                        </div>
-            
-                        <div class="descripcion">
-                            <p>For athletes, high altitude produces two contradi effects on performance.</p>
-                        </div>
-                        
-                        <div class="separacion"></div>
-            
-                        <div class="piedetarjeta">
-                            <div class="boton">
-                                <button>Unirse</button>
+
+                            <div class="descripcion">
+                                <p>For athletes, high altitude produces two contradi effects on performance.</p>
                             </div>
-            
-                            <div class="icono2">
-                                <img src="img/IconMarketing.png" alt="">
+
+                            <div class="separacion"></div>
+
+                            <div class="piedetarjeta">
+                                <div class="boton">
+                                    <button>Unirse</button>
+                                </div>
+
+                                <div class="icono2">
+                                    <img src="img/IconMarketing.png" alt="">
+                                </div>
                             </div>
+
+
                         </div>
-                        
-            
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4 ">
-                <div class="card" id="72EQ">
-                    <div class="content">
-                        <div class="encabezado">
-                            <div class="icono" onclick="agregarCurso('72EQ')">
-                                <button  id="boton72EQ"><i class="fa-solid fa-star" style="color: #f6d32d;"data-curso="72EQ"></i></button>                       
+                <div class="col-md-4 ">
+                    <div class="card" id="72EQ">
+                        <div class="content">
+                            <div class="encabezado">
+                                <div class="icono" onclick="agregarCurso('72EQ')">
+                                    <button id="boton72EQ"><i class="fa-solid fa-star" style="color: #f6d32d;"
+                                            data-curso="72EQ"></i></button>
 
+                                </div>
+                                <div class="categoria">
+                                    <label for="">Programación</label>
+                                </div>
                             </div>
-                            <div class="categoria">
-                                <label for="">Programación</label>
+
+                            <div class="titulo">
+                                <h2>Desarrollo web</h2>
                             </div>
-                        </div>
-            
-                        <div class="titulo">
-                            <h2>Desarrollo web</h2>
-                        </div>
-            
-                        <div class="descripcion">
-                            <p>For athletes, high altitude produces two contradi effects on performance.</p>
-                        </div>
-                        
-                        <div class="separacion"></div>
-            
-                        <div class="piedetarjeta">
-                            <div class="boton">
-                                <button>Unirse</button>
+
+                            <div class="descripcion">
+                                <p>For athletes, high altitude produces two contradi effects on performance.</p>
                             </div>
-            
-                            <div class="icono2">
-                                <img src="img/IconProgramacion.png" alt="">
+
+                            <div class="separacion"></div>
+
+                            <div class="piedetarjeta">
+                                <div class="boton">
+                                    <button>Unirse</button>
+                                </div>
+
+                                <div class="icono2">
+                                    <img src="img/IconProgramacion.png" alt="">
+                                </div>
                             </div>
+
+
                         </div>
-                        
-            
                     </div>
                 </div>
-            </div>
 
-        </div>
+            </div>
 
             <div class="row mt-3">
-            <div class="col-md-4">
-                <div class="card" id="3JBT">
-                    <div class="content">
-                        <div class="encabezado">
-                            <div class="icono" onclick="agregarCurso('3JBT')">
-                                <button  id="boton3JBT"><i class="fa-solid fa-star" style="color: #f6d32d;" data-curso="3JBT"></i></button>                       
-                                
+                <div class="col-md-4">
+                    <div class="card" id="3JBT">
+                        <div class="content">
+                            <div class="encabezado">
+                                <div class="icono" onclick="agregarCurso('3JBT')">
+                                    <button id="boton3JBT"><i class="fa-solid fa-star" style="color: #f6d32d;"
+                                            data-curso="3JBT"></i></button>
+
+                                </div>
+                                <div class="categoria">
+                                    <label for="">Diseño</label>
+                                </div>
                             </div>
-                            <div class="categoria">
-                                <label for="">Diseño</label>
+
+                            <div class="titulo">
+                                <h2>Diseño gráfico</h2>
                             </div>
-                        </div>
-            
-                        <div class="titulo">
-                            <h2>Diseño gráfico</h2>
-                        </div>
-            
-                        <div class="descripcion">
-                            <p>For athletes, high altitude produces two contradi effects on performance.</p>
-                        </div>
-                        
-                        <div class="separacion"></div>
-            
-                        <div class="piedetarjeta">
-                            <div class="boton">
-                                <button>Unirse</button>
+
+                            <div class="descripcion">
+                                <p>For athletes, high altitude produces two contradi effects on performance.</p>
                             </div>
-            
-                            <div class="icono2">
-                                <img src="img/Icon.png" alt="">
+
+                            <div class="separacion"></div>
+
+                            <div class="piedetarjeta">
+                                <div class="boton">
+                                    <button>Unirse</button>
+                                </div>
+
+                                <div class="icono2">
+                                    <img src="img/Icon.png" alt="">
+                                </div>
                             </div>
+
+
                         </div>
-                        
-            
                     </div>
                 </div>
-            </div> 
-        
-       
-            <div class="col-md-4">
-                <div class="card" id="F2QR">
-                    <div class="content">
-                        <div class="encabezado">
-                            <div class="icono" onclick="agregarCurso('F2QR')">
-                                <button  id="botonF2QR"><i class="fa-solid fa-star" style="color: #f6d32d;" data-curso="F2QR"></i></button>                       
-          
+
+
+                <div class="col-md-4">
+                    <div class="card" id="F2QR">
+                        <div class="content">
+                            <div class="encabezado">
+                                <div class="icono" onclick="agregarCurso('F2QR')">
+                                    <button id="botonF2QR"><i class="fa-solid fa-star" style="color: #f6d32d;"
+                                            data-curso="F2QR"></i></button>
+
+                                </div>
+                                <div class="categoria">
+                                    <label for="">Psicología</label>
+                                </div>
                             </div>
-                            <div class="categoria">
-                                <label for="">Psicología</label>
+
+                            <div class="titulo">
+                                <h2>Personal Developmen</h2>
                             </div>
-                        </div>
-            
-                        <div class="titulo">
-                            <h2>Personal Developmen</h2>
-                        </div>
-            
-                        <div class="descripcion">
-                            <p>For athletes, high altitude produces two contradi effects on performance.</p>
-                        </div>
-                        
-                        <div class="separacion"></div>
-            
-                        <div class="piedetarjeta">
-                            <div class="boton">
-                                <button>Unirse</button>
+
+                            <div class="descripcion">
+                                <p>For athletes, high altitude produces two contradi effects on performance.</p>
                             </div>
-            
-                            <div class="icono2">
-                                <img src="img/IconPsicologia.png" alt="">
+
+                            <div class="separacion"></div>
+
+                            <div class="piedetarjeta">
+                                <div class="boton">
+                                    <button>Unirse</button>
+                                </div>
+
+                                <div class="icono2">
+                                    <img src="img/IconPsicologia.png" alt="">
+                                </div>
                             </div>
+
+
                         </div>
-                        
-            
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card" id="X2FT">
+                        <div class="content">
+                            <div class="encabezado">
+                                <div class="icono" onclick="agregarCurso('X2FT')">
+                                    <button id="botonX2FT"><i class="fa-solid fa-star" style="color: #f6d32d;"
+                                            data-curso="X2FT"></i></button>
+
+                                </div>
+                                <div class="categoria">
+                                    <label for="">Programación</label>
+                                </div>
+                            </div>
+
+                            <div class="titulo">
+                                <h2>Software IT</h2>
+                            </div>
+
+                            <div class="descripcion">
+                                <p>For athletes, high altitude produces two contradi effects on performance.</p>
+                            </div>
+
+                            <div class="separacion"></div>
+
+                            <div class="piedetarjeta">
+                                <div class="boton">
+                                    <button>Unirse</button>
+                                </div>
+
+                                <div class="icono2">
+                                    <img src="img/IconProgramacion.png" alt="">
+                                </div>
+                            </div>
+
+
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card" id="X2FT">
-                    <div class="content">
-                        <div class="encabezado">
-                            <div class="icono" onclick="agregarCurso('X2FT')">
-                                <button  id="botonX2FT"><i class="fa-solid fa-star" style="color: #f6d32d;" data-curso="X2FT"></i></button>                       
-                               
-                            </div>
-                            <div class="categoria">
-                                <label for="">Programación</label>
-                            </div>
-                        </div>
-            
-                        <div class="titulo">
-                            <h2>Software IT</h2>
-                        </div>
-            
-                        <div class="descripcion">
-                            <p>For athletes, high altitude produces two contradi effects on performance.</p>
-                        </div>
-                        
-                        <div class="separacion"></div>
-            
-                        <div class="piedetarjeta">
-                            <div class="boton">
-                                <button>Unirse</button>
-                            </div>
-            
-                            <div class="icono2">
-                                <img src="img/IconProgramacion.png" alt="">
-                            </div>
-                        </div>
-                        
-            
-                    </div>
-                </div>
-            </div>
-            </div>
-           
-            
-        
-       </div>
+
+
+
+        </div>
 
     </main>
     <script>
@@ -490,57 +519,128 @@
             if (btnIniciarSesion) {
                 console.log("entrando al condicional")
                 btnIniciarSesion.style.display = 'none';
-              }
-        
-              if (btnRegistrarse) {
+            }
+
+            if (btnRegistrarse) {
                 btnRegistrarse.style.display = 'none';
-              }
-             
-} else {
-    // Ocultar el botón de cerrar sesión
-    cerrarSesionBtn.style.display = 'none';
-}
-              
-        
-    
-        
-        
+            }
+
+        } else {
+            // Ocultar el botón de cerrar sesión
+            cerrarSesionBtn.style.display = 'none';
+        }
+
+
+
+
+
         function cerrarSesion() {
-        // Limpiar localStorage
-        localStorage.clear();
-        
-        // Redirigir a la página principal
-        window.location.href = "http://127.0.0.1:5501/Training%20Neurons/index.html";
-    }
+            // Limpiar localStorage
+            localStorage.clear();
 
-    document.addEventListener('DOMContentLoaded', function() {
-        const dropdownButton = document.querySelector('.dropbtn');
-        const dropdownContent = document.querySelector('.dropdown-content');
-  
-        dropdownButton.addEventListener('click', function(e) {
-          // Prevenir el comportamiento predeterminado del clic en el botón
-          e.preventDefault();
-          
-          // Alternar la visibilidad del contenido del dropdown
-          dropdownContent.style.display = (dropdownContent.style.display === 'block') ? 'none' : 'block';
+            // Redirigir a la página principal
+            window.location.href = "http://127.0.0.1:5501/Training%20Neurons/index.html";
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const dropdownButton = document.querySelector('.dropbtn');
+            const dropdownContent = document.querySelector('.dropdown-content');
+
+            dropdownButton.addEventListener('click', function (e) {
+                // Prevenir el comportamiento predeterminado del clic en el botón
+                e.preventDefault();
+
+                // Alternar la visibilidad del contenido del dropdown
+                dropdownContent.style.display = (dropdownContent.style.display === 'block') ? 'none' : 'block';
+            });
         });
-      });
 
+
+        // Obtener la lista de idiomas desde la API de Google Translate
+        fetch('https://translate.googleapis.com/language/translate/v2/languages?key=AIzaSyBmmsiUH16a5EQ8gH--BdGu59kYXo3siYU')
+    .then(response => response.json())
+    .then(data => {
+        const languageDropdown = document.getElementById('languageDropdown');
+
+        // Mapeo de códigos de idioma a nombres de idioma
+        const languageNames = {
+            'es': 'Español',
+            'en': 'Inglés',  // Agrega más según sea necesario
+            // ...
+        };
+
+        // Iterar sobre los idiomas y agregarlos al dropdown
+        data.data.languages.forEach(language => {
+            const languageOption = document.createElement('a');
+            languageOption.href = '#';
+            
+            // Obtener el nombre del idioma del mapeo
+            const languageName = languageNames[language.language] || language.language;
+
+            languageOption.innerHTML = `
+                <img src="img/${language.language}.png" alt="${languageName}" class="option-icon">
+                ${languageName}
+            `;
+
+            languageOption.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                // Obtener el código del idioma seleccionado
+                const selectedLanguageCode = language.language;
+
+                // Llamar a la función para cambiar el idioma
+                cambiarIdioma(selectedLanguageCode);
+            });
+
+            languageDropdown.querySelector('.dropdown-content').appendChild(languageOption);
+        });
+    })
+    .catch(error => console.error('Error fetching languages:', error));
+        // Función para cambiar el idioma de la página
+        function cambiarIdioma(selectedLanguageCode) {
+            // Obtener todos los elementos que deseas traducir
+            const elementsToTranslate = document.querySelectorAll('[data-translate]');
+
+            // Iterar sobre los elementos y traducir su contenido
+            elementsToTranslate.forEach(element => {
+                // Obtener el texto original
+                const originalText = element.getAttribute('data-translate');
+
+                // Llamar a la API de Google Translate para obtener la traducción
+                fetch(`https://translate.googleapis.com/language/translate/v2?key=AIzaSyBmmsiUH16a5EQ8gH--BdGu59kYXo3siYU&source=es&target=${selectedLanguageCode}&q=${encodeURIComponent(originalText)}`)
+                    .then(response => response.json())
+                    .then(data => {
+                        // Actualizar el contenido del elemento con la traducción
+                        element.textContent = data.data.translations[0].translatedText;
+                        console.log('Código del idioma seleccionado:');
+                    })
+                    .catch(error => console.error('Error translating text:', error));
+            });
+        }
+
+        dropdownButton.addEventListener('click', function (e) {
+            // Prevenir el comportamiento predeterminado del clic en el botón
+            e.preventDefault();
+
+            // Alternar la visibilidad del contenido del menú desplegable
+            dropdownContent.style.display = (dropdownContent.style.display === 'block') ? 'none' : 'block';
+        });
     </script>
-   
+
     <script src="script.js"></script>
 
-    
+
     <script>
-        function capturarID(elemento){
+        function capturarID(elemento) {
             idCurso = elemento.getAttribute('id');
 
             localStorage.setItem("cursos", idCurso)
             console.log(idCurso);
-            
-            
-        
+
+
+
         }
     </script>
 </body>
+
 </html>
