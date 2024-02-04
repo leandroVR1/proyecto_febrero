@@ -208,6 +208,22 @@
         "MG8B",
         "72EQ"
       ]
+    },
+    {
+      "id": "_sc8d6we3o",
+      "name": "leo",
+      "lastname": "vargas",
+      "phone": "123",
+      "birthdate": "2024-02-01",
+      "country": "colombia",
+      "city": "medellin",
+      "gender": "masculino",
+      "email": "yeifry@g.com",
+      "password": "222222",
+      "misCursos": [
+        "MG8B",
+        "X2FT"
+      ]
     }
   ]
 }
