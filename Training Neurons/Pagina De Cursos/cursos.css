@@ -90,7 +90,7 @@ body {
     color: #D9ECFF;
 }
 
-.descripcion  {
+.descripcion {
     display: flex;
     justify-content: space-between;
     margin: 30px;
@@ -148,7 +148,13 @@ button {
     margin-right: 49px;
     font-size: 16px;
     background-color: #ffff;
+    overflow: hidden;
 }
-.icono2 img{
-    border-radius: 50%;
+
+.icono2 img {
+
+    width: 50px;
+    height: 40px;
+    /* Permite que la altura se ajuste automáticamente para mantener la proporción */
+
 }
