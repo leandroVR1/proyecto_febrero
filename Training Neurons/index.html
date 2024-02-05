@@ -39,9 +39,9 @@
         </div>
         <div class="botones">
             <a target="_blank" href="Inicio de Sesion/INICIO_SESION.html"><button id="btnIniciarSesion"
-                    class="btn1">Iniciar Sesion</button></a>
+                    class="btn1" data-translate="Iniciar Sesion">Iniciar Sesion</button></a>
             <a target="_blank" href="Registro/inicio.html"><button id="btnRegistrarse"
-                    class="btn2">Registrarse</button></a>
+                    class="btn2" data-translate="Registrarse">Registrarse</button></a>
         </div>
     </header>
 
@@ -57,14 +57,14 @@
             <a href="#" class="selected">
                 <div class="option">
                     <i class="fa-solid fa-house"></i>
-                    <h4>Inicio</h4>
+                    <h4 data-translate="Inicio">Inicio</h4>
                 </div>
             </a>
 
             <a href="./MisCursos/cursos.html">
                 <div class="option">
                     <i class="fa-solid fa-book"></i>
-                    <h4 data-translate="hola">Mis Cursos</h4>
+                    <h4 data-translate="Mis Cursos">Mis Cursos</h4>
                 </div>
             </a>
 
@@ -74,7 +74,7 @@
                 <div class="option">
                     <i class="fa-solid fa-phone"></i>
 
-                    <h4>Soporte</h4>
+                    <h4 data-translate="Soporte">Soporte</h4>
                 </div>
             </a>
 
@@ -87,18 +87,20 @@
                     <div class="dropdown" id="languageDropdown">
                         <button class="dropbtn">
                             <img src="img/earth-americas-solid(1).svg" alt="Icono" class="icon">
-                            <strong>Idioma</strong>
+                            <strong data-translate="Idioma">Idioma</strong>
                             <span class="arrow">&#9660;</span>
                         </button>
                         <div class="dropdown-content">
-                            <a href="#">
+                            <a id="spanishOption" href="#">
                                 <img src="img/espana.png" alt="Opción 1" class="option-icon">
                                 Español
                             </a>
-                            <a href="#">
+                            
+                            <a id="englishOption" href="#">
                                 <img src="img/estados-unidos-de-america.png" alt="Opción 2" class="option-icon">
                                 Inglés
                             </a>
+                            
                         </div>
                     </div>
                 </div>
@@ -116,7 +118,7 @@
                 </div>
                 <div class="option" id="cerrarSesionBtn" onclick="cerrarSesion()">
                     <i class="fa-solid fa-right-to-bracket"></i>
-                    <h4>Cerrar Sesión</h4>
+                    <h4 data-translate="Cerrar Sesión">Cerrar Sesión</h4>
                 </div>
             </div>
 
@@ -139,9 +141,9 @@
                     <div class="card">
                         <div class="img-wrapper"><img src="img/programacion.jpg" class="d-block w-100" alt="..."> </div>
                         <div class="card-body">
-                            <h5 class="card-title">Programacion</h5>
+                            <h5 data-translate="Programacion" class="card-title">Programacion</h5>
 
-                            <a id="desarollo" href="./Pagina De Cursos/cursos.html" class="btn btn-primary mt-3"
+                            <a  data-translate="Ver Cursos" id="desarollo" href="./Pagina De Cursos/cursos.html" class="btn btn-primary mt-3"
                                 onclick="capturarID(this)">Ver Cursos</a>
                         </div>
                     </div>
@@ -150,8 +152,8 @@
                     <div class="card">
                         <div class="img-wrapper"><img src="img/marketing.jpeg" class="d-block w-100" alt="..."> </div>
                         <div class="card-body">
-                            <h5 class="card-title">Marketing</h5>
-                            <a id="marketing" href="./Pagina De Cursos/cursos.html" class="btn btn-primary mt-3"
+                            <h5 data-translate="Marketing" class="card-title" >Marketing</h5>
+                            <a data-translate="Ver Cursos"id="marketing" href="./Pagina De Cursos/cursos.html" class="btn btn-primary mt-3"
                                 onclick="capturarID(this)">Ver Cursos</a>
                         </div>
                     </div>
@@ -160,9 +162,9 @@
                     <div class="card">
                         <div class="img-wrapper"><img src="img/fotografia.jpg" class="d-block w-100" alt="..."> </div>
                         <div class="card-body">
-                            <h5 class="card-title">Fotografia</h5>
+                            <h5 data-translate="Fotografia" class="card-title">Fotografia</h5>
 
-                            <a id="fotografia" href="./Pagina De Cursos/cursos.html" class="btn btn-primary mt-3"
+                            <a data-translate="Ver Cursos" id="fotografia" href="./Pagina De Cursos/cursos.html" class="btn btn-primary mt-3"
                                 onclick="capturarID(this)">Ver Cursos</a>
                         </div>
                     </div>
@@ -171,9 +173,9 @@
                     <div class="card">
                         <div class="img-wrapper"><img src="img/diseño.jpg" class="d-block w-100" alt="..."> </div>
                         <div class="card-body">
-                            <h5 class="card-title">Diseño</h5>
+                            <h5 data-translate="Diseño" class="card-title">Diseño</h5>
 
-                            <a id="diseño" href="./Pagina De Cursos/cursos.html" class="btn btn-primary mt-3"
+                            <a data-translate="Ver Cursos" id="diseño" href="./Pagina De Cursos/cursos.html" class="btn btn-primary mt-3"
                                 onclick="capturarID(this)">Ver Cursos</a>
                         </div>
                     </div>
@@ -182,9 +184,9 @@
                     <div class="card">
                         <div class="img-wrapper"><img src="img/finanzas.jpg" class="d-block w-100" alt="..."> </div>
                         <div class="card-body">
-                            <h5 class="card-title">Finanzas</h5>
+                            <h5 data-translate="Finanzas" class="card-title">Finanzas</h5>
 
-                            <a id="finanzas" href="./Pagina De Cursos/cursos.html" class="btn btn-primary mt-3"
+                            <a data-translate="Ver Cursos" id="finanzas" href="./Pagina De Cursos/cursos.html" class="btn btn-primary mt-3"
                                 onclick="capturarID(this)">Ver Cursos</a>
                         </div>
                     </div>
@@ -193,9 +195,9 @@
                     <div class="card">
                         <div class="img-wrapper"><img src="img/idiomas.jpg" class="d-block w-100" alt="..."> </div>
                         <div class="card-body">
-                            <h5 class="card-title">Idiomas</h5>
+                            <h5 data-translate="Idiomas" class="card-title">Idiomas</h5>
 
-                            <a id="idiomas" href="./Pagina De Cursos/cursos.html" class="btn btn-primary mt-3"
+                            <a data-translate="Ver Cursos" id="idiomas" href="./Pagina De Cursos/cursos.html" class="btn btn-primary mt-3"
                                 onclick="capturarID(this)">Ver Cursos</a>
                         </div>
                     </div>
@@ -205,9 +207,9 @@
                         <div class="img-wrapper"><img src="img/ciencia_datos.jpg" class="d-block w-100" alt="...">
                         </div>
                         <div class="card-body">
-                            <h5 class="card-title">Ciencia De Datos</h5>
+                            <h5 data-translate="Ciencia De Datos" class="card-title">Ciencia De Datos</h5>
 
-                            <a id="ciencia_datos" href="./Pagina De Cursos/cursos.html" class="btn btn-primary mt-3"
+                            <a data-translate="Ver Cursos" id="ciencia_datos" href="./Pagina De Cursos/cursos.html" class="btn btn-primary mt-3"
                                 onclick="capturarID(this)">Ver Cursos</a>
                         </div>
                     </div>
@@ -270,23 +272,23 @@
 
                                 </div>
                                 <div class="categoria">
-                                    <label for="">Diseño</label>
+                                    <label data-translate="Diseño" for="">Diseño</label>
                                 </div>
                             </div>
 
                             <div class="titulo">
-                                <h2>Arte y Humanidades</h2>
+                                <h2 data-translate="Arte y Humanidades">Arte y Humanidades</h2>
                             </div>
 
                             <div class="descripcion">
-                                <p>For athletes, high altitude produces two contradi effects on performance.</p>
+                                <p data-translate="For athletes, high altitude produces two contradi effects on performance.">For athletes, high altitude produces two contradi effects on performance.</p>
                             </div>
 
                             <div class="separacion"></div>
 
                             <div class="piedetarjeta">
                                 <div class="boton">
-                                    <button>Unirse</button>
+                                    <button data-translate="Unirse">Unirse</button>
                                 </div>
 
                                 <div class="icono2">
@@ -308,23 +310,23 @@
                                             data-curso="MG8B"></i></button>
                                 </div>
                                 <div class="categoria">
-                                    <label for="">Marketing</label>
+                                    <label data-translate="Marketing" for="">Marketing</label>
                                 </div>
                             </div>
 
                             <div class="titulo">
-                                <h2>Marketing Digital y Analítico</h2>
+                                <h2 data-translate="Marketing Digital y Analítico">Marketing Digital y Analítico</h2>
                             </div>
 
                             <div class="descripcion">
-                                <p>For athletes, high altitude produces two contradi effects on performance.</p>
+                                <p data-translate="For athletes, high altitude produces two contradi effects on performance.">For athletes, high altitude produces two contradi effects on performance.</p>
                             </div>
 
                             <div class="separacion"></div>
 
                             <div class="piedetarjeta">
                                 <div class="boton">
-                                    <button>Unirse</button>
+                                    <button data-translate="Unirse">Unirse</button>
                                 </div>
 
                                 <div class="icono2">
@@ -346,12 +348,12 @@
 
                                 </div>
                                 <div class="categoria">
-                                    <label for="">Programación</label>
+                                    <label data-translate="Programación" for="">Programación</label>
                                 </div>
                             </div>
 
                             <div class="titulo">
-                                <h2>Desarrollo web</h2>
+                                <h2 data-translate="Desarrollo web">Desarrollo web</h2>
                             </div>
 
                             <div class="descripcion">
@@ -362,7 +364,7 @@
 
                             <div class="piedetarjeta">
                                 <div class="boton">
-                                    <button>Unirse</button>
+                                    <button data-translate="Unirse">Unirse</button>
                                 </div>
 
                                 <div class="icono2">
@@ -388,12 +390,12 @@
 
                                 </div>
                                 <div class="categoria">
-                                    <label for="">Diseño</label>
+                                    <label data-translate="Diseño" for="">Diseño</label>
                                 </div>
                             </div>
 
                             <div class="titulo">
-                                <h2>Diseño gráfico</h2>
+                                <h2 data-translate="Diseño gráfico">Diseño gráfico</h2>
                             </div>
 
                             <div class="descripcion">
@@ -404,7 +406,7 @@
 
                             <div class="piedetarjeta">
                                 <div class="boton">
-                                    <button>Unirse</button>
+                                    <button data-translate="Unirse">Unirse</button>
                                 </div>
 
                                 <div class="icono2">
@@ -428,7 +430,7 @@
 
                                 </div>
                                 <div class="categoria">
-                                    <label for="">Psicología</label>
+                                    <label data-translate="Psicología" for="">Psicología</label>
                                 </div>
                             </div>
 
@@ -444,7 +446,7 @@
 
                             <div class="piedetarjeta">
                                 <div class="boton">
-                                    <button>Unirse</button>
+                                    <button data-translate="Unirse">Unirse</button>
                                 </div>
 
                                 <div class="icono2">
@@ -466,12 +468,12 @@
 
                                 </div>
                                 <div class="categoria">
-                                    <label for="">Programación</label>
+                                    <label data-translate="Programación" for="">Programación</label>
                                 </div>
                             </div>
 
                             <div class="titulo">
-                                <h2>Software IT</h2>
+                                <h2 data-translate="Software IT" >Software IT</h2>
                             </div>
 
                             <div class="descripcion">
@@ -482,7 +484,7 @@
 
                             <div class="piedetarjeta">
                                 <div class="boton">
-                                    <button>Unirse</button>
+                                    <button data-translate="Unirse">Unirse</button>
                                 </div>
 
                                 <div class="icono2">
@@ -546,6 +548,19 @@
             const dropdownButton = document.querySelector('.dropbtn');
             const dropdownContent = document.querySelector('.dropdown-content');
 
+
+            document.getElementById('spanishOption').addEventListener('click', function (e) {
+                e.preventDefault();
+                cambiarIdioma('es');
+            });
+    
+            // Agrega un event listener para el clic en la opción de inglés
+            document.getElementById('englishOption').addEventListener('click', function (e) {
+                e.preventDefault();
+                cambiarIdioma('en');
+            });
+
+
             dropdownButton.addEventListener('click', function (e) {
                 // Prevenir el comportamiento predeterminado del clic en el botón
                 e.preventDefault();
@@ -564,9 +579,7 @@
 
         // Mapeo de códigos de idioma a nombres de idioma
         const languageNames = {
-            'es': 'Español',
-            'en': 'Inglés',  // Agrega más según sea necesario
-            // ...
+            'af': 'Aleman'
         };
 
         // Iterar sobre los idiomas y agregarlos al dropdown
@@ -597,25 +610,38 @@
     })
     .catch(error => console.error('Error fetching languages:', error));
         // Función para cambiar el idioma de la página
+
+    // Obtener el usuario almacenado en localStorage
+
+let idiomaActual = 'es';  // Declarar la variable idiomaActual con un valor predeterminado
+
+// Resto del código...
+
+
+
         function cambiarIdioma(selectedLanguageCode) {
-            // Obtener todos los elementos que deseas traducir
-            const elementsToTranslate = document.querySelectorAll('[data-translate]');
-
-            // Iterar sobre los elementos y traducir su contenido
-            elementsToTranslate.forEach(element => {
-                // Obtener el texto original
-                const originalText = element.getAttribute('data-translate');
-
-                // Llamar a la API de Google Translate para obtener la traducción
-                fetch(`https://translate.googleapis.com/language/translate/v2?key=AIzaSyBmmsiUH16a5EQ8gH--BdGu59kYXo3siYU&source=es&target=${selectedLanguageCode}&q=${encodeURIComponent(originalText)}`)
-                    .then(response => response.json())
-                    .then(data => {
-                        // Actualizar el contenido del elemento con la traducción
-                        element.textContent = data.data.translations[0].translatedText;
-                        console.log('Código del idioma seleccionado:');
-                    })
-                    .catch(error => console.error('Error translating text:', error));
-            });
+            if (selectedLanguageCode !== 'es') {
+                const elementsToTranslate = document.querySelectorAll('[data-translate]');
+        
+                elementsToTranslate.forEach(element => {
+                    const originalText = element.getAttribute('data-translate');
+        
+                    fetch(`https://translate.googleapis.com/language/translate/v2?key=AIzaSyBmmsiUH16a5EQ8gH--BdGu59kYXo3siYU&source=${idiomaActual}&target=${selectedLanguageCode}&q=${encodeURIComponent(originalText)}`)
+                        .then(response => response.json())
+                        .then(data => {
+                            element.textContent = data.data.translations[0].translatedText;
+        
+                            // Actualiza el idioma actualy
+                            idiomaActual = selectedLanguageCode;
+                        })
+                        .catch(error => console.error('Error translating text:', error));
+                });
+            }
+        
+            // Si se selecciona español, actualiza la variable idiomaActual a 'es'
+            if (selectedLanguageCode === 'es') {
+                idiomaActual = 'es';
+            }
         }
 
         dropdownButton.addEventListener('click', function (e) {
