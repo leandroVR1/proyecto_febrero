@@ -37,12 +37,10 @@ main{
 header{
     width: calc(100% - 20px);
     height: 80px;
-    
     background-color: #022010;
     font-family: 'Lemon', serif;
     display: flex;
     justify-content: space-between;
-   
     align-items: center;
     position: fixed;
     top: 0;
@@ -248,6 +246,7 @@ header .btn2 {
     height: 100%;
 }
 
+
 .row {
     height: 100%;
 }
@@ -265,14 +264,18 @@ header .btn2 {
     padding: 1em;
 }
 
+.carousel{
+  
+    display: flex;
+
+}
 .carousel-inner {
     padding: 1em;
 }
 
  .carousel-inner .card {
-    margin: 0 0.5em;
-    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
-    border: solid black;
+    margin-right: 10px;
+    box-shadow: 2px 6px 8px 0 rgba(8, 8, 223, 0.18);
     border-radius: 20px;
     height: 350px;
     background:#2C2D2C;
@@ -292,7 +295,23 @@ header .btn2 {
 }
 
 .container2{
-    margin-top: 200px;
+    margin-top: 150px;
+   
+}
+.popular{
+    margin-top: 150px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    
+}
+.popular h2{
+    font-size: 80px;
+    font-family: 'Playfair Display', serif;
+}
+.row{
+   
+    height:600px;
 }
 
 
@@ -434,16 +453,7 @@ body.active {
 
 /*prueba*/
 
-.card{
-    display: flex;
-    margin: 20px;
-    width: 495px;
-    height: 468px;
-    border-radius: 30px;
-    border: 2px solid #3D4E64;
-    background: #020302;
-   
-}
+
 
 
 
