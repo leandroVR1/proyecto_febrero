@@ -44,9 +44,9 @@
         </div>
         <div class="botones">
             <a target="_blank" href="Inicio de Sesion/INICIO_SESION.html"><button id="btnIniciarSesion"
-                    class="btn1">Iniciar Sesion</button></a>
+                    class="btn1" data-translate="Iniciar Sesion">Iniciar Sesion</button></a>
             <a target="_blank" href="Registro/inicio.html"><button id="btnRegistrarse"
-                    class="btn2">Registrarse</button></a>
+                    class="btn2" data-translate="Registrarse">Registrarse</button></a>
         </div>
     </header>
 
@@ -60,19 +60,19 @@
         <div class="options__menu">
             <div class="options__menu">
 
-                <a href="#" class="selected">
-                    <div class="option">
-                        <i class="fa-solid fa-house"></i>
-                        <h4>Inicio</h4>
-                    </div>
-                </a>
+            <a href="#" class="selected">
+                <div class="option">
+                    <i class="fa-solid fa-house"></i>
+                    <h4 data-translate="Inicio">Inicio</h4>
+                </div>
+            </a>
 
-                <a href="./MisCursos/cursos.html">
-                    <div class="option">
-                        <i class="fa-solid fa-book"></i>
-                        <h4 data-translate="hola">Mis Cursos</h4>
-                    </div>
-                </a>
+            <a href="./MisCursos/cursos.html">
+                <div class="option">
+                    <i class="fa-solid fa-book"></i>
+                    <h4 data-translate="Mis Cursos">Mis Cursos</h4>
+                </div>
+            </a>
 
 
 
@@ -82,34 +82,36 @@
                     <div class="option">
                         <i class="fa-solid fa-phone"></i>
 
-                        <h4>Soporte</h4>
-                    </div>
-                </a>
+                    <h4 data-translate="Soporte">Soporte</h4>
+                </div>
+            </a>
 
 
 
 
                 <div class="pieNav">
 
-                    <div class="option">
-                        <div class="dropdown" id="languageDropdown">
-                            <button class="dropbtn">
-                                <img src="img/earth-americas-solid(1).svg" alt="Icono" class="icon">
-                                <strong>Idioma</strong>
-                                <span class="arrow">&#9660;</span>
-                            </button>
-                            <div class="dropdown-content">
-                                <a href="#">
-                                    <img src="img/espana.png" alt="Opción 1" class="option-icon">
-                                    Español
-                                </a>
-                                <a href="#">
-                                    <img src="img/estados-unidos-de-america.png" alt="Opción 2" class="option-icon">
-                                    Inglés
-                                </a>
-                            </div>
+                <div class="option">
+                    <div class="dropdown" id="languageDropdown">
+                        <button class="dropbtn">
+                            <img src="img/earth-americas-solid(1).svg" alt="Icono" class="icon">
+                            <strong data-translate="Idioma">Idioma</strong>
+                            <span class="arrow">&#9660;</span>
+                        </button>
+                        <div class="dropdown-content">
+                            <a id="spanishOption" href="#">
+                                <img src="img/espana.png" alt="Opción 1" class="option-icon">
+                                Español
+                            </a>
+                            
+                            <a id="englishOption" href="#">
+                                <img src="img/estados-unidos-de-america.png" alt="Opción 2" class="option-icon">
+                                Inglés
+                            </a>
+                            
                         </div>
                     </div>
+                </div>
 
 
                     <div class="option">
@@ -124,7 +126,7 @@
                     </div>
                     <div class="option" id="cerrarSesionBtn" onclick="cerrarSesion()">
                         <i class="fa-solid fa-right-to-bracket"></i>
-                        <h4>Cerrar Sesión</h4>
+                        <h4 data-translate="Cerrar Sesión">Cerrar Sesión</h4>
                     </div>
                 </div>
 
@@ -163,9 +165,9 @@
                     <div class="card">
                         <div class="img-wrapper"><img src="img/programacion.jpg" class="d-block w-100" alt="..."> </div>
                         <div class="card-body">
-                            <h5 class="card-title">Programacion</h5>
+                            <h5 data-translate="Programacion" class="card-title">Programacion</h5>
 
-                            <a id="desarrollo" href="./Pagina De Cursos/cursos.html" class="btn btn-primary mt-3"
+                            <a  data-translate="Ver Cursos" id="desarrollo" href="./Pagina De Cursos/cursos.html" class="btn btn-primary mt-3"
                                 onclick="capturarID(this)">Ver Cursos</a>
                         </div>
                     </div>
@@ -174,8 +176,8 @@
                     <div class="card">
                         <div class="img-wrapper"><img src="img/marketing.jpeg" class="d-block w-100" alt="..."> </div>
                         <div class="card-body">
-                            <h5 class="card-title">Marketing</h5>
-                            <a id="marketing" href="./Pagina De Cursos/cursos.html" class="btn btn-primary mt-3"
+                            <h5 data-translate="Marketing" class="card-title" >Marketing</h5>
+                            <a data-translate="Ver Cursos"id="marketing" href="./Pagina De Cursos/cursos.html" class="btn btn-primary mt-3"
                                 onclick="capturarID(this)">Ver Cursos</a>
                         </div>
                     </div>
@@ -184,9 +186,9 @@
                     <div class="card">
                         <div class="img-wrapper"><img src="img/fotografia.jpg" class="d-block w-100" alt="..."> </div>
                         <div class="card-body">
-                            <h5 class="card-title">Fotografia</h5>
+                            <h5 data-translate="Fotografia" class="card-title">Fotografia</h5>
 
-                            <a id="fotografia" href="./Pagina De Cursos/cursos.html" class="btn btn-primary mt-3"
+                            <a data-translate="Ver Cursos" id="fotografia" href="./Pagina De Cursos/cursos.html" class="btn btn-primary mt-3"
                                 onclick="capturarID(this)">Ver Cursos</a>
                         </div>
                     </div>
@@ -196,9 +198,9 @@
                         <div class="img-wrapper"><img src="/Training Neurons/Registro/img/ciencia_datos.jpg"
                                 class="d-block w-100" alt="..."> </div>
                         <div class="card-body">
-                            <h5 class="card-title">Ciencia de Datos</h5>
+                            <h5 data-translate="Diseño" class="card-title">Ciencia de Datos</h5>
 
-                            <a id="datos" href="./Pagina De Cursos/cursos.html" class="btn btn-primary mt-3"
+                            <a data-translate="Ver Cursos" id="datos" href="./Pagina De Cursos/cursos.html" class="btn btn-primary mt-3"
                                 onclick="capturarID(this)">Ver Cursos</a>
                         </div>
                     </div>
@@ -207,9 +209,9 @@
                     <div class="card">
                         <div class="img-wrapper"><img src="img\iafondo.webp" class="d-block w-100" alt="..."> </div>
                         <div class="card-body">
-                            <h5 class="card-title">I Artificial</h5>
+                            <h5 data-translate="Finanzas" class="card-title">I Artificial</h5>
 
-                            <a id="IA" href="./Pagina De Cursos/cursos.html" class="btn btn-primary mt-3"
+                            <a data-translate="Ver Cursos" id="IA" href="./Pagina De Cursos/cursos.html" class="btn btn-primary mt-3"
                                 onclick="capturarID(this)">Ver Cursos</a>
                         </div>
                     </div>
@@ -218,9 +220,9 @@
                     <div class="card">
                         <div class="img-wrapper"><img src="img/idiomas.jpg" class="d-block w-100" alt="..."> </div>
                         <div class="card-body">
-                            <h5 class="card-title">Idiomas</h5>
+                            <h5 data-translate="Idiomas" class="card-title">Idiomas</h5>
 
-                            <a id="idiomas" href="./Pagina De Cursos/cursos.html" class="btn btn-primary mt-3"
+                            <a data-translate="Ver Cursos" id="idiomas" href="./Pagina De Cursos/cursos.html" class="btn btn-primary mt-3"
                                 onclick="capturarID(this)">Ver Cursos</a>
                         </div>
                     </div>
@@ -285,23 +287,23 @@
 
                                 </div>
                                 <div class="categoria">
-                                    <label for="">Informatica</label>
+                                    <label data-translate="Diseño" for="">Informatica</label>
                                 </div>
                             </div>
 
                             <div class="titulo">
-                                <h2>Curso de NoSQL y DBaas</h2>
+                                <h2 data-translate="Arte y Humanidades">Curso de NoSQL y DBaas</h2>
                             </div>
 
                             <div class="descripcion">
-                                <p>El curso de NoSQL y DBaaS te sumerge en las bases de datos NoSQL y servicios DBaaS. Aprende modelos de datos, escalabilidad y gestión para potenciar soluciones en la era digital. Explora la flexibilidad y eficiencia de estas tecnologías en la gestión de datos.</p>
+                                <p data-translate=El curso de NoSQL y DBaaS te sumerge en las bases de datos NoSQL y servicios DBaaS. Aprende modelos de datos, escalabilidad y gestión para potenciar soluciones en la era digital. Explora la flexibilidad y eficiencia de estas tecnologías en la gestión de datos.</p>
                             </div>
 
                             <div class="separacion"></div>
 
                             <div class="piedetarjeta">
                                 <div class="boton">
-                                    <button onclick="window.location.href='https://cognitiveclass.ai/courses/introduction-nosql-dbaas#about-course'">Ir al curso</button>
+                                    <button data-translate="Unirse" onclick="window.location.href='https://cognitiveclass.ai/courses/introduction-nosql-dbaas#about-course'">Ir al curso</button>
                                 </div>
 
                                 <div class="icono2">
@@ -323,23 +325,23 @@
                                             data-curso="MG8B"></i></button>
                                 </div>
                                 <div class="categoria">
-                                    <label for="">Desarrollo</label>
+                                    <label data-translate="Desarrollo" for="">Desarrollo</label>
                                 </div>
                             </div>
 
                             <div class="titulo">
-                                <h2>Curso de Python Intermedio</h2>
+                                <h2 data-translate="Curso de Python Intermedio">Curso de Python Intermedio</h2>
                             </div>
 
                             <div class="descripcion">
-                                <p>El curso de Python Intermedio te lleva más allá de lo básico. Aprende sobre estructuras de datos avanzadas, manejo de archivos, y programación orientada a objetos. Domina la resolución de problemas y el desarrollo de aplicaciones más complejas en Python</p>
+                                <p data-translate="El curso de Python Intermedio te lleva más allá de lo básico. Aprende sobre estructuras de datos avanzadas, manejo de archivos, y programación orientada a objetos. Domina la resolución de problemas y el desarrollo de aplicaciones más complejas en Python">El curso de Python Intermedio te lleva más allá de lo básico. Aprende sobre estructuras de datos avanzadas, manejo de archivos, y programación orientada a objetos. Domina la resolución de problemas y el desarrollo de aplicaciones más complejas en Python</p>
                             </div>
 
                             <div class="separacion"></div>
 
                             <div class="piedetarjeta">
                                 <div class="boton">
-                                    <button onclick="window.location.href='https://www.sololearn.com/es/learn/courses/python-intermediate'">Ir al curso</button>
+                                    <button data-translate="Ir al curso" onclick="window.location.href='https://www.sololearn.com/es/learn/courses/python-intermediate'">Ir al curso</button>
                                 </div>
 
                                 <div class="icono2">
@@ -361,12 +363,12 @@
 
                                 </div>
                                 <div class="categoria">
-                                    <label for="">Marketing</label>
+                                    <label data-translate="Marketing" for="">Marketing</label>
                                 </div>
                             </div>
 
                             <div class="titulo">
-                                <h2>Curso de Marketing Digital</h2>
+                                <h2 data-translate="Curso de Marketing Digital">Curso de Marketing Digital</h2>
                             </div>
 
                             <div class="descripcion">
@@ -377,7 +379,7 @@
 
                             <div class="piedetarjeta">
                                 <div class="boton">
-                                    <button onclick="window.location.href='https://www.facebook.com/business/learn/courses/ads-manager#'">Ir al curso</button>
+                                    <button data-translate="Ir al curso" onclick="window.location.href='https://www.facebook.com/business/learn/courses/ads-manager#'">Ir al curso</button>
                                 </div>
 
                                 <div class="icono2">
@@ -405,12 +407,12 @@
     
                                 </div>
                                 <div class="categoria">
-                                    <label for="">Fotografia</label>
+                                    <label data-translate="Fotografia" for="">Fotografia</label>
                                 </div>
                             </div>
     
                             <div class="titulo">
-                                <h2>Curso de Diseño Grafico</h2>
+                                <h2 data-translate="Diseño gráfico">Curso de Diseño Grafico</h2>
                             </div>
     
                             <div class="descripcion">
@@ -421,7 +423,7 @@
     
                             <div class="piedetarjeta">
                                 <div class="boton">
-                                    <button onclick="window.location.href='https://edutin.com/curso-de-diseno-grafico-3995'">Ir al curso</button>
+                                    <button data-translate="Ir al curso" onclick="window.location.href='https://edutin.com/curso-de-diseno-grafico-3995'">Ir al curso</button>
                                 </div>
     
                                 <div class="icono2">
@@ -443,7 +445,7 @@
                                             data-curso="F2QR"></i></button>
                                 </div>
                                 <div class="categoria">
-                                    <label for="">Datos</label>
+                                    <label data-translate="Datos" for="">Datos</label>
                                 </div>
                             </div>
     
@@ -459,7 +461,7 @@
     
                             <div class="piedetarjeta">
                                 <div class="boton">
-                                    <button onclick="window.location.href='https://www.sololearn.com/es/learn/courses/python-introduction'">Ir al curso</button>
+                                    <button data-translate="Ir al curso" onclick="window.location.href='https://www.sololearn.com/es/learn/courses/python-introduction'">Ir al curso</button>
                                 </div>
     
                                 <div class="icono2">
@@ -481,12 +483,12 @@
     
                                 </div>
                                 <div class="categoria">
-                                    <label for="">IA</label>
+                                    <label data-translate="IA" for="">IA</label>
                                 </div>
                             </div>
     
                             <div class="titulo">
-                                <h2>Curso de Fundamentos Deep Learning </h2>
+                                <h2 data-translate="Curso de Fundamentos Deep Learning " >Curso de Fundamentos Deep Learning </h2>
                             </div>
     
                             <div class="descripcion">
@@ -497,7 +499,7 @@
     
                             <div class="piedetarjeta">
                                 <div class="boton">
-                                    <button onclick="window.location.href='https://cognitiveclass.ai/courses/introduction-deep-learning'   ">Ir al curso</button>
+                                    <button data-translate="Ir al curso" onclick="window.location.href='https://cognitiveclass.ai/courses/introduction-deep-learning'   ">Ir al curso</button>
                                 </div>
     
                                 <div class="icono2">
@@ -564,6 +566,19 @@
             const dropdownButton = document.querySelector('.dropbtn');
             const dropdownContent = document.querySelector('.dropdown-content');
 
+
+            document.getElementById('spanishOption').addEventListener('click', function (e) {
+                e.preventDefault();
+                cambiarIdioma('es');
+            });
+    
+            // Agrega un event listener para el clic en la opción de inglés
+            document.getElementById('englishOption').addEventListener('click', function (e) {
+                e.preventDefault();
+                cambiarIdioma('en');
+            });
+
+
             dropdownButton.addEventListener('click', function (e) {
                 // Prevenir el comportamiento predeterminado del clic en el botón
                 e.preventDefault();
@@ -580,12 +595,10 @@
             .then(data => {
                 const languageDropdown = document.getElementById('languageDropdown');
 
-                // Mapeo de códigos de idioma a nombres de idioma
-                const languageNames = {
-                    'es': 'Español',
-                    'en': 'Inglés',  // Agrega más según sea necesario
-                    // ...
-                };
+        // Mapeo de códigos de idioma a nombres de idioma
+        const languageNames = {
+            'af': 'Aleman'
+        };
 
                 // Iterar sobre los idiomas y agregarlos al dropdown
                 data.data.languages.forEach(language => {
@@ -615,25 +628,38 @@
             })
             .catch(error => console.error('Error fetching languages:', error));
         // Función para cambiar el idioma de la página
+
+    // Obtener el usuario almacenado en localStorage
+
+let idiomaActual = 'es';  // Declarar la variable idiomaActual con un valor predeterminado
+
+// Resto del código...
+
+
+
         function cambiarIdioma(selectedLanguageCode) {
-            // Obtener todos los elementos que deseas traducir
-            const elementsToTranslate = document.querySelectorAll('[data-translate]');
-
-            // Iterar sobre los elementos y traducir su contenido
-            elementsToTranslate.forEach(element => {
-                // Obtener el texto original
-                const originalText = element.getAttribute('data-translate');
-
-                // Llamar a la API de Google Translate para obtener la traducción
-                fetch(`https://translate.googleapis.com/language/translate/v2?key=AIzaSyBmmsiUH16a5EQ8gH--BdGu59kYXo3siYU&source=es&target=${selectedLanguageCode}&q=${encodeURIComponent(originalText)}`)
-                    .then(response => response.json())
-                    .then(data => {
-                        // Actualizar el contenido del elemento con la traducción
-                        element.textContent = data.data.translations[0].translatedText;
-                        console.log('Código del idioma seleccionado:');
-                    })
-                    .catch(error => console.error('Error translating text:', error));
-            });
+            if (selectedLanguageCode !== 'es') {
+                const elementsToTranslate = document.querySelectorAll('[data-translate]');
+        
+                elementsToTranslate.forEach(element => {
+                    const originalText = element.getAttribute('data-translate');
+        
+                    fetch(`https://translate.googleapis.com/language/translate/v2?key=AIzaSyBmmsiUH16a5EQ8gH--BdGu59kYXo3siYU&source=${idiomaActual}&target=${selectedLanguageCode}&q=${encodeURIComponent(originalText)}`)
+                        .then(response => response.json())
+                        .then(data => {
+                            element.textContent = data.data.translations[0].translatedText;
+        
+                            // Actualiza el idioma actualy
+                            idiomaActual = selectedLanguageCode;
+                        })
+                        .catch(error => console.error('Error translating text:', error));
+                });
+            }
+        
+            // Si se selecciona español, actualiza la variable idiomaActual a 'es'
+            if (selectedLanguageCode === 'es') {
+                idiomaActual = 'es';
+            }
         }
 
         dropdownButton.addEventListener('click', function (e) {
