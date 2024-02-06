@@ -102,7 +102,7 @@ let user = JSON.parse(userData3);
 // Extrae el ID del usuario
 let userId2 = user.id;
 
-function agregarCurso(cursoId) {
+function agregarCurso(id) {
   // Obtener el usuario almacenado en localStorage
   let userData = localStorage.getItem("user");
 
@@ -117,21 +117,21 @@ function agregarCurso(cursoId) {
       }
 
       // Obtener el ID del curso y verificar si ya está en la lista de "Mis Cursos"
-      if (!userObject.misCursos.includes(cursoId)) {
+      if (!userObject.misCursos.includes(id)) {
           // Si no está, agrégalo a la lista
-          userObject.misCursos.push(cursoId);
+          userObject.misCursos.push(id);
 
           // Actualizar el objeto del usuario en localStorage
           localStorage.setItem("user", JSON.stringify(userObject));
 
           
-          console.log('Curso agregado a Mis Cursos: ' + cursoId);
+          console.log('Curso agregado a Mis Cursos: ' + id);
 
           // Enviar la actualización al servidor con el ID del usuario
           enviarActualizacionAlServidor(userObject.userId, userObject);
       } else {
           // Si ya está en la lista, mostrar un mensaje  que ya se ha unido
-          console.log('Ya te has unido a este curso: ' + cursoId);
+          console.log('Ya te has unido a este curso: ' + id);
       }
   }
 }

@@ -143,36 +143,36 @@ let userId = user.id;
 
         if (userObject && userObject.misCursos && userObject.misCursos.length > 0) {
 
-            fetch('http://localhost:3000/course')
+            fetch('http://localhost:3000/categories')
                 .then(response => response.json())
-                .then(courses => { 
-                    let userCourses = courses.filter(course => userObject.misCursos.includes(course.id));
+                .then(categories => { 
+                    let userCourses = categories.filter(course => userObject.misCursos.includes(categories.id));
 
                     console.log("Cursos del usuario:", userCourses); // Agregamos esta línea para verificar los cursos del usuario
 
                     // Mostrar los cursos
-                    userCourses.forEach(course => {
+                    userCourses.forEach(categories => {
                         let cursoCard = document.createElement("div");
                         cursoCard.className = "col-md-4"; 
                     
                         cursoCard.innerHTML = `
-                            <div class="card" id="${course.id}">
+                            <div class="card" id="${categories.id}">
                                 <div class="content">
                                     <div class="encabezado">
-                                        <div class="icono" onclick="agregarCurso('${course.id}')">
-                                            <button id="boton${course.id}"><i class="fas fa-star" style="color: #f6d32d;"></i></button>
+                                        <div class="icono" onclick="agregarCurso('${categories.id}')">
+                                            <button id="boton${categories.id}"><i class="fas fa-star" style="color: #f6d32d;"></i></button>
                                         </div>
                                         <div class="categoria">
-                                            <label for="">${course.category}</label>
+                                            <label for="">${categories.categoria}</label>
                                         </div>
                                     </div>
                     
                                     <div class="titulo">
-                                        <h2>${course.title}</h2>
+                                        <h2>${categories.title}</h2>
                                     </div>
                     
                                     <div class="descripcion">
-                                        <p>${course.description}</p>
+                                        <p>${categories.description}</p>
                                     </div>
                     
                                     <div class="separacion"></div>

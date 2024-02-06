@@ -15,7 +15,7 @@ body {
     padding-right: 20px;
     transition: margin-left 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
     background: linear-gradient(180deg, #0FFE9A 0%, rgba(50, 114, 40, 0.00) 100%), rgba(60, 65, 64, 0.84);
-    border: solid black;
+  
 
 }
 
