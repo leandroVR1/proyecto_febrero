@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function () {
         console.log('Respuesta del servidor:', data);
 
         // Si los datos se envían correctamente al servidor, realiza la redirección
-        window.location.href = "http://127.0.0.1:5501/Training%20Neurons/index.html";
+        location.href = "./../index.html";
 
       })
       .catch(error => {
@@ -60,3 +60,8 @@ document.addEventListener('DOMContentLoaded', function () {
       });
   });
 });
+
+
+
+
+

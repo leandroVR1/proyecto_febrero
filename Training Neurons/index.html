@@ -1,40 +1,52 @@
-<!DOCTYPE html>
 <html lang="en">
+
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menú lateral responsive - MagtimusPro</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lemon&display=swap" rel="stylesheet">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Sixtyfour&display=swap"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lemon&family=Salsa&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=KoHo:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=KoHo:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
 
     <link rel="shortcut icon" href="img/logoSinFondo.png" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
 
+
+
     <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
 </head>
+
+
 <body id="body">
-    
+
+
     <header>
         <div class="inicio">
-        <div class="icon__menu">
-            <i class="fa-solid fa-bars" style="color: aliceblue;" id="btn_open"></i>
-        </div>
-        
-        <img style="margin-left: 50px;" class="logo" src="img/logoSinFondo.png" alt="">
-        <h1 class="title mt-2" style="font-size: 40px; color: #21B573;">Training Neurons</h1>
+            <div class="icon__menu">
+                <i class="fa-solid fa-bars" style="color: aliceblue;" id="btn_open"></i>
+            </div>
+
+            <img style="margin-left: 50px;" class="logo" src="img/logoSinFondo.png" alt="">
+            <h1 class="title mt-2" style="font-size: 40px; color: #21B573;">Training Neurons</h1>
         </div>
         <div class="botones">
-        <a target="_blank" href="Inicio de Sesion/INICIO_SESION.html"><button id="btnIniciarSesion" class="btn1">Iniciar Sesion</button></a>
-        <a target="_blank" href="Registro/inicio.html"><button  id="btnRegistrarse" class="btn2">Registrarse</button></a>
+            <a target="_blank" href="Inicio de Sesion/INICIO_SESION.html"><button id="btnIniciarSesion"
+                    class="btn1" data-translate="Iniciar Sesion">Iniciar Sesion</button></a>
+            <a target="_blank" href="Registro/Registro.html"><button id="btnRegistrarse"
+                    class="btn2" data-translate="Registrarse">Registrarse</button></a>
         </div>
     </header>
 
@@ -45,62 +57,118 @@
             <h4><span id="objUsuario"> </span></h4>
         </div>
 
-        <div class="options__menu">	
+       
+        <div class="options__menu">
 
             <a href="#" class="selected">
                 <div class="option">
                     <i class="fa-solid fa-house"></i>
-                    <h4>Inicio</h4>
+                    <h4 data-translate="Inicio">Inicio</h4>
                 </div>
             </a>
 
-            <a href="#">
+            <a href="./MisCursos/cursos.html">
                 <div class="option">
                     <i class="fa-solid fa-book"></i>
-                    <h4>Mis Cursos</h4>
+                    <h4 data-translate="Mis Cursos">Mis Cursos</h4>
                 </div>
             </a>
-            
+
+
+
+
+
+                <a href="#">
+                    <div class="option">
+                        <i class="fa-solid fa-phone"></i>
+
+                    <h4 data-translate="Soporte">Soporte</h4>
+                </div>
+            </a>
+
+
+
+
+                <div class="pieNav">
+
+                    <div class="option">
+                        <div class="dropdown" id="languageDropdown">
+                            <button class="dropbtn">
+                                <img src="img/earth-americas-solid(1).svg" alt="Icono" class="icon">
+                                <strong data-translate="Idioma">Idioma</strong>
+                                <span class="arrow">&#9660;</span>
+                            </button>
+                            <div class="dropdown-content">
+                                <a id="spanishOption" href="#">
+                                    <img src="img/espana.png" alt="Opción 1" class="option-icon">
+                                    Español
+                                </a>
+                                
+                                <a id="englishOption" href="#">
+                                    <img src="img/estados-unidos-de-america.png" alt="Opción 2" class="option-icon">
+                                    Inglés
+                                </a>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="option">
+                        <i id="sol-icon" class="fa-solid fa-sun"></i>
+                        <div class="toggle">
+                            <!-- <span>lightaaa mode</span>   -->
+
+                            <input type="checkbox" class="checkbox">
+                        </div>
+
+
+                    </div>
+                    <div class="option" id="cerrarSesionBtn" onclick="cerrarSesion()">
+                        <i class="fa-solid fa-right-to-bracket"></i>
+                        <h4 data-translate="Cerrar Sesión">Cerrar Sesión</h4>
+                    </div>
+                </div>
+
+            </div>
+           
        
 
-            <a href="#">
-                <div class="option">
-                    <i class="fa-solid fa-phone"></i>
-
-                    <h4>Soporte</h4>
-                </div>
-            </a>
-        
-            <div class="option">
-                <i id="sol-icon" class="fa-solid fa-sun"></i>
-                <div class="toggle">
-                    <!-- <span>light mode</span>   -->
-            
-                    <input type="checkbox" class="checkbox"> 
-                  </div>     
-
-                
-            </div>
-
-            
-
-        </div>
+    </div>
 
     </div>
 
     <main>
-      <!--   Carousel -->
+     
+        <!--   Carousel -->
         <div id="carouselExampleControls" class="carousel">
             <div class="carousel-inner">
-                    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+                <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+                    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+                    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+                    crossorigin="anonymous"></script>
+            
                 <div class="carousel-item active">
+                    <div class="card">
+                        <div class="img-wrapper"><img src="img/informatica.jpeg" class="d-block w-100" alt="..."> </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Informatica</h5>
+
+
+                            <a id="informatica" href="./Pagina De Cursos/cursos.html" class="btn btn-primary mt-3"
+                                onclick="capturarID(this)">Ver Cursos</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
                     <div class="card">
                         <div class="img-wrapper"><img src="img/programacion.jpg" class="d-block w-100" alt="..."> </div>
                         <div class="card-body">
-                            <h5 class="card-title">Programacion</h5>
-                           
-                            <a id="boton-categoria" href="./Pagina De Cursos/cursos.html" class="btn btn-primary mt-3">Ver Cursos</a>
+                            <h5 data-translate="Programacion" class="card-title">Programacion</h5>
+
+                            <a  data-translate="Ver Cursos" id="desarrollo" href="./Pagina De Cursos/cursos.html" class="btn btn-primary mt-3"
+                                onclick="capturarID(this)">Ver Cursos</a>
                         </div>
                     </div>
                 </div>
@@ -108,8 +176,9 @@
                     <div class="card">
                         <div class="img-wrapper"><img src="img/marketing.jpeg" class="d-block w-100" alt="..."> </div>
                         <div class="card-body">
-                            <h5 class="card-title">Marketing</h5>
-                            <a id="boton-categoria" href="./Pagina De Cursos/cursos.html" class="btn btn-primary mt-3">Ver Cursos</a>
+                            <h5 data-translate="Marketing" class="card-title" >Marketing</h5>
+                            <a data-translate="Ver Cursos"id="marketing" href="./Pagina De Cursos/cursos.html" class="btn btn-primary mt-3"
+                                onclick="capturarID(this)">Ver Cursos</a>
                         </div>
                     </div>
                 </div>
@@ -117,29 +186,33 @@
                     <div class="card">
                         <div class="img-wrapper"><img src="img/fotografia.jpg" class="d-block w-100" alt="..."> </div>
                         <div class="card-body">
-                            <h5 class="card-title">Fotografia</h5>
-                          
-                            <a id="boton-categoria" href="./Pagina De Cursos/cursos.html" class="btn btn-primary mt-3">Ver Cursos</a>
+                            <h5 data-translate="Fotografia" class="card-title">Fotografia</h5>
+
+                            <a data-translate="Ver Cursos" id="fotografia" href="./Pagina De Cursos/cursos.html" class="btn btn-primary mt-3"
+                                onclick="capturarID(this)">Ver Cursos</a>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="card">
-                        <div class="img-wrapper"><img src="img/diseño.jpg" class="d-block w-100" alt="..."> </div>
+                        <div class="img-wrapper"><img src="/Training Neurons/Registro/img/ciencia_datos.jpg"
+                                class="d-block w-100" alt="..."> </div>
                         <div class="card-body">
-                            <h5 class="card-title">Diseño</h5>
-                            
-                            <a id="boton-categoria" href="./Pagina De Cursos/cursos.html" class="btn btn-primary mt-3">Ver Cursos</a>
+                            <h5 data-translate="Ciencia de Datos" class="card-title">Ciencia de Datos</h5>
+
+                            <a data-translate="Ver Cursos" id="datos" href="./Pagina De Cursos/cursos.html" class="btn btn-primary mt-3"
+                                onclick="capturarID(this)">Ver Cursos</a>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="card">
-                        <div class="img-wrapper"><img src="img/finanzas.jpg" class="d-block w-100" alt="..."> </div>
+                        <div class="img-wrapper"><img src="img\iafondo.webp" class="d-block w-100" alt="..."> </div>
                         <div class="card-body">
-                            <h5 class="card-title">Finanzas</h5>
-                            
-                            <a id="boton-categoria" href="./Pagina De Cursos/cursos.html" class="btn btn-primary mt-3">Ver Cursos</a>
+                            <h5 data-translate="I Artificial" class="card-title">I Artificial</h5>
+
+                            <a data-translate="Ver Cursos" id="IA" href="./Pagina De Cursos/cursos.html" class="btn btn-primary mt-3"
+                                onclick="capturarID(this)">Ver Cursos</a>
                         </div>
                     </div>
                 </div>
@@ -147,42 +220,40 @@
                     <div class="card">
                         <div class="img-wrapper"><img src="img/idiomas.jpg" class="d-block w-100" alt="..."> </div>
                         <div class="card-body">
-                            <h5 class="card-title">Idiomas</h5>
-                          
-                            <a id="boton-categoria" href="./Pagina De Cursos/cursos.html" class="btn btn-primary mt-3">Ver Cursos</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="card">
-                        <div class="img-wrapper"><img src="img/ciencia_datos.jpg" class="d-block w-100" alt="..."> </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Ciencia De Datos</h5>
-                            
-                            <a id="boton-categoria" href="./Pagina De Cursos/cursos.html" class="btn btn-primary mt-3">Ver Cursos</a>
+                            <h5 data-translate="Idiomas" class="card-title">Idiomas</h5>
+
+                            <a data-translate="Ver Cursos" id="idiomas" href="./Pagina De Cursos/cursos.html" class="btn btn-primary mt-3"
+                                onclick="capturarID(this)">Ver Cursos</a>
                         </div>
                     </div>
                 </div>
                
+
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
 
- 
+
+
 
         </div>
-        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
 
-                  <!-- Script para recargar el carrusel cuando llega a la última imagen -->
+        <!-- Script para recargar el carrusel cuando llega a la última imagen -->
         <script>
-            $(document).ready(function() {
+            $(document).ready(function () {
                 $('#carouselExampleControls').on('slide.bs.carousel', function (e) {
                     var currentIndex = e.to;
                     var totalItems = $(this).find('.carousel-item').length;
@@ -194,252 +265,322 @@
                 });
             });
         </script>
-       
 
 
 
-       <!--  Cards -->
+        <div class="popular">
+            <h2>Destacados</h2>
+        </div>
 
-       <div class="container2" style="padding: 20px;">
-        <div class="row">
+        <!--  Cards -->
 
-            
-            <div class="col-md-4 ">
-             
+        <div class="container2" style="padding: 20px;">
+           
+            <div class="row">
 
-                <div class="card " id="JCGX">
-                    <div class="content">
-                        <div class="encabezado">
-                            <div class="icono" onclick="agregarCurso('JCGX')">
-                                <i class="fa-solid fa-star" style="color: #f6d32d;"></i>                               
+
+                <div class="col-md-4 ">
+
+                    <div class="card " id="1">
+                        <div class="content">
+                            <div class="encabezado">
+                                <div class="icono" onclick="agregarCurso('1')">
+                                    <button id="boton1"><i class="fa-solid fa-star" style="color: #f6d32d;"
+                                            data-curso="1"></i></button>
+
+                                </div>
+                                <div class="categoria">
+                                    <label data-translate="Informatica" for="">Informatica</label>
+                                </div>
                             </div>
-                            <div class="categoria">
-                                <label for="">Diseño</label>
+
+                            <div class="titulo">
+                                <h2 data-translate="Curso de NoSQL y DBaas">Curso de NoSQL y DBaas</h2>
                             </div>
-                        </div>
-            
-                        <div class="titulo">
-                            <h2>Arte y Humanidades</h2>
-                        </div>
-            
-                        <div class="descripcion">
-                            <p>For athletes, high altitude produces two contradi effects on performance.</p>
-                        </div>
-                        
-                        <div class="separacion"></div>
-            
-                        <div class="piedetarjeta">
-                            <div class="boton">
-                                <button>Unirse</button>
+
+                            <div class="descripcion">
+                                <p data-translate="El curso de NoSQL y DBaaS te sumerge en las bases de datos NoSQL y servicios DBaaS. Aprende modelos de datos, escalabilidad y gestión para potenciar soluciones en la era digital. Explora la flexibilidad y eficiencia de estas tecnologías en la gestión de datos.">El curso de NoSQL y DBaaS te sumerge en las bases de datos NoSQL y servicios DBaaS. Aprende modelos de datos, escalabilidad y gestión para potenciar soluciones en la era digital. Explora la flexibilidad y eficiencia de estas tecnologías en la gestión de datos.</p>
                             </div>
-            
-                            <div class="icono2">
-                                <img src="img/Icon.png" alt="">
+
+                            <div class="separacion"></div>
+
+                            <div class="piedetarjeta">
+                                <div class="boton">
+                                    <button data-translate="Ir al curso" onclick="window.location.href='https://cognitiveclass.ai/courses/introduction-nosql-dbaas#about-course'">Ir al curso</button>
+                                </div>
+
+                                <div class="icono2">
+                                    <img src="img/Icon.png" alt="">
+                                </div>
                             </div>
+
+
                         </div>
-                        
-            
                     </div>
                 </div>
-            </div>
-            
-            <div class="col-md-4 ">
-                <div class="card" id="MG8B">
-                    <div class="content">
-                        <div class="encabezado">
-                            <div class="icono" onclick="agregarCurso('MG8B')">
-                                <i class="fa-solid fa-star" style="color: #f6d32d;"></i>                               
+
+                <div class="col-md-4 ">
+                    <div class="card" id="2">
+                        <div class="content">
+                            <div class="encabezado">
+                                <div class="icono" onclick="agregarCurso('2')">
+                                    <button id="boton2"><i class="fa-solid fa-star" style="color: #f6d32d;"
+                                            data-curso="2"></i></button>
+                                </div>
+                                <div class="categoria">
+                                    <label data-translate="Desarrollo" for="">Desarrollo</label>
+                                </div>
                             </div>
-                            <div class="categoria">
-                                <label for="">Marketing</label>
+
+                            <div class="titulo">
+                                <h2 data-translate="Curso de Python Intermedio">Curso de Python Intermedio</h2>
                             </div>
-                        </div>
-            
-                        <div class="titulo">
-                            <h2>Marketing Digital y Analítico</h2>
-                        </div>
-            
-                        <div class="descripcion">
-                            <p>For athletes, high altitude produces two contradi effects on performance.</p>
-                        </div>
-                        
-                        <div class="separacion"></div>
-            
-                        <div class="piedetarjeta">
-                            <div class="boton">
-                                <button>Unirse</button>
+
+                            <div class="descripcion">
+                                <p data-translate="El curso de Python Intermedio te lleva más allá de lo básico. Aprende sobre estructuras de datos avanzadas, manejo de archivos, y programación orientada a objetos. Domina la resolución de problemas y el desarrollo de aplicaciones más complejas en Python">El curso de Python Intermedio te lleva más allá de lo básico. Aprende sobre estructuras de datos avanzadas, manejo de archivos, y programación orientada a objetos. Domina la resolución de problemas y el desarrollo de aplicaciones más complejas en Python</p>
                             </div>
-            
-                            <div class="icono2">
-                                <img src="img/IconMarketing.png" alt="">
+
+                            <div class="separacion"></div>
+
+                            <div class="piedetarjeta">
+                                <div class="boton">
+                                    <button data-translate="Ir al curso" onclick="window.location.href='https://www.sololearn.com/es/learn/courses/python-intermediate'">Ir al curso</button>
+                                </div>
+
+                                <div class="icono2">
+                                    <img src="img/IconProgramacion copy.png" alt="">
+                                </div>
                             </div>
+
+
                         </div>
-                        
-            
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4 ">
-                <div class="card" id="72EQ">
-                    <div class="content">
-                        <div class="encabezado">
-                            <div class="icono" onclick="agregarCurso('72EQ')">
-                                <i class="fa-solid fa-star" style="color: #f6d32d;"></i>                               
+                <div class="col-md-4 ">
+                    <div class="card" id="72EQ">
+                        <div class="content">
+                            <div class="encabezado">
+                                <div class="icono" onclick="agregarCurso('72EQ')">
+                                    <button id="boton72EQ"><i class="fa-solid fa-star" style="color: #f6d32d;"
+                                            data-curso="72EQ"></i></button>
+
+                                </div>
+                                <div class="categoria">
+                                    <label data-translate="Marketing" for="">Marketing</label>
+                                </div>
                             </div>
-                            <div class="categoria">
-                                <label for="">Programación</label>
+
+                            <div class="titulo">
+                                <h2 data-translate="Curso de Marketing Digital">Curso de Marketing Digital</h2>
                             </div>
-                        </div>
-            
-                        <div class="titulo">
-                            <h2>Desarrollo web</h2>
-                        </div>
-            
-                        <div class="descripcion">
-                            <p>For athletes, high altitude produces two contradi effects on performance.</p>
-                        </div>
-                        
-                        <div class="separacion"></div>
-            
-                        <div class="piedetarjeta">
-                            <div class="boton">
-                                <button>Unirse</button>
+
+                            <div class="descripcion">
+                                <p data-translate="El curso de Marketing Digital te sumerge en estrategias digitales clave. Aprende SEO, SEM, redes sociales y análisis de datos para potenciar la presencia online y aumentar la visibilidad de marcas y negocios. Domina técnicas efectivas para alcanzar audiencias y mejorar conversiones.">El curso de Marketing Digital te sumerge en estrategias digitales clave. Aprende SEO, SEM, redes sociales y análisis de datos para potenciar la presencia online y aumentar la visibilidad de marcas y negocios. Domina técnicas efectivas para alcanzar audiencias y mejorar conversiones.</p>
                             </div>
-            
-                            <div class="icono2">
-                                <img src="img/IconProgramacion.png" alt="">
+
+                            <div class="separacion"></div>
+
+                            <div class="piedetarjeta">
+                                <div class="boton">
+                                    <button data-translate="Ir al curso" onclick="
+                                    if(localStorage.getItem('user')){
+                                        alert('enlace usuario registrado')
+                                    }else{
+                                        alert('enlace login')
+                                    }
+                                     
+                                    //window.location.href='https://www.facebook.com/business/learn/courses/ads-manager#'
+                                    
+                                    ">Ir al curso</button>
+                                </div>
+
+                                <div class="icono2">
+                                    <img src="img/IconMarketing.png" alt="">
+                                </div>
                             </div>
+
+
                         </div>
-                        
-            
                     </div>
                 </div>
+
             </div>
+
+            <div class="row">
+                <div class="col-md-4 ">
+
+
+                    <div class="card " id="3JBT">
+                        <div class="content">
+                            <div class="encabezado">
+                                <div class="icono" onclick="agregarCurso('3JBT')">
+                                    <button id="botonJCGX"><i class="fa-solid fa-star" style="color: #f6d32d;"
+                                            data-curso="3JBT"></i></button>
+    
+                                </div>
+                                <div class="categoria">
+                                    <label data-translate="Fotografia" for="">Fotografia</label>
+                                </div>
+                            </div>
+    
+                            <div class="titulo">
+                                <h2 data-translate="Diseño gráfico">Curso de Diseño Grafico</h2>
+                            </div>
+    
+                            <div class="descripcion">
+                                <p data-translate="curso de Diseño Gráfico explora principios fundamentales y herramientas digitales. Aprende diseño de logotipos, tipografía y composición visual. Domina software como Adobe Illustrator y Photoshop para crear obras impactantes y profesionales"> curso de Diseño Gráfico explora principios fundamentales y herramientas digitales. Aprende diseño de logotipos, tipografía y composición visual. Domina software como Adobe Illustrator y Photoshop para crear obras impactantes y profesionales.</p>
+                            </div>
+    
+                            <div class="separacion"></div>
+    
+                            <div class="piedetarjeta">
+                                <div class="boton">
+                                    <button data-translate="Ir al curso" onclick="window.location.href='https://edutin.com/curso-de-diseno-grafico-3995'">Ir al curso</button>
+                                </div>
+    
+                                <div class="icono2">
+                                    <img src="" alt="">
+                                </div>
+                            </div>
+    
+    
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-md-4 ">
+                    <div class="card" id="F2QR">
+                        <div class="content">
+                            <div class="encabezado">
+                                <div class="icono" onclick="agregarCurso('F2QR')">
+                                    <button id="botonMG8B"><i class="fa-solid fa-star" style="color: #f6d32d;"
+                                            data-curso="F2QR"></i></button>
+                                </div>
+                                <div class="categoria">
+                                    <label data-translate="Datos" for="">Datos</label>
+                                </div>
+                            </div>
+    
+                            <div class="titulo">
+                                <h2 data-translate="Curso de Introduccion a Python para Data Science">Curso de Introduccion a Python para Data Science</h2>
+                            </div>
+    
+                            <div class="descripcion">
+                                <p data-translate="Fundamentos de programación y librerías como NumPy y Pandas para manipular y analizar datos. Domina técnicas básicas de visualización y preparación de datos para dar tus primeros pasos en Data Science" >fundamentos de programación y librerías como NumPy y Pandas para manipular y analizar datos. Domina técnicas básicas de visualización y preparación de datos para dar tus primeros pasos en Data Science</p>
+                            </div>
+    
+                            <div class="separacion"></div>
+    
+                            <div class="piedetarjeta">
+                                <div class="boton">
+                                    <button data-translate="Ir al curso" onclick="window.location.href='https://www.sololearn.com/es/learn/courses/python-introduction'">Ir al curso</button>
+                                </div>
+    
+                                <div class="icono2">
+                                    <img src="img/IconProgramacion copy.png" alt="">
+                                </div>
+                            </div>
+    
+    
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 ">
+                    <div class="card" id="X2FT">
+                        <div class="content">
+                            <div class="encabezado">
+                                <div class="icono" onclick="agregarCurso('X2FT')">
+                                    <button id="boton72EQ"><i class="fa-solid fa-star" style="color: #f6d32d;"
+                                            data-curso="X2FT"></i></button>
+    
+                                </div>
+                                <div class="categoria">
+                                    <label data-translate="IA" for="">IA</label>
+                                </div>
+                            </div>
+    
+                            <div class="titulo">
+                                <h2 data-translate="Curso de Fundamentos Deep Learning " >Curso de Fundamentos Deep Learning </h2>
+                            </div>
+    
+                            <div class="descripcion">
+                                <p data-translate="Curso de Fundamentos Deep Learning: Explora redes neuronales, optimización y aplicaciones prácticas en Python para comprender los fundamentos del deep learning.">Curso de Fundamentos Deep Learning: Explora redes neuronales, optimización y aplicaciones prácticas en Python para comprender los fundamentos del deep learning.</p>
+                            </div>
+    
+                            <div class="separacion"></div>
+    
+                            <div class="piedetarjeta">
+                                <div class="boton">
+                                    <button data-translate="Ir al curso" onclick="window.location.href='https://cognitiveclass.ai/courses/introduction-deep-learning'   ">Ir al curso</button>
+                                </div>
+    
+                                <div class="icono2">
+                                    <img src="img/IconMarketing.png" alt="">
+                                </div>
+                            </div>
+    
+    
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 ">
+                    <div class="card" id="111">
+                        <div class="content">
+                            <div class="encabezado">
+                                <div class="icono" onclick="agregarCurso('111')">
+                                    <button id="boton72EQ"><i class="fa-solid fa-star" style="color: #f6d32d;"
+                                            data-curso="111"></i></button>
+    
+                                </div>
+                                <div class="categoria">
+                                    <label data-translate="IA" for="">IA</label>
+                                </div>
+                            </div>
+    
+                            <div class="titulo">
+                                <h2 data-translate="Curso de Fundamentos Deep Learning " >Curso de Fundamentos Deep Learning </h2>
+                            </div>
+    
+                            <div class="descripcion">
+                                <p data-translate="Curso de Fundamentos Deep Learning: Explora redes neuronales, optimización y aplicaciones prácticas en Python para comprender los fundamentos del deep learning.">Curso de Fundamentos Deep Learning: Explora redes neuronales, optimización y aplicaciones prácticas en Python para comprender los fundamentos del deep learning.</p>
+                            </div>
+    
+                            <div class="separacion"></div>
+    
+                            <div class="piedetarjeta">
+                                <div class="boton">
+                                    <button data-translate="Ir al curso" onclick="window.location.href='https://cognitiveclass.ai/courses/introduction-deep-learning'   ">Ir al curso</button>
+                                </div>
+    
+                                <div class="icono2">
+                                    <img src="img/IconMarketing.png" alt="">
+                                </div>
+                            </div>
+    
+    
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            
 
         </div>
 
-            <div class="row mt-3">
-            <div class="col-md-4">
-                <div class="card" id="3JBT">
-                    <div class="content">
-                        <div class="encabezado">
-                            <div class="icono" onclick="agregarCurso('3JBT')">
-                                <i class="fa-solid fa-star" style="color: #f6d32d;"></i>                               
-                            </div>
-                            <div class="categoria">
-                                <label for="">Diseño</label>
-                            </div>
-                        </div>
-            
-                        <div class="titulo">
-                            <h2>Diseño gráfico</h2>
-                        </div>
-            
-                        <div class="descripcion">
-                            <p>For athletes, high altitude produces two contradi effects on performance.</p>
-                        </div>
-                        
-                        <div class="separacion"></div>
-            
-                        <div class="piedetarjeta">
-                            <div class="boton">
-                                <button>Unirse</button>
-                            </div>
-            
-                            <div class="icono2">
-                                <img src="img/Icon.png" alt="">
-                            </div>
-                        </div>
-                        
-            
-                    </div>
-                </div>
-            </div> 
-        
-       
-            <div class="col-md-4">
-                <div class="card" id="F2QR">
-                    <div class="content">
-                        <div class="encabezado">
-                            <div class="icono" onclick="agregarCurso('F2QR')">
-                                <i class="fa-solid fa-star" style="color: #f6d32d;"></i>                               
-                            </div>
-                            <div class="categoria">
-                                <label for="">Psicología</label>
-                            </div>
-                        </div>
-            
-                        <div class="titulo">
-                            <h2>Personal Developmen</h2>
-                        </div>
-            
-                        <div class="descripcion">
-                            <p>For athletes, high altitude produces two contradi effects on performance.</p>
-                        </div>
-                        
-                        <div class="separacion"></div>
-            
-                        <div class="piedetarjeta">
-                            <div class="boton">
-                                <button>Unirse</button>
-                            </div>
-            
-                            <div class="icono2">
-                                <img src="img/IconPsicologia.png" alt="">
-                            </div>
-                        </div>
-                        
-            
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card" id="X2FT">
-                    <div class="content">
-                        <div class="encabezado">
-                            <div class="icono" onclick="agregarCurso('X2FT')">
-                                <i class="fa-solid fa-star" style="color: #f6d32d;"></i>                               
-                            </div>
-                            <div class="categoria">
-                                <label for="">Programación</label>
-                            </div>
-                        </div>
-            
-                        <div class="titulo">
-                            <h2>Software IT</h2>
-                        </div>
-            
-                        <div class="descripcion">
-                            <p>For athletes, high altitude produces two contradi effects on performance.</p>
-                        </div>
-                        
-                        <div class="separacion"></div>
-            
-                        <div class="piedetarjeta">
-                            <div class="boton">
-                                <button>Unirse</button>
-                            </div>
-            
-                            <div class="icono2">
-                                <img src="img/IconProgramacion.png" alt="">
-                            </div>
-                        </div>
-                        
-            
-                    </div>
-                </div>
-            </div>
-            </div>
-           
-            
-        
-       </div>
+
+        </div>
+
+
+
+    </div>
 
     </main>
     <script>
         // Obtener el usuario almacenado en localStorage
         let userData = localStorage.getItem("user");
-
+        let cerrarSesionBtn = document.getElementById("cerrarSesionBtn");
         // Verificar si el usuario existe
         if (userData) {
             // Parsear el JSON para obtener el objeto del usuario
@@ -454,14 +595,152 @@
             if (btnIniciarSesion) {
                 console.log("entrando al condicional")
                 btnIniciarSesion.style.display = 'none';
-              }
-        
-              if (btnRegistrarse) {
+            }
+
+            if (btnRegistrarse) {
                 btnRegistrarse.style.display = 'none';
-              }
+            }
+
+        } else {
+            // Ocultar el botón de cerrar sesión
+            cerrarSesionBtn.style.display = 'none';
         }
-        console.log(localStorage.getItem("user"));
+        function cerrarSesion() {
+            // Limpiar localStorage
+            localStorage.clear();
+
+            // Redirigir a la página principal
+            window.location.href = "http://127.0.0.1:5501/Training%20Neurons/index.html";
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const dropdownButton = document.querySelector('.dropbtn');
+            const dropdownContent = document.querySelector('.dropdown-content');
+
+
+            document.getElementById('spanishOption').addEventListener('click', function (e) {
+                e.preventDefault();
+                cambiarIdioma('es');
+            });
+    
+            // Agrega un event listener para el clic en la opción de inglés
+            document.getElementById('englishOption').addEventListener('click', function (e) {
+                e.preventDefault();
+                cambiarIdioma('en');
+            });
+
+
+            dropdownButton.addEventListener('click', function (e) {
+                // Prevenir el comportamiento predeterminado del clic en el botón
+                e.preventDefault();
+
+                // Alternar la visibilidad del contenido del dropdown
+                dropdownContent.style.display = (dropdownContent.style.display === 'block') ? 'none' : 'block';
+            });
+        });
+
+
+        // Obtener la lista de idiomas desde la API de Google Translate
+        fetch('https://translate.googleapis.com/language/translate/v2/languages?key=AIzaSyBmmsiUH16a5EQ8gH--BdGu59kYXo3siYU')
+            .then(response => response.json())
+            .then(data => {
+                const languageDropdown = document.getElementById('languageDropdown');
+
+        // Mapeo de códigos de idioma a nombres de idioma
+        const languageNames = {
+            'af': 'Aleman'
+        };
+
+                // Iterar sobre los idiomas y agregarlos al dropdown
+                data.data.languages.forEach(language => {
+                    const languageOption = document.createElement('a');
+                    languageOption.href = '#';
+
+                    // Obtener el nombre del idioma del mapeo
+                    const languageName = languageNames[language.language] || language.language;
+
+                    languageOption.innerHTML = `
+                <img src="img/${language.language}.png" alt="${languageName}" class="option-icon">
+                ${languageName}
+            `;
+
+                    languageOption.addEventListener('click', function (e) {
+                        e.preventDefault();
+
+                        // Obtener el código del idioma seleccionado
+                        const selectedLanguageCode = language.language;
+
+                        // Llamar a la función para cambiar el idioma
+                        cambiarIdioma(selectedLanguageCode);
+                    });
+
+                    languageDropdown.querySelector('.dropdown-content').appendChild(languageOption);
+                });
+            })
+            .catch(error => console.error('Error fetching languages:', error));
+        // Función para cambiar el idioma de la página
+
+    // Obtener el usuario almacenado en localStorage
+
+let idiomaActual = 'es';  // Declarar la variable idiomaActual con un valor predeterminado
+
+// Resto del código...
+
+
+
+        function cambiarIdioma(selectedLanguageCode) {
+            if (selectedLanguageCode !== 'es') {
+                const elementsToTranslate = document.querySelectorAll('[data-translate]');
+        
+                elementsToTranslate.forEach(element => {
+                    const originalText = element.getAttribute('data-translate');
+        
+                    fetch(`https://translate.googleapis.com/language/translate/v2?key=AIzaSyBmmsiUH16a5EQ8gH--BdGu59kYXo3siYU&source=${idiomaActual}&target=${selectedLanguageCode}&q=${encodeURIComponent(originalText)}`)
+                        .then(response => response.json())
+                        .then(data => {
+                            element.textContent = data.data.translations[0].translatedText;
+        
+                            // Actualiza el idioma actualy
+                            idiomaActual = selectedLanguageCode;
+                        })
+                        .catch(error => console.error('Error translating text:', error));
+                });
+            }
+        
+            // Si se selecciona español, actualiza la variable idiomaActual a 'es'
+            if (selectedLanguageCode === 'es') {
+                idiomaActual = 'es';
+            }
+        }
+
+        dropdownButton.addEventListener('click', function (e) {
+            // Prevenir el comportamiento predeterminado del clic en el botón
+            e.preventDefault();
+
+            // Alternar la visibilidad del contenido del menú desplegable
+            dropdownContent.style.display = (dropdownContent.style.display === 'block') ? 'none' : 'block';
+        });
     </script>
+
     <script src="script.js"></script>
+
+
+
+    <!--funtion para capturar el valor del id de los botones con getattribute y hay que guardarlo en local store para poder usarlo ya que toca traer ese valor 
+    en el js donde esta la logica para cargar las tarjetas -->
+    <script>
+        function capturarID(elemento) {
+            idCurso = elemento.getAttribute('id');
+
+            localStorage.setItem("cursos", id)
+            console.log(id);
+
+
+
+        }
+    </script>
 </body>
+
 </html>
+
+
