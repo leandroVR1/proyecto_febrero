@@ -730,13 +730,12 @@ let idiomaActual = 'es';  // Declarar la variable idiomaActual con un valor pred
     en el js donde esta la logica para cargar las tarjetas -->
     <script>
         function capturarID(elemento) {
+          
             idCurso = elemento.getAttribute('id');
+          
 
-            localStorage.setItem("cursos", id)
-            console.log(id);
-
-
-
+            localStorage.setItem("cursos", idCurso)
+            
         }
     </script>
 </body>

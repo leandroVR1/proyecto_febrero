@@ -3,8 +3,6 @@ var container = document.createElement('div');
 container.classList.add('container2');
 root.appendChild(container);
 
-
-
 var row = document.createElement('div');
 row.classList.add('row', 'mt-5');
 container.appendChild(row)
@@ -24,14 +22,15 @@ function cargarDatos() {
 
 function cargarTargetas() {
     let idCurso = localStorage.getItem('cursos');//codigo para traer lo que esta guardado en el local 
+    console.log(idCurso);
 
 
     filtro = datos.filter(function (dato) {
         return dato.categoria == idCurso;
     });
-
+     console.log(filtro);
     filtro.forEach((dato) => {
-
+        console.log(dato.categoria);
         let col = document.createElement('div')
         col.classList.add('col-md-4');
         row.appendChild(col);
