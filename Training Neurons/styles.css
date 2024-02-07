@@ -532,6 +532,18 @@ body.active {
     align-items: center;
     margin: 20px;
 }
+@media screen and (max-width: 992px) {
+    .container2 .card {
+        width: calc(50% - 40px); /* Ajustar el ancho de las tarjetas en pantallas más pequeñas */
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .container2 .card {
+        width: calc(100% - 40px); /* Ajustar el ancho de las tarjetas en dispositivos móviles */
+    }
+}
+
 
 button{
     width: 161px;

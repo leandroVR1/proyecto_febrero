@@ -1,68 +1,3 @@
-//Ejecutar función en el evento click
-document.getElementById("btn_open").addEventListener("click", open_close_menu);
-
-//Declaramos variables
-var side_menu = document.getElementById("menu_side");
-var btn_open = document.getElementById("btn_open");
-var body = document.getElementById("body");
-
-//Evento para mostrar y ocultar menú
-    function open_close_menu(){
-        body.classList.toggle("body_move");
-        side_menu.classList.toggle("menu__side_move");
-    }
-
-//Si el ancho de la página es menor a 760px, ocultará el menú al recargar la página
-//esto es una prueba
-
-if (window.innerWidth < 760){
-
-    body.classList.add("body_move");
-    side_menu.classList.add("menu__side_move");
-}
-
-//Haciendo el menú responsive(adaptable)
-
-window.addEventListener("resize", function(){
-
-    if (window.innerWidth > 760){
-
-        body.classList.remove("body_move");
-        side_menu.classList.remove("menu__side_move");
-    }
-
-    if (window.innerWidth < 760){
-
-        body.classList.add("body_move");
-        side_menu.classList.add("menu__side_move");
-    }
-
-});
-
-
-//toggle
-const toggle = document.querySelector('.checkbox');
-const solIcon = document.getElementById('sol-icon');
- body = document.querySelector('body');
-
-
-toggle.addEventListener('click', () => {
-    body.classList.toggle('active');
-    toggle.addEventListener('change', function () {
-      // Si el checkbox está marcado, cambia el ícono a la luna, de lo contrario, vuelve al sol
-      if (toggle.checked) {
-          solIcon.classList.remove('fa-sun');
-          solIcon.classList.add('fa-moon');
-      } else {
-          solIcon.classList.remove('fa-moon');
-          solIcon.classList.add('fa-sun');
-      }
-  });
-    
-
-});
-
-
 
 
 
@@ -71,12 +6,6 @@ let root = document.getElementById('root');
 var container = document.createElement('div');
 container.classList.add('container2');
 root.appendChild(container);
-
-
-
-var row = document.createElement('div');
-row.classList.add('row', 'mt-5');
-container.appendChild(row)
 
 let apiCursos = "http://localhost:3000/categories";
 let datos = [];
@@ -92,107 +21,130 @@ function cargarDatos() {
 }
 
 function cargarTargetas() {
-    let idCurso = localStorage.getItem('cursos');//codigo para traer lo que esta guardado en el local 
+    let idCurso = localStorage.getItem('cursos');
     console.log(idCurso);
 
-    filtro = datos.filter(function (dato) {
+    let userCourses = datos.filter(function (dato) {
         return dato.categoria == idCurso;
     });
 
-    filtro.forEach((dato) => {
-        console.log(dato.categoria);
-        let col = document.createElement('div')
-        col.classList.add('col-md-4');
-        row.appendChild(col);
+    container.innerHTML = '';
 
-        let card = document.createElement('div')
-        card.classList.add('card')
-        card.style.marginRight = '20px';
-        col.appendChild(card)
+    let row = document.createElement('div');
+    row.classList.add('row', 'mt-5');
+    container.appendChild(row);
 
-        let content = document.createElement('div')
-        content.classList.add("content")
-        card.appendChild(content)
+    userCourses.forEach(categories => {
+        let cursoCard = document.createElement("div");
+        cursoCard.className = "col-md-4"; 
 
-        let encabezado = document.createElement('div')
-        encabezado.classList.add('encabezado')
-        content.appendChild(encabezado)
+        cursoCard.innerHTML = `
+            <div class="card" id="${categories.id}">
+                <div class="content">
+                    <div class="encabezado">
+                        <div class="icono" onclick="agregarCurso('${categories.id}')">
+                            <button id="boton${categories.id}"><i class="fas fa-star" style="color: #f6d32d;"></i></button>
+                        </div>
+                        <div class="categoria">
+                            <label for="">${categories.categoria}</label>
+                        </div>
+                    </div>
 
-        let icono = document.createElement('div')
-        icono.classList.add('icono')
-        encabezado.appendChild(icono)
+                    <div class="titulo">
+                        <h2>${categories.title}</h2>
+                    </div>
 
-        let i = document.createElement('i')
-        i.classList.add('fa-solid', 'fa-star')
-        i.style.color = '#f6d32d';
-        icono.appendChild(i)
+                    <div class="descripcion">
+                        <p>${categories.description}</p>
+                    </div>
 
-        let categoria = document.createElement('div')
-        categoria.classList.add('categoria')
-        categoria.id = ('categoria')
-        encabezado.appendChild(categoria)
+                    <div class="separacion"></div>
 
-        let label = document.createElement('label')
-        label.innerText = dato.categoria;
-        label.setAttribute('for', 'categoria')
-        categoria.appendChild(label);
+                    <div class="piedetarjeta">
+                        <div class="boton">
+                            <button onclick="redirigir('${categories.website}')">Unirse</button>
+                        </div>
 
-        let title = document.createElement('div')
-        title.classList.add('titulo')
-        content.appendChild(title)
+                        <div class="icono2">
+                            <img src="./../img/IconPsicologia.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `;
 
-        let h2 = document.createElement('h2')
-        h2.innerText = dato.title
-        title.appendChild(h2)
+        cursoCard.querySelector('.boton button').onclick = function () {
+            redirigir(categories.website);
+        };
 
-        let description = document.createElement('div')
-        description.classList.add('descripcion')
-        content.appendChild(description)
-
-        let p = document.createElement('p')
-        p.innerText = dato.description;
-        description.appendChild(p);
-
-        let separacion = document.createElement('div')
-        separacion.classList.add('separacion')
-        content.appendChild(separacion);
-
-        let pieTarjeta = document.createElement('div')
-        pieTarjeta.classList.add('pietarjeta')
-        content.appendChild(pieTarjeta)
-
-
-        let button = document.createElement("button");
-        button.classList.add('boton');
-        button.style.border = "none";
-        button.innerText = "Ir al curso";
-        pieTarjeta.appendChild(button);
-
-        let icono2 = document.createElement('div')
-        icono2.classList.add('icono2')
-        pieTarjeta.appendChild(icono2)
-
-
-        let img = document.createElement('img')
-        img.classList.add('img-fluid')
-        img.setAttribute('src', `${dato.img}`);
-        icono2.appendChild(img)
-
-
-
-
-        button.onclick = function () {
-            redirigir(dato.website);
-
-        }
-
-
-        container.appendChild(row);
-    })
-
+        row.appendChild(cursoCard);
+    });
 }
+
 function redirigir(url) {
     window.open(url, "_blank");
 }
 
 cargarDatos();
+
+let userData3 = localStorage.getItem("user");
+let user = JSON.parse(userData3);
+
+// Extrae el ID del usuario
+let userId2 = user.id;
+
+function agregarCurso(cursoId) {
+  // Obtener el usuario almacenado en localStorage
+  let userData = localStorage.getItem("user");
+
+  // Verificar si el usuario existe
+  if (userData) {
+      // Parsear el JSON para obtener el objeto del usuario
+      let userObject = JSON.parse(userData);
+
+      // Verificar si el campo misCursos existe en el objeto del usuario
+      if (!userObject.misCursos) {
+          userObject.misCursos = []; // Inicializar misCursos como un array si no existe
+      }
+
+      // Obtener el ID del curso y verificar si ya está en la lista de "Mis Cursos"
+      if (!userObject.misCursos.includes(cursoId)) {
+          // Si no está, agrégalo a la lista
+          userObject.misCursos.push(cursoId);
+
+          // Actualizar el objeto del usuario en localStorage
+          localStorage.setItem("user", JSON.stringify(userObject));
+
+          
+          console.log('Curso agregado a Mis Cursos: ' + cursoId);
+
+          // Enviar la actualización al servidor con el ID del usuario
+          enviarActualizacionAlServidor(userObject.userId, userObject);
+      } else {
+          // Si ya está en la lista, mostrar un mensaje  que ya se ha unido
+          console.log('Ya te has unido a este curso: ' + cursoId);
+      }
+  }
+}
+
+// Función para enviar la actualización al servidor con el ID del usuario
+function enviarActualizacionAlServidor(userId, userObject) {
+  // Utilizar fetch para enviar la actualización al servidor
+  fetch('http://localhost:3000/users/' + userId2, {  
+      method: 'PUT', // 
+      headers: {
+          'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(userObject),
+  })
+      .then(response => {
+          if (!response.ok) {
+              throw new Error('Error al actualizar datos en el servidor');
+          }
+          
+          return response.json();
+      })
+      .catch(error => {
+          console.error('Error:', error);
+      });
+}

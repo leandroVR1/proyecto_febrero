@@ -36,54 +36,48 @@ header{
 }
 
 /*Cards*/
-.btnCards {
-    background-color: #21B573;
-    /*border: none;*/
-    border-radius: 45px;
-    color: whitesmoke;
-    border: solid black;
-
+.container2 .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch; /* Ajustar la altura de las tarjetas */
 }
 
-
-.card {
+.container2 .card {
     display: flex;
     flex-direction: column;
-    /* Para que los elementos internos se apilen verticalmente */
-    margin: 20px;
-    width: 100%;
-    /* O cualquier otro valor que desees */
-    max-width: 495px;
-    height: 750px;
+    width: 100%; /* Ajustar el ancho de las tarjetas */
+    margin: 20px 0;
     border-radius: 30px;
     border: 2px solid #3D4E64;
     background: #2C2D2C;
-    align-items: stretch;
-
+    min-height: 400px; /* Altura mínima de las tarjetas */
 }
 
-.encabezado {
+@media screen and (max-width: 992px) {
+    .container2 .card {
+        width: calc(50% - 40px); /* Ajustar el ancho de las tarjetas en pantallas más pequeñas */
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .container2 .card {
+        width: calc(100% - 40px); /* Ajustar el ancho de las tarjetas en dispositivos móviles */
+    }
+}
+
+
+.encabezado{
     display: flex;
     justify-content: space-between;
     margin: 30px;
 
 }
 
-.icono {
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 39px;
-    height: 36px;
-    border-radius: 50%;
-    font-size: 16px;
-    background-color: #24D198;
 
-}
-
-.categoria {
-    display: flex;
+.categoria{
+    display:flex ;
     justify-content: center;
     width: 122px;
     height: 33px;
@@ -96,18 +90,18 @@ header{
     line-height: 28px;
 }
 
-.titulo {
+.titulo{
     display: flex;
     justify-content: space-between;
     margin: 30px;
     font-size: 30px;
     font-weight: 700;
     font-weight: 700;
-    line-height: 40px;
+    line-height: 40px; 
     color: #D9ECFF;
 }
 
-.descripcion {
+.descripcion{
     display: flex;
     justify-content: space-between;
     margin: 30px;
@@ -116,46 +110,44 @@ header{
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
-    line-height: 28px;
-    /* 155.556% */
+    line-height: 28px; /* 155.556% */
 }
 
-.separacion {
+.separacion{
     margin: 30px;
-    width: 457px;
+    width: 100;
     height: 1px;
     background: rgba(218, 218, 247, 0.30);
 }
-
-.boton {
+.boton{
     margin: 30px;
 }
 
-.pietarjeta {
-
+.piedetarjeta{
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
-
+    align-items: center;
+    margin: 20px;
 }
 
-button {
+button{
     width: 161px;
     height: 58px;
     border-radius: 47px;
     background: #21B573;
     border: none;
+   
     /*text*/
     color: #ffff;
     font-size: 22px;
     font-style: normal;
     font-weight: 700;
     line-height: 28px;
-
+    
 }
 
-.icono2 {
-
+.icono2{
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -165,15 +157,17 @@ button {
     margin-right: 49px;
     font-size: 16px;
     background-color: #ffff;
-    overflow: hidden;
 }
-
-.icono2 img {
-
-    width: 50px;
-    height: 40px;
-    /* Permite que la altura se ajuste automáticamente para mantener la proporción */
-
+.icono button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 39px;
+    height: 36px;
+    border-radius: 50%;
+    font-size: 16px;
+    background-color: #24D198;
+    
 }
 
 .inicio{
@@ -201,6 +195,21 @@ button {
   }
 
 
+
+.icon__menu{
+    width: 50px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(10px);
+}
+
+.icon__menu i{
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute;
+}
 
 .icon__menu{
     width: 50px;
@@ -315,6 +324,18 @@ a.selected{
 
 .menu__side_move{
     width: 250px;
+}
+
+
+@media screen and (max-width: 760px){
+    .body_move{
+        margin-left: 0px;
+    }
+
+    .menu__side_move{
+        width: 80px;
+        left: -80px;
+    }
 }
 
 .pieNav{

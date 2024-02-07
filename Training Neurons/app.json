@@ -472,7 +472,8 @@
       "password": "123",
       "misCursos": [
         "MG8B",
-        "72EQ"
+        "72EQ",
+        "13"
       ]
     },
     {
@@ -559,21 +560,10 @@
       "misCursos": [
         "MG8B",
         "X2FT",
-        "13"
+        "13",
+        "6",
+        "14"
       ]
-    },
-    {
-      "id": "_qklt8xhph",
-      "name": "www",
-      "lastname": "wwww",
-      "phone": "wwww",
-      "birthdate": "2024-02-17",
-      "country": "colombia",
-      "city": "bogota",
-      "gender": "masculino",
-      "email": "harvac25@gaghga.com",
-      "password": "qwert",
-      "misCursos": []
     },
     {
       "id": "_h993w1chr",
@@ -607,7 +597,9 @@
       "password": "222",
       "misCursos": [
         "10",
-        "13"
+        "13",
+        "23",
+        "3"
       ]
     }
   ],
