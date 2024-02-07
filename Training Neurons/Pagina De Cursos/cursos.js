@@ -93,14 +93,14 @@ function cargarDatos() {
 
 function cargarTargetas() {
     let idCurso = localStorage.getItem('cursos');//codigo para traer lo que esta guardado en el local 
-
+    console.log(idCurso);
 
     filtro = datos.filter(function (dato) {
         return dato.categoria == idCurso;
     });
 
     filtro.forEach((dato) => {
-
+        console.log(dato.categoria);
         let col = document.createElement('div')
         col.classList.add('col-md-4');
         row.appendChild(col);
